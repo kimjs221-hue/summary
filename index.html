@@ -1,918 +1,3431 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
-<meta charset="UTF-8" />
-<title>물리치료 국가고시 최종 완벽 요약 (신경계/근골격계/해부생리)</title>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700;900&display=swap" rel="stylesheet">
-<style>
-  /* =======================
-     Print + Layout Safe CSS
-     ======================= */
-  @page { size: A4; margin: 15mm; }
-  html { scroll-behavior: smooth; }
-  body{
-    font-family: 'Noto Sans KR', sans-serif;
-    line-height: 1.55;
-    color: #333;
-    max-width: 210mm;
-    margin: 0 auto;
-    background: #fff;
-    font-size: 10pt;
-    -webkit-print-color-adjust: exact;
-    print-color-adjust: exact;
-  }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>물리치료 국가고시 최종 완벽 요약 (신경계/근골격계/해부생리)</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" as="style" crossorigin
+    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <style>
+    :root {
+      /* Premium Color Palette */
+      --primary: #6366f1;
+      /* Indigo 500 */
+      --primary-dark: #4f46e5;
+      /* Indigo 600 */
+      --secondary: #ec4899;
+      /* Pink 500 */
+      --accent: #8b5cf6;
+      /* Violet 500 */
 
-  h1{
-    text-align:center;
-    background-color:#2c3e50;
-    color:#fff;
-    padding:15px;
-    border-radius:8px;
-    font-size:22pt;
-    margin: 0 0 18px 0;
-  }
-  h2{
-    color:#2980b9;
-    border-bottom:2px solid #2980b9;
-    padding-bottom:5px;
-    margin-top:28px;
-    font-size:16pt;
-    page-break-after: avoid;
-  }
-  h3{
-    color:#2c3e50;
-    background:#ecf0f1;
-    padding:6px 10px;
-    border-left:5px solid #2c3e50;
-    margin-top:18px;
-    font-size:13pt;
-    page-break-after: avoid;
-  }
-  h4{
-    color:#c0392b;
-    margin-top:14px;
-    margin-bottom:6px;
-    font-size:11pt;
-    font-weight:bold;
-    page-break-after: avoid;
-  }
+      --bg-gradient: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+      --glass-bg: rgba(255, 255, 255, 0.85);
+      --glass-border: rgba(255, 255, 255, 0.5);
+      --glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
 
-  /* Tables */
-  table{
-    width:100%;
-    border-collapse:collapse;
-    margin:10px 0;
-    font-size:9.5pt;
-    break-inside: avoid;
-    page-break-inside: avoid;
-  }
-  th{
-    background-color:#34495e;
-    color:white;
-    padding:6px;
-    text-align:center;
-  }
-  td{
-    border:1px solid #bdc3c7;
-    padding:5px;
-    text-align:center;
-    vertical-align:middle;
-  }
-  tr:nth-child(even){ background-color:#f9f9f9; }
+      --text-main: #1e293b;
+      /* Slate 800 */
+      --text-sub: #475569;
+      /* Slate 600 */
+      --text-muted: #94a3b8;
+      /* Slate 400 */
 
-  /* Boxes */
-  .box-lock, .box-point, .box-final{
-    padding:10px;
-    margin:10px 0;
-    border-radius:6px;
-    break-inside: avoid;
-    page-break-inside: avoid;
-    font-size:10pt;
-  }
-  .box-lock{
-    background-color:#fff3cd;
-    border:1px solid #ffeeba;
-    border-left:6px solid #ffc107;
-  }
-  .box-point{
-    background-color:#d1ecf1;
-    border:1px solid #bee5eb;
-    border-left:6px solid #17a2b8;
-  }
-  .box-final{
-    background-color:#2c3e50;
-    color:white;
-    padding:15px;
-    border-radius:8px;
-    text-align:center;
-    font-weight:bold;
-    font-size:1.05em;
-  }
+      --success: #10b981;
+      --warning: #f59e0b;
+      --danger: #ef4444;
 
-  /* Print-safe two-column blocks (no flex) */
-  .grid2{
-    width:100%;
-    border-collapse:separate;
-    border-spacing: 12px 0;
-    margin: 6px 0 10px 0;
-  }
-  .grid2 td{
-    border: none;
-    text-align: left;
-    vertical-align: top;
-    padding: 0;
-  }
+      --radius-sm: 8px;
+      --radius-md: 16px;
+      --radius-lg: 24px;
+      --radius-xl: 32px;
+    }
 
-  ul{ margin: 6px 0 6px 18px; padding:0; }
-  li{ margin-bottom:4px; }
+    /* Reset & Typography */
+    * {
+      box-sizing: border-box;
+      -webkit-tap-highlight-color: transparent;
+    }
 
-  /* TOC */
-  .toc{
-    border:1px solid #dfe6e9;
-    border-radius:10px;
-    padding:14px 16px;
-    background:#fbfcfd;
-    margin: 8px 0 18px 0;
-    break-inside: avoid;
-    page-break-inside: avoid;
-  }
-  .toc h2{ margin-top: 0; border-bottom: 0; padding-bottom: 0; }
-  .toc a{ color:#2c3e50; text-decoration:none; font-weight:800; }
-  .toc a:hover{ text-decoration:underline; }
-  .toc .sub{ margin-left: 16px; font-weight:600; }
-  .toc .tiny{ color:#666; font-weight:400; font-size:9pt; }
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+      background: #f0f2f5;
+      /* Fallback */
+      background-image:
+        radial-gradient(at 0% 0%, hsla(253, 16%, 7%, 1) 0, transparent 50%),
+        radial-gradient(at 50% 0%, hsla(225, 39%, 30%, 1) 0, transparent 50%),
+        radial-gradient(at 100% 0%, hsla(339, 49%, 30%, 1) 0, transparent 50%);
+      background: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+      background-attachment: fixed;
+      color: var(--text-main);
+      height: 100vh;
+      overflow: hidden;
+      /* App-like feel */
+    }
 
-  .backtoc{
-    display:inline-block;
-    margin:6px 0 0 0;
-    padding:4px 10px;
-    border:1px solid #d0d7de;
-    border-radius:999px;
-    font-size:9pt;
-    text-decoration:none;
-    color:#2c3e50;
-    background:#fff;
-  }
+    /* Main App Layout */
+    #book-container {
+      width: 100%;
+      height: 100vh;
+      position: relative;
+      perspective: 1500px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
 
-  /* Page breaks (minimal, controlled) */
-  .pb{ break-before: page; page-break-before: always; }
-  .keep{ break-inside: avoid; page-break-inside: avoid; }
+    .book-page {
+      width: 100%;
+      max-width: 800px;
+      /* Optimal reading width */
+      height: 90vh;
+      /* Floating Card effect */
+      padding: 50px 60px;
+      background: var(--glass-bg);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid var(--glass-border);
+      border-radius: var(--radius-lg);
+      box-shadow:
+        0 20px 40px rgba(0, 0, 0, 0.1),
+        0 0 0 1px rgba(255, 255, 255, 0.4) inset;
 
-  /* Optional placeholder for images */
-  .img-placeholder{
-    border:1px dashed #95a5a6;
-    border-radius:8px;
-    padding:10px;
-    color:#7f8c8d;
-    font-size:9pt;
-    text-align:center;
-    margin:10px 0;
-    break-inside: avoid;
-    page-break-inside: avoid;
-  }
-</style>
+      overflow-y: auto;
+      scroll-behavior: smooth;
+      opacity: 0;
+      transform: translateY(20px) scale(0.98);
+      position: absolute;
+      transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+      display: none;
+      /* JS handles display */
+    }
+
+    .book-page.active {
+      display: block;
+      opacity: 1;
+      transform: translateY(0) scale(1);
+      z-index: 10;
+    }
+
+    /* Scrollbar Styling */
+    .book-page::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    .book-page::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    .book-page::-webkit-scrollbar-thumb {
+      background: rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+
+    .book-page::-webkit-scrollbar-thumb:hover {
+      background: rgba(0, 0, 0, 0.2);
+    }
+
+    /* Typography Overhaul */
+    h1,
+    h2,
+    h3,
+    h4 {
+      letter-spacing: -0.02em;
+      line-height: 1.3;
+      margin-bottom: 0.8em;
+    }
+
+    h1.title {
+      font-size: 3.2rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, var(--primary-dark) 0%, var(--accent) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-align: center;
+      margin-bottom: 10px;
+      text-shadow: 0 10px 20px rgba(99, 102, 241, 0.2);
+    }
+
+    .subtitle {
+      text-align: center;
+      font-size: 1.2rem;
+      color: var(--text-sub);
+      margin-bottom: 50px;
+      font-weight: 500;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      color: var(--text-main);
+      border-bottom: 3px solid var(--primary);
+      display: inline-block;
+      padding-bottom: 5px;
+      margin-top: 40px;
+    }
+
+    h2.pb {
+      /* Page Break Headers (Cover Pages) */
+      background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+      color: white;
+      padding: 40px;
+      border-radius: var(--radius-md);
+      width: 100%;
+      text-align: center;
+      border: none;
+      box-shadow: 0 10px 30px rgba(99, 102, 241, 0.3);
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 300px;
+      /* Cover page height */
+      font-size: 2.2rem;
+    }
+
+    h3 {
+      font-size: 1.4rem;
+      color: var(--primary-dark);
+      margin-top: 30px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    h3::before {
+      content: '';
+      display: inline-block;
+      width: 6px;
+      height: 24px;
+      background: var(--secondary);
+      border-radius: 4px;
+    }
+
+    h4 {
+      font-size: 1.15rem;
+      color: var(--text-sub);
+      margin-top: 20px;
+      font-weight: 600;
+    }
+
+    p,
+    li {
+      font-size: 1.05rem;
+      line-height: 1.7;
+      color: var(--text-sub);
+    }
+
+    strong {
+      color: var(--text-main);
+      font-weight: 700;
+      box-shadow: inset 0 -8px 0 rgba(99, 102, 241, 0.15);
+    }
+
+    /* Modern Table Design */
+    table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      margin: 25px 0;
+      background: white;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    }
+
+    th,
+    td {
+      padding: 16px 20px;
+      text-align: left;
+      border-bottom: 1px solid #f1f5f9;
+    }
+
+    th {
+      background: #f8fafc;
+      color: var(--text-main);
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 0.85rem;
+      letter-spacing: 0.05em;
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    tr:hover td {
+      background: #f8fafc;
+      transition: background 0.2s;
+    }
+
+    /* TOC Specifics */
+    #toc ul {
+      list-style: none;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 15px;
+    }
+
+    #toc a {
+      display: block;
+      padding: 16px 20px;
+      background: white;
+      border: 1px solid rgba(0, 0, 0, 0.05);
+      border-radius: var(--radius-md);
+      text-decoration: none;
+      color: var(--text-main);
+      font-weight: 600;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+      position: relative;
+      overflow: hidden;
+    }
+
+    #toc a:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+      border-color: var(--primary);
+      color: var(--primary);
+    }
+
+    #toc a::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 4px;
+      background: var(--primary);
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    #toc a:hover::before {
+      opacity: 1;
+    }
+
+    .backtoc {
+      display: none;
+    }
+
+    /* Hide backtoc links in E-Book mode as UI handles it */
+
+    /* Feature Boxes (Cards) */
+    .box-point,
+    .box-lock,
+    .box-final {
+      padding: 24px;
+      margin: 25px 0;
+      border-radius: var(--radius-md);
+      position: relative;
+      border: none;
+      /* Override old border */
+    }
+
+    .box-point {
+      background: #f0f9ff;
+      border-left: 5px solid #0ea5e9;
+      color: #0c4a6e;
+    }
+
+    .box-point::before {
+      content: '💡 POINT';
+      font-size: 0.8em;
+      font-weight: bold;
+      color: #0284c7;
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .box-lock {
+      background: #fff7ed;
+      border-left: 5px solid #f97316;
+      color: #7c2d12;
+    }
+
+    .box-lock::before {
+      content: '🔒 LOCK';
+      font-size: 0.8em;
+      font-weight: bold;
+      color: #ea580c;
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .box-final {
+      background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+      color: white;
+      text-align: center;
+      box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.5);
+    }
+
+    /* Utility Grid */
+    .grid2 {
+      width: 100%;
+      border: none;
+      background: transparent;
+      box-shadow: none;
+      margin: 0;
+    }
+
+    .grid2 td {
+      border: none;
+      padding: 10px;
+      vertical-align: top;
+      background: transparent !important;
+    }
+
+    .grid2 td:first-child {
+      padding-left: 0;
+    }
+
+    .grid2 td:last-child {
+      padding-right: 0;
+    }
+
+    @media (max-width: 768px) {
+      .grid2 td {
+        display: block;
+        width: 100%;
+        padding: 0 0 20px 0;
+      }
+    }
+
+    /* Interactive: Blur & Reveal */
+    .blur-text {
+      filter: blur(6px);
+      cursor: pointer;
+      background: rgba(0, 0, 0, 0.05);
+      border-radius: 4px;
+      padding: 2px 4px;
+      transition: all 0.3s ease;
+      user-select: none;
+    }
+
+    .blur-text:hover {
+      background: rgba(99, 102, 241, 0.1);
+    }
+
+    .blur-text.revealed {
+      filter: blur(0);
+      background: transparent;
+      animation: popIn 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    @keyframes popIn {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
+    /* Navigation Bar (Glassmorphism) */
+    .nav-bar {
+      position: fixed;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+
+      background: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.8);
+
+      padding: 12px 30px;
+      border-radius: 100px;
+      display: flex;
+      gap: 20px;
+      align-items: center;
+
+      box-shadow:
+        0 20px 40px rgba(0, 0, 0, 0.1),
+        0 5px 10px rgba(0, 0, 0, 0.05);
+      z-index: 100;
+      transition: transform 0.3s ease;
+    }
+
+    .nav-bar:hover {
+      transform: translateX(-50%) translateY(-2px);
+      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+    }
+
+    .nav-btn {
+      background: white;
+      border: none;
+      border-radius: 50px;
+      color: var(--text-main);
+      font-size: 0.95rem;
+      font-weight: 700;
+      cursor: pointer;
+      padding: 12px 24px;
+      transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+      font-family: 'Pretendard', sans-serif;
+    }
+
+    .nav-btn:hover:not(:disabled) {
+      background: var(--primary);
+      color: white;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 15px rgba(99, 102, 241, 0.3);
+    }
+
+    .nav-btn:disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+      box-shadow: none;
+      background: rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-btn.toc-btn {
+      display: none;
+    }
+
+    /* Kept hidden as requested */
+
+    .page-indicator {
+      font-weight: 600;
+      color: var(--text-sub);
+      font-feature-settings: "tnum";
+      font-variant-numeric: tabular-nums;
+      padding: 0 10px;
+    }
+
+    /* Floating Controls */
+    .floating-controls {
+      position: fixed;
+      top: 30px;
+      right: 30px;
+      display: flex;
+      gap: 12px;
+      z-index: 101;
+    }
+
+    .fab {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: 1px solid rgba(255, 255, 255, 0.8);
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(10px);
+      font-size: 1.5rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .fab:hover {
+      transform: translateY(-3px) rotate(10deg);
+      background: white;
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Quiz Modal Restyling */
+    dialog {
+      background: white;
+      border-radius: var(--radius-lg);
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+      padding: 0;
+      overflow: hidden;
+    }
+
+    dialog::backdrop {
+      background: rgba(0, 0, 0, 0.2);
+      backdrop-filter: blur(8px);
+    }
+
+    .modal-header {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+      padding: 20px 30px;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .modal-header span {
+      font-size: 1.2rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+
+    .close-btn {
+      background: rgba(255, 255, 255, 0.2);
+      color: white;
+      border: none;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 1.2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.2s;
+    }
+
+    .close-btn:hover {
+      background: rgba(255, 255, 255, 0.4);
+    }
+
+    .modal-body {
+      padding: 30px;
+    }
+
+    details {
+      background: #f8fafc;
+      border-radius: var(--radius-md);
+      margin-bottom: 12px;
+      border: 1px solid #e2e8f0;
+      transition: all 0.2s;
+    }
+
+    details[open] {
+      background: white;
+      border-color: var(--primary);
+      box-shadow: 0 4px 6px -1px rgba(99, 102, 241, 0.1);
+    }
+
+    summary {
+      padding: 16px 20px;
+      cursor: pointer;
+      font-weight: 600;
+      color: var(--text-main);
+      list-style: none;
+      /* Hide default triangle */
+      position: relative;
+    }
+
+    summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .answer {
+      padding: 0 20px 20px 20px;
+      color: var(--primary-dark);
+      font-weight: 600;
+      animation: slideDown 0.3s ease;
+    }
+
+    @keyframes slideDown {
+      from {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Print Override */
+    @media print {
+      body {
+        background: white;
+        height: auto;
+        overflow: visible;
+        font-family: 'Malgun Gothic', sans-serif;
+      }
+
+      #book-container {
+        display: block;
+        height: auto;
+        padding: 0;
+      }
+
+      .book-page {
+        display: block !important;
+        position: static;
+        width: 100%;
+        max-width: none;
+        height: auto;
+        box-shadow: none;
+        border: none;
+        padding: 0;
+        margin: 0;
+        opacity: 1;
+        transform: none;
+        background: white;
+      }
+
+      .nav-bar,
+      .floating-controls,
+      .quiz-trigger-btn,
+      .box-final {
+        display: none !important;
+      }
+
+      h2.pb {
+        color: black;
+        background: white;
+        border: 1px solid #000;
+        height: auto;
+        min-height: 0;
+        padding: 20px;
+        font-size: 1.5em;
+        text-align: left;
+        box-shadow: none;
+        display: block;
+        border-radius: 0;
+      }
+
+      /* Restore print layout visibility */
+    }
+  </style>
 </head>
 
 <body>
 
-<a id="toc"></a>
-<h1>🧠 물리치료 국가고시 최종 완벽 요약집</h1>
+  <!-- UI Elements for E-Book Mode -->
+  <div id="book-container"></div>
 
-<div class="box-final">
-  🔑 최종 암기 공식: <span style="font-weight:900;">병변 위치 → 증상 / 반사 / 평가도구 자동 연결</span>
-</div>
-
-<div class="toc">
-  <h2>📑 목차 (클릭 이동)</h2>
-  <ul>
-    <li><a href="#part1">PART 1. 신경계 수준별 반사·반응 (국시 단골)</a>
-      <div class="sub tiny">
-        <a href="#p1-spinal">1) 척수(ATNR)</a> ·
-        <a href="#p1-brainstem">2) 뇌줄기(TLR/양서류)</a> ·
-        <a href="#p1-midbrain">3) 중간뇌(란다우/유인원)</a> ·
-        <a href="#p1-cortical">4) 대뇌겉질(평형/보호)</a> ·
-        <a href="#p1-table">초압축표</a> ·
-        <a href="#p1-remain">남아 있으면 문제</a>
-      </div>
-    </li>
-    <li><a href="#part2">PART 2. 뇌졸중(CVA) 핵심 정리</a></li>
-    <li><a href="#part3">PART 3. MS vs GBS (탈수초 질환)</a></li>
-    <li><a href="#part4">PART 4. 병적 반사 검사 (표준 한국어 의료용어)</a>
-      <div class="sub tiny">
-        <a href="#p4-foot">Ⅰ. 발</a> ·
-        <a href="#p4-hand">Ⅱ. 손</a> ·
-        <a href="#p4-face">Ⅲ. 얼굴</a> ·
-        <a href="#p4-flex">Ⅳ. 발가락 굽힘 계열</a>
-      </div>
-    </li>
-    <li><a href="#part5">PART 5. 주요 평가 도구(Scale)</a></li>
-    <li><a href="#part6">PART 6. 운동 관련 검사 (어깨→배/허리→엉덩관절→무릎→발목)</a></li>
-    <li><a href="#part7">PART 7. 신경 해부학 및 분절(Segment)</a></li>
-    <li><a href="#part8">PART 8. 해부생리 및 세포학 핵심</a></li>
-    <li><a href="#part9">PART 9. 뼈세포와 뼈되기(Ossification)</a></li>
-  </ul>
-
-  <div class="box-point">
-    ✅ PDF 저장 팁: Chrome/Edge에서 열기 → Ctrl+P → <strong>배경 그래픽(Background graphics)</strong> 체크 → PDF로 저장<br>
-    <span class="tiny">* PDF에서 링크 클릭은 뷰어에 따라 다를 수 있음</span>
+  <div class="nav-bar">
+    <button class="nav-btn" id="prevBtn" disabled>◀ 이전</button>
+    <!-- TOC button removed from here -->
+    <span class="page-indicator" id="pageIndicator">1 / 1</span>
+    <button class="nav-btn" id="nextBtn">다음 ▶</button>
   </div>
-</div>
 
-<!-- =========================================================
+  <div class="floating-controls">
+    <button class="fab" id="tocFab" title="목차로 이동">📑</button>
+    <button class="fab" id="quizBtn" title="이 페이지 퀴즈 풀기">🎮</button>
+    <button class="fab" id="memoToggle" title="암기 모드 (정답 가리기)">🙈</button>
+  </div>
+
+  <!-- RAW CONTENT SOURCE (Hidden, used by JS to generate pages) -->
+  <div id="raw-content" style="display:none;">
+
+    <a id="toc"></a>
+    <h1>🧠 물리치료 국가고시 최종 완벽 요약집</h1>
+
+    <div class="box-final">
+      🔑 최종 암기 공식: <span style="font-weight:900;">병변 위치 → 증상 / 반사 / 평가도구 자동 연결</span>
+    </div>
+
+    <div class="toc">
+      <h2>📑 목차 (클릭 이동)</h2>
+      <ul>
+        <li><a href="#part1">PART 1. 신경계 수준별 반사·반응 (국시 단골)</a>
+          <div class="sub tiny">
+            <a href="#p1-spinal">1) 척수(ATNR)</a> ·
+            <a href="#p1-brainstem">2) 뇌줄기(TLR/양서류)</a> ·
+            <a href="#p1-midbrain">3) 중간뇌(란다우/유인원)</a> ·
+            <a href="#p1-cortical">4) 대뇌겉질(평형/보호)</a> ·
+            <a href="#p1-table">초압축표</a> ·
+            <a href="#p1-remain">남아 있으면 문제</a>
+          </div>
+        </li>
+        <li><a href="#part2">PART 2. 뇌졸중(CVA) 핵심 정리</a></li>
+        <li><a href="#part3">PART 3. MS vs GBS (탈수초 질환)</a></li>
+        <li><a href="#part4">PART 4. 병적 반사 검사 (표준 한국어 의료용어)</a>
+          <div class="sub tiny">
+            <a href="#p4-foot">Ⅰ. 발</a> ·
+            <a href="#p4-hand">Ⅱ. 손</a> ·
+            <a href="#p4-face">Ⅲ. 얼굴</a> ·
+            <a href="#p4-flex">Ⅳ. 발가락 굽힘 계열</a>
+          </div>
+        </li>
+        <li><a href="#part5">PART 5. 주요 평가 도구(Scale)</a></li>
+        <li><a href="#part6">PART 6. 운동 관련 검사 (어깨→배/허리→엉덩관절→무릎→발목)</a></li>
+        <li><a href="#part7">PART 7. 신경 해부학 및 분절(Segment)</a></li>
+        <li><a href="#part8">PART 8. 해부생리 및 세포학 핵심</a></li>
+        <li><a href="#part9">PART 9. 뼈세포와 뼈되기(Ossification)</a></li>
+        <li><a href="#part10">PART 10. 운동학 및 생체역학 핵심</a></li>
+        <li><a href="#part11">PART 11. 신경계 질환 및 말초신경 손상 (심화)</a></li>
+        <li><a href="#part12">PART 12. 내분비계 및 호르몬 핵심 정리</a></li>
+      </ul>
+
+      <div class="box-point">
+        ✅ PDF 저장 팁: Chrome/Edge에서 열기 → Ctrl+P → <strong>배경 그래픽(Background graphics)</strong> 체크 → PDF로 저장<br>
+        <span class="tiny">* PDF에서 링크 클릭은 뷰어에 따라 다를 수 있음</span>
+      </div>
+    </div>
+
+    <!-- =========================================================
      PART 1. 신경계 수준별 반사·반응 정리 (원문 100% 포함)
      ========================================================= -->
-<a id="part1"></a>
-<h2>PART 1. 🧠 신경계 수준별 반사·반응 정리 (국시 단골)</h2>
-<a class="backtoc" href="#toc">↑ 목차로</a>
+    <a id="part1"></a>
+    <h2>PART 1. 🧠 신경계 수준별 반사·반응 정리 (국시 단골)</h2>
+    <a class="backtoc" href="#toc">↑ 목차로</a>
 
-<div class="box-point">
-  <strong>핵심 구조 먼저</strong><br>
-  척수 수준 → 원시적, 분절 반사<br>
-  뇌줄기 수준 → 자세 긴장 반사<br>
-  중간뇌 수준 → 항중력·자세 반응 시작<br>
-  대뇌겉질 수준 → 균형·보호 반응 완성
-</div>
+    <div class="box-point">
+      <strong>핵심 구조 먼저</strong><br>
+      척수 수준 → 원시적, 분절 반사<br>
+      뇌줄기 수준 → 자세 긴장 반사<br>
+      중간뇌 수준 → 항중력·자세 반응 시작<br>
+      대뇌겉질 수준 → 균형·보호 반응 완성
+    </div>
 
-<a id="p1-spinal"></a>
-<h3>1️⃣ 척수 수준 반사 (Spinal level)</h3>
+    <a id="p1-spinal"></a>
+    <h3>1️⃣ 척수 수준 반사 (Spinal level)</h3>
 
-<h4>🔹 비대칭긴장성목반사 (ATNR)</h4>
-<table>
-  <tr><th width="20%">항목</th><th>내용</th></tr>
-  <tr><td>신경계 수준</td><td>척수 수준</td></tr>
-  <tr><td>자극</td><td>머리를 한쪽으로 돌림</td></tr>
-  <tr><td>양성 자세</td><td>얼굴 쪽 팔다리 폄, 반대쪽 굽힘</td></tr>
-  <tr><td>의미</td><td>원시적 자세 패턴</td></tr>
-  <tr><td>소실</td><td>생후 4–6개월</td></tr>
-</table>
-<div class="box-lock">🔒 절대 안 까먹는 멘트<br>“고개 돌리면 활 쏘는 자세 = 척수”</div>
-<div class="box-point">
-  📌 시험 포인트<br>
-  ATNR 지속 → 뇌성마비 의심<br>
-  척수 수준 = 가장 원시적
-</div>
+    <h4>🔹 비대칭긴장성목반사 (ATNR)</h4>
+    <table>
+      <tr>
+        <th width="20%">항목</th>
+        <th>내용</th>
+      </tr>
+      <tr>
+        <td>신경계 수준</td>
+        <td>척수 수준</td>
+      </tr>
+      <tr>
+        <td>자극</td>
+        <td>머리를 한쪽으로 돌림</td>
+      </tr>
+      <tr>
+        <td>양성 자세</td>
+        <td>얼굴 쪽 팔다리 폄, 반대쪽 굽힘</td>
+      </tr>
+      <tr>
+        <td>의미</td>
+        <td>원시적 자세 패턴</td>
+      </tr>
+      <tr>
+        <td>소실</td>
+        <td>생후 4–6개월</td>
+      </tr>
+    </table>
+    <div class="box-lock">🔒 절대 안 까먹는 멘트<br>“고개 돌리면 활 쏘는 자세 = 척수”</div>
+    <div class="box-point">
+      📌 시험 포인트<br>
+      ATNR 지속 → 뇌성마비 의심<br>
+      척수 수준 = 가장 원시적
+    </div>
 
-<a id="p1-brainstem"></a>
-<h3>2️⃣ 뇌줄기 수준 반사 (Brainstem level)</h3>
+    <a id="p1-brainstem"></a>
+    <h3>2️⃣ 뇌줄기 수준 반사 (Brainstem level)</h3>
 
-<h4>🔹 긴장성미로반사 (TLR)</h4>
-<table>
-  <tr><th width="20%">항목</th><th>내용</th></tr>
-  <tr><td>신경계 수준</td><td>뇌줄기 수준</td></tr>
-  <tr><td>자극</td><td>머리 위치 변화</td></tr>
-  <tr><td>양성 자세</td><td>바로 누우면 폄, 엎드리면 굽힘</td></tr>
-  <tr><td>의미</td><td>중력에 대한 자세 긴장</td></tr>
-  <tr><td>소실</td><td>생후 6개월</td></tr>
-</table>
-<div class="box-lock">🔒 멘트<br>“하늘 보면 펴지고, 바닥 보면 접힌다”</div>
+    <h4>🔹 긴장성미로반사 (TLR)</h4>
+    <table>
+      <tr>
+        <th width="20%">항목</th>
+        <th>내용</th>
+      </tr>
+      <tr>
+        <td>신경계 수준</td>
+        <td>뇌줄기 수준</td>
+      </tr>
+      <tr>
+        <td>자극</td>
+        <td>머리 위치 변화</td>
+      </tr>
+      <tr>
+        <td>양성 자세</td>
+        <td>바로 누우면 폄, 엎드리면 굽힘</td>
+      </tr>
+      <tr>
+        <td>의미</td>
+        <td>중력에 대한 자세 긴장</td>
+      </tr>
+      <tr>
+        <td>소실</td>
+        <td>생후 6개월</td>
+      </tr>
+    </table>
+    <div class="box-lock">🔒 멘트<br>“하늘 보면 펴지고, 바닥 보면 접힌다”</div>
 
-<h4>🔹 양서류 반응 (Amphibian reaction)</h4>
-<table>
-  <tr><th width="20%">항목</th><th>내용</th></tr>
-  <tr><td>신경계 수준</td><td>뇌줄기 수준</td></tr>
-  <tr><td>자극</td><td>한쪽 다리 굽힘</td></tr>
-  <tr><td>양성 자세</td><td>같은 쪽 팔·다리 굽힘</td></tr>
-  <tr><td>의미</td><td>분리된 몸통·사지 움직임</td></tr>
-  <tr><td>시기</td><td>생후 6개월 이후</td></tr>
-</table>
-<div class="box-lock">🔒 멘트<br>“한쪽 접으면 그쪽만 따라 접힌다”</div>
-<div class="box-point">
-  📌 중요<br>
-  이건 반사라기보다 반응<br>
-  뇌줄기 단계에서 처음 나타나는 분리 움직임
-</div>
+    <h4>🔹 양서류 반응 (Amphibian reaction)</h4>
+    <table>
+      <tr>
+        <th width="20%">항목</th>
+        <th>내용</th>
+      </tr>
+      <tr>
+        <td>신경계 수준</td>
+        <td>뇌줄기 수준</td>
+      </tr>
+      <tr>
+        <td>자극</td>
+        <td>한쪽 다리 굽힘</td>
+      </tr>
+      <tr>
+        <td>양성 자세</td>
+        <td>같은 쪽 팔·다리 굽힘</td>
+      </tr>
+      <tr>
+        <td>의미</td>
+        <td>분리된 몸통·사지 움직임</td>
+      </tr>
+      <tr>
+        <td>시기</td>
+        <td>생후 6개월 이후</td>
+      </tr>
+    </table>
+    <div class="box-lock">🔒 멘트<br>“한쪽 접으면 그쪽만 따라 접힌다”</div>
+    <div class="box-point">
+      📌 중요<br>
+      이건 반사라기보다 반응<br>
+      뇌줄기 단계에서 처음 나타나는 분리 움직임
+    </div>
 
-<a id="p1-midbrain"></a>
-<h3>3️⃣ 중간뇌 수준 반응 (Midbrain level)</h3>
+    <a id="p1-midbrain"></a>
+    <h3>3️⃣ 중간뇌 수준 반응 (Midbrain level)</h3>
 
-<h4>🔹 란다우 반응 (Landau reaction)</h4>
-<table>
-  <tr><th width="20%">항목</th><th>내용</th></tr>
-  <tr><td>신경계 수준</td><td>중간뇌 수준</td></tr>
-  <tr><td>자극</td><td>엎드린 공중 들기</td></tr>
-  <tr><td>양성 자세</td><td>머리·몸통·다리 폄</td></tr>
-  <tr><td>의미</td><td>항중력 신전</td></tr>
-  <tr><td>시기</td><td>생후 3–12개월</td></tr>
-</table>
-<div class="box-lock">🔒 멘트<br>“공중에 들면 슈퍼맨 = 중간뇌”</div>
-<div class="box-point">
-  📌 시험 포인트<br>
-  란다우 없음 → 중간뇌 이상<br>
-  너무 과도 → 강직 의심
-</div>
+    <h4>🔹 란다우 반응 (Landau reaction)</h4>
+    <table>
+      <tr>
+        <th width="20%">항목</th>
+        <th>내용</th>
+      </tr>
+      <tr>
+        <td>신경계 수준</td>
+        <td>중간뇌 수준</td>
+      </tr>
+      <tr>
+        <td>자극</td>
+        <td>엎드린 공중 들기</td>
+      </tr>
+      <tr>
+        <td>양성 자세</td>
+        <td>머리·몸통·다리 폄</td>
+      </tr>
+      <tr>
+        <td>의미</td>
+        <td>항중력 신전</td>
+      </tr>
+      <tr>
+        <td>시기</td>
+        <td>생후 3–12개월</td>
+      </tr>
+    </table>
+    <div class="box-lock">🔒 멘트<br>“공중에 들면 슈퍼맨 = 중간뇌”</div>
+    <div class="box-point">
+      📌 시험 포인트<br>
+      란다우 없음 → 중간뇌 이상<br>
+      너무 과도 → 강직 의심
+    </div>
 
-<h4>🔹 유인원 반응 (Simian reaction)</h4>
-<table>
-  <tr><th width="20%">항목</th><th>내용</th></tr>
-  <tr><td>신경계 수준</td><td>중간뇌 수준</td></tr>
-  <tr><td>자극</td><td>한쪽 팔 굽힘</td></tr>
-  <tr><td>양성 자세</td><td>같은 쪽 다리도 굽힘</td></tr>
-  <tr><td>의미</td><td>상·하지 협응</td></tr>
-  <tr><td>시기</td><td>생후 6개월 이후</td></tr>
-</table>
-<div class="box-lock">🔒 멘트<br>“팔 접히면 다리도 따라 접힌다”</div>
+    <h4>🔹 유인원 반응 (Simian reaction)</h4>
+    <table>
+      <tr>
+        <th width="20%">항목</th>
+        <th>내용</th>
+      </tr>
+      <tr>
+        <td>신경계 수준</td>
+        <td>중간뇌 수준</td>
+      </tr>
+      <tr>
+        <td>자극</td>
+        <td>한쪽 팔 굽힘</td>
+      </tr>
+      <tr>
+        <td>양성 자세</td>
+        <td>같은 쪽 다리도 굽힘</td>
+      </tr>
+      <tr>
+        <td>의미</td>
+        <td>상·하지 협응</td>
+      </tr>
+      <tr>
+        <td>시기</td>
+        <td>생후 6개월 이후</td>
+      </tr>
+    </table>
+    <div class="box-lock">🔒 멘트<br>“팔 접히면 다리도 따라 접힌다”</div>
 
-<a id="p1-cortical"></a>
-<h3>4️⃣ 대뇌겉질 수준 반응 (Cortical level)</h3>
+    <a id="p1-cortical"></a>
+    <h3>4️⃣ 대뇌겉질 수준 반응 (Cortical level)</h3>
 
-<h4>🔹 평형 반응 · 보호신전반응</h4>
-<table>
-  <tr><th width="20%">항목</th><th>내용</th></tr>
-  <tr><td>신경계 수준</td><td>대뇌겉질 수준</td></tr>
-  <tr><td>특징</td><td>중심 이동에 따른 균형</td></tr>
-  <tr><td>의미</td><td>최고 수준 자세 조절</td></tr>
-  <tr><td>소실</td><td>❌ (평생 유지)</td></tr>
-</table>
-<div class="box-lock">🔒 멘트<br>“넘어질 걸 알고 손을 뻗는다 = 대뇌”</div>
+    <h4>🔹 평형 반응 · 보호신전반응</h4>
+    <table>
+      <tr>
+        <th width="20%">항목</th>
+        <th>내용</th>
+      </tr>
+      <tr>
+        <td>신경계 수준</td>
+        <td>대뇌겉질 수준</td>
+      </tr>
+      <tr>
+        <td>특징</td>
+        <td>중심 이동에 따른 균형</td>
+      </tr>
+      <tr>
+        <td>의미</td>
+        <td>최고 수준 자세 조절</td>
+      </tr>
+      <tr>
+        <td>소실</td>
+        <td>❌ (평생 유지)</td>
+      </tr>
+    </table>
+    <div class="box-lock">🔒 멘트<br>“넘어질 걸 알고 손을 뻗는다 = 대뇌”</div>
 
-<a id="p1-table"></a>
-<h3>🧠 국시용 한 눈에 보는 표 (초압축)</h3>
-<table>
-  <tr><th>반사/반응</th><th>신경계 수준</th><th>핵심 자세</th></tr>
-  <tr><td>ATNR</td><td>척수</td><td>얼굴 쪽 폄</td></tr>
-  <tr><td>TLR</td><td>뇌줄기</td><td>하늘=폄 / 바닥=굽힘</td></tr>
-  <tr><td>양서류 반응</td><td>뇌줄기</td><td>한쪽만 분리</td></tr>
-  <tr><td>란다우</td><td>중간뇌</td><td>슈퍼맨</td></tr>
-  <tr><td>유인원 반응</td><td>중간뇌</td><td>팔=다리</td></tr>
-  <tr><td>평형·보호</td><td>대뇌겉질</td><td>균형·방어</td></tr>
-</table>
+    <a id="p1-table"></a>
+    <h3>🧠 국시용 한 눈에 보는 표 (초압축)</h3>
+    <table>
+      <tr>
+        <th>반사/반응</th>
+        <th>신경계 수준</th>
+        <th>핵심 자세</th>
+      </tr>
+      <tr>
+        <td>ATNR</td>
+        <td>척수</td>
+        <td>얼굴 쪽 폄</td>
+      </tr>
+      <tr>
+        <td>TLR</td>
+        <td>뇌줄기</td>
+        <td>하늘=폄 / 바닥=굽힘</td>
+      </tr>
+      <tr>
+        <td>양서류 반응</td>
+        <td>뇌줄기</td>
+        <td>한쪽만 분리</td>
+      </tr>
+      <tr>
+        <td>란다우</td>
+        <td>중간뇌</td>
+        <td>슈퍼맨</td>
+      </tr>
+      <tr>
+        <td>유인원 반응</td>
+        <td>중간뇌</td>
+        <td>팔=다리</td>
+      </tr>
+      <tr>
+        <td>평형·보호</td>
+        <td>대뇌겉질</td>
+        <td>균형·방어</td>
+      </tr>
+    </table>
 
-<div class="box-lock">
-  🔒 국시 최종 락 문장 (이거 외우면 끝)<br>
-  ATNR = 척수<br>
-  TLR·양서류 = 뇌줄기<br>
-  란다우·유인원 = 중간뇌<br>
-  평형·보호 = 대뇌겉질
-</div>
+    <div class="box-lock">
+      🔒 국시 최종 락 문장 (이거 외우면 끝)<br>
+      ATNR = 척수<br>
+      TLR·양서류 = 뇌줄기<br>
+      란다우·유인원 = 중간뇌<br>
+      평형·보호 = 대뇌겉질
+    </div>
 
-<a id="p1-remain"></a>
-<h3>남아 있으면 문제</h3>
-<table>
-  <tr><th>남아 있으면 문제</th><th>핵심 의미</th></tr>
-  <tr><td>ATNR</td><td>양손 협응 불가</td></tr>
-  <tr><td>TLR</td><td>항중력 자세 불가</td></tr>
-  <tr><td>모로</td><td>자세 불안정</td></tr>
-  <tr><td>STNR</td><td>기기·서기 장애</td></tr>
-  <tr><td>손바닥잡기</td><td>미세운동 장애</td></tr>
-  <tr><td>발바닥잡기</td><td>보행 장애</td></tr>
-  <tr><td>보호·평형 없음</td><td>대뇌겉질 미성숙</td></tr>
-</table>
+    <a id="p1-remain"></a>
+    <h3>남아 있으면 문제</h3>
+    <table>
+      <tr>
+        <th>남아 있으면 문제</th>
+        <th>핵심 의미</th>
+      </tr>
+      <tr>
+        <td>ATNR</td>
+        <td>양손 협응 불가</td>
+      </tr>
+      <tr>
+        <td>TLR</td>
+        <td>항중력 자세 불가</td>
+      </tr>
+      <tr>
+        <td>모로</td>
+        <td>자세 불안정</td>
+      </tr>
+      <tr>
+        <td>STNR</td>
+        <td>기기·서기 장애</td>
+      </tr>
+      <tr>
+        <td>손바닥잡기</td>
+        <td>미세운동 장애</td>
+      </tr>
+      <tr>
+        <td>발바닥잡기</td>
+        <td>보행 장애</td>
+      </tr>
+      <tr>
+        <td>보호·평형 없음</td>
+        <td>대뇌겉질 미성숙</td>
+      </tr>
+    </table>
 
-<!-- =========================================================
+    <!-- =========================================================
      PART 2. 뇌졸중 (원문 그대로 포함)
      ========================================================= -->
-<a id="part2"></a>
-<h2 class="pb">PART 2. 뇌졸중 (CVA) 핵심 정리 🔥</h2>
-<a class="backtoc" href="#toc">↑ 목차로</a>
-
-<h3>1. 허혈성 vs 출혈성 감별</h3>
-<table>
-  <tr><th width="20%">구분</th><th>허혈성 (막힘)</th><th>출혈성 (터짐)</th></tr>
-  <tr><td>원인</td><td>혈전, 색전</td><td>고혈압, 동맥류 파열</td></tr>
-  <tr><td>증상</td><td>점진적/갑작스런 신경결손</td><td><strong>극심한 두통</strong>, 의식 저하</td></tr>
-</table>
-<div class="box-lock">🔑 “머리 깨질 듯한 두통 = 출혈성”</div>
-
-<h3>2. 뇌혈관별 증상 (킬러 포인트)</h3>
-<table>
-  <tr>
-    <th width="20%">혈관명</th>
-    <th width="30%">핵심 마비 위치</th>
-    <th>주요 동반 증상</th>
-    <th width="20%">🔑 기억 락</th>
-  </tr>
-  <tr>
-    <td><strong>중대뇌동맥 (MCA)</strong></td>
-    <td><strong>얼굴·팔 &gt; 다리</strong></td>
-    <td>실어증(우성), 시야 결손</td>
-    <td><strong>얼굴·팔 + 말</strong></td>
-  </tr>
-  <tr>
-    <td>전대뇌동맥 (ACA)</td>
-    <td><strong>다리 &gt; 팔</strong></td>
-    <td>보행 장애, 성격 변화</td>
-    <td><strong>ACA = 다리</strong></td>
-  </tr>
-  <tr>
-    <td>후대뇌동맥 (PCA)</td>
-    <td>(마비 경미)</td>
-    <td>시야 결손, 시각 인식 장애</td>
-    <td><strong>PCA = 눈</strong></td>
-  </tr>
-  <tr>
-    <td>내낭 병변</td>
-    <td><strong>운동+감각+시야</strong></td>
-    <td>증상이 한꺼번에 심함</td>
-    <td><strong>다 같이 망가짐</strong></td>
-  </tr>
-</table>
-
-<h3>3. 반구 우성 (Lateralization)</h3>
-<table class="grid2">
-  <tr>
-    <td>
-      <div class="box-point">
-        <strong>▣ 우성반구 (좌뇌)</strong><br>
-        - 실어증, 계산·언어 장애
+    <button class="quiz-trigger-btn" onclick="openQuiz('quiz-part1')">🎮 [Lv.1] 반사 퀴즈 시작</button>
+    <dialog id="quiz-part1">
+      <div class="modal-header"><span>🧠 Lv.1 반사 퀴즈</span><button class="close-btn"
+          onclick="closeQuiz('quiz-part1')">×</button></div>
+      <div class="modal-body">
+        <details>
+          <summary>고개를 돌렸더니 얼굴 쪽 팔다리가 펴지는 반사는?</summary>
+          <div class="answer">A. ATNR (비대칭성긴장성목반사) - 척수 수준</div>
+        </details>
+        <details>
+          <summary>바로 누우면 몸이 펴지고, 엎드리면 굽혀지는 반사는?</summary>
+          <div class="answer">A. TLR (긴장성미로반사) - 뇌줄기 수준</div>
+        </details>
+        <details>
+          <summary>한쪽 다리를 굽히면 같은 쪽 팔도 굽혀진다. (분리 움직임의 시작)</summary>
+          <div class="answer">A. 양서류 반응 (Amphibian) - 뇌줄기 수준</div>
+        </details>
+        <details>
+          <summary>아기를 공중에 띄웠더니 슈퍼맨처럼 머리와 다리를 폈다.</summary>
+          <div class="answer">A. 란다우 반응 (Landau) - 중간뇌 수준</div>
+        </details>
+        <details>
+          <summary>넘어질 때 손을 뻗어 방어하는 반응은?</summary>
+          <div class="answer">A. 보호신전반응 (Protective Extension) - 대뇌겉질</div>
+        </details>
+        <details>
+          <summary>ATNR이 성인기까지 남아있으면 어떤 문제가 생길까?</summary>
+          <div class="answer">A. 양손 협응이 어렵고 척추측만이 생길 수 있다.</div>
+        </details>
+        <details>
+          <summary>중간뇌 수준에서 나타나며, 한쪽 팔을 굽히면 다리도 따라 굽혀지는 반응은?</summary>
+          <div class="answer">A. 유인원 반응 (Simian)</div>
+        </details>
+        <details>
+          <summary>네발기기 자세에서 고개를 들면 팔은 펴지고 다리는 굽혀진다.</summary>
+          <div class="answer">A. STNR (대칭성긴장성목반사)</div>
+        </details>
       </div>
-    </td>
-    <td>
-      <div class="box-point">
-        <strong>▣ 비우성반구 (우뇌)</strong><br>
-        - <strong>반쪽무시 (Neglect)</strong>, 공간 인식
-      </div>
-    </td>
-  </tr>
-</table>
-<div class="box-lock">🔑 말 못 하면 좌뇌 / 몸 반쪽 무시하면 우뇌</div>
+    </dialog>
 
-<!-- =========================================================
+    <a id="part2"></a>
+    <h2 class="pb">PART 2. 뇌졸중 (CVA) 핵심 정리 🔥</h2>
+    <a class="backtoc" href="#toc">↑ 목차로</a>
+
+    <h3>1. 허혈성 vs 출혈성 감별</h3>
+    <table>
+      <tr>
+        <th width="20%">구분</th>
+        <th>허혈성 (막힘)</th>
+        <th>출혈성 (터짐)</th>
+      </tr>
+      <tr>
+        <td>원인</td>
+        <td>혈전, 색전</td>
+        <td>고혈압, 동맥류 파열</td>
+      </tr>
+      <tr>
+        <td>증상</td>
+        <td>점진적/갑작스런 신경결손</td>
+        <td><strong>극심한 두통</strong>, 의식 저하</td>
+      </tr>
+    </table>
+    <div class="box-lock">🔑 “머리 깨질 듯한 두통 = 출혈성”</div>
+
+    <h3>2. 뇌혈관별 증상 (킬러 포인트)</h3>
+    <table>
+      <tr>
+        <th width="20%">혈관명</th>
+        <th width="30%">핵심 마비 위치</th>
+        <th>주요 동반 증상</th>
+        <th width="20%">🔑 기억 락</th>
+      </tr>
+      <tr>
+        <td><strong>중간대뇌동맥 (MCA)</strong></td>
+        <td><strong>얼굴·팔 &gt; 다리</strong></td>
+        <td>언어상실증(우성), 시야 결손</td>
+        <td><strong>얼굴·팔 + 말</strong></td>
+      </tr>
+      <tr>
+        <td>앞대뇌동맥 (ACA)</td>
+        <td><strong>다리 &gt; 팔</strong></td>
+        <td>보행 장애, 성격 변화</td>
+        <td><strong>ACA = 다리</strong></td>
+      </tr>
+      <tr>
+        <td>뒤대뇌동맥 (PCA)</td>
+        <td>(마비 경미)</td>
+        <td>시야 결손, 시각 인식 장애</td>
+        <td><strong>PCA = 눈</strong></td>
+      </tr>
+      <tr>
+        <td>속섬유막 병변 (내낭)</td>
+        <td><strong>운동+감각+시야</strong></td>
+        <td>증상이 한꺼번에 심함</td>
+        <td><strong>다 같이 망가짐</strong></td>
+      </tr>
+    </table>
+
+    <h3>3. 반구 우성 (Lateralization)</h3>
+    <table class="grid2">
+      <tr>
+        <td>
+          <div class="box-point">
+            <strong>▣ 우성반구 (좌뇌)</strong><br>
+            - 언어상실증, 계산·언어 장애
+          </div>
+        </td>
+        <td>
+          <div class="box-point">
+            <strong>▣ 비우성반구 (우뇌)</strong><br>
+            - <strong>반쪽무시 (Neglect)</strong>, 공간 인식
+          </div>
+        </td>
+      </tr>
+    </table>
+    <div class="box-lock">🔑 말 못 하면 좌뇌 / 몸 반쪽 무시하면 우뇌</div>
+
+    <!-- =========================================================
      PART 3. MS vs GBS (원문 그대로 포함)
      ========================================================= -->
-<a id="part3"></a>
-<h2 class="pb">PART 3. MS vs GBS (탈수초 질환)</h2>
-<a class="backtoc" href="#toc">↑ 목차로</a>
+    <button class="quiz-trigger-btn" onclick="openQuiz('quiz-part2')">🎮 [Lv.2] 뇌졸중 감별 퀴즈</button>
+    <dialog id="quiz-part2">
+      <div class="modal-header"><span>🧠 Lv.2 CVA 퀴즈</span><button class="close-btn"
+          onclick="closeQuiz('quiz-part2')">×</button></div>
+      <div class="modal-body">
+        <details>
+          <summary>다리 마비가 팔보다 심하고, 성격 변화나 요실금이 나타났다.</summary>
+          <div class="answer">A. ACA (앞대뇌동맥) - 전두엽/다리</div>
+        </details>
+        <details>
+          <summary>얼굴과 팔의 마비가 심하고 언어장애가 동반되었다.</summary>
+          <div class="answer">A. MCA (중간대뇌동맥) - 가장 흔함</div>
+        </details>
+        <details>
+          <summary>운동, 감각, 시야가 모두 심하게 손상되는 부위는?</summary>
+          <div class="answer">A. 속섬유막 (Internal Capsule) - 신경 다발 통로</div>
+        </details>
+        <details>
+          <summary>환자가 왼쪽 공간을 무시하고 오른쪽만 본다 (편측무시).</summary>
+          <div class="answer">A. 우뇌 손상 (비우성반구)</div>
+        </details>
+        <details>
+          <summary>말을 이해하지 못하거나 표현하지 못한다 (실어증).</summary>
+          <div class="answer">A. 좌뇌 손상 (우성반구)</div>
+        </details>
+        <details>
+          <summary>시야 결손과 시각 인식 장애가 주 증상이다.</summary>
+          <div class="answer">A. PCA (뒤대뇌동맥) - 후두엽</div>
+        </details>
+        <details>
+          <summary>갑작스러운 극심한 두통과 의식 저하가 나타났다.</summary>
+          <div class="answer">A. 뇌출혈 (출혈성 뇌졸중)</div>
+        </details>
+      </div>
+    </dialog>
 
-<table>
-  <tr>
-    <th width="20%">구분</th>
-    <th>길랭–바레 (GBS)</th>
-    <th>다발성경화증 (MS)</th>
-  </tr>
-  <tr>
-    <td><strong>병변 위치</strong></td>
-    <td><strong>말초신경 (PNS)</strong></td>
-    <td><strong>중추신경 (CNS)</strong></td>
-  </tr>
-  <tr>
-    <td>운동신경원</td>
-    <td><strong>LMN (하위)</strong></td>
-    <td><strong>UMN (상위)</strong></td>
-  </tr>
-  <tr>
-    <td><strong>심부건반사</strong></td>
-    <td><strong>감소/소실 (이완성)</strong></td>
-    <td><strong>증가/항진 (경직성)</strong></td>
-  </tr>
-  <tr>
-    <td>진행/증상</td>
-    <td>급성, <strong>상행성 마비</strong><br>호흡근 약화</td>
-    <td>재발–완화<br><strong>시신경염, 복시</strong></td>
-  </tr>
-</table>
-<div class="box-final">
-  🔑 <strong>GBS = 말초/반사↓/상행성</strong> vs <strong>MS = 중추/반사↑/재발-완화</strong>
-</div>
+    <a id="part3"></a>
+    <h2 class="pb">PART 3. MS vs GBS (탈수초 질환)</h2>
+    <a class="backtoc" href="#toc">↑ 목차로</a>
 
-<!-- =========================================================
+    <table>
+      <tr>
+        <th width="20%">구분</th>
+        <th>길랭–바레 (GBS)</th>
+        <th>다발성경화증 (MS)</th>
+      </tr>
+      <tr>
+        <td><strong>병변 위치</strong></td>
+        <td><strong>말초신경 (PNS)</strong></td>
+        <td><strong>중추신경 (CNS)</strong></td>
+      </tr>
+      <tr>
+        <td>운동신경원</td>
+        <td><strong>LMN (하위)</strong></td>
+        <td><strong>UMN (상위)</strong></td>
+      </tr>
+      <tr>
+        <td><strong>심부건반사</strong></td>
+        <td><strong>감소/소실 (이완성)</strong></td>
+        <td><strong>증가/항진 (경직성)</strong></td>
+      </tr>
+      <tr>
+        <td>진행/증상</td>
+        <td>급성, <strong>상행성 마비</strong><br>호흡근 약화</td>
+        <td>재발–완화<br><strong>시신경염, 복시</strong></td>
+      </tr>
+    </table>
+    <div class="box-final">
+      🔑 <strong>GBS = 말초/반사↓/상행성</strong> vs <strong>MS = 중추/반사↑/재발-완화</strong>
+    </div>
+
+    <!-- =========================================================
      PART 4. 병적 반사 (원문 100% 포함)
      ========================================================= -->
-<a id="part4"></a>
-<h2>PART 4. 🧠 병적 반사 검사 (표준 한국어 의료용어 정리본)</h2>
-<a class="backtoc" href="#toc">↑ 목차로</a>
+    <button class="quiz-trigger-btn" onclick="openQuiz('quiz-part3')">🎮 [Lv.3] GBS vs MS 퀴즈</button>
+    <dialog id="quiz-part3">
+      <div class="modal-header"><span>🆚 Lv.3 탈수초질환</span><button class="close-btn"
+          onclick="closeQuiz('quiz-part3')">×</button></div>
+      <div class="modal-body">
+        <details>
+          <summary>감기 후 발끝부터 힘이 빠져서 위로 올라온다 (상행성).</summary>
+          <div class="answer">A. GBS (길랭바레 증후군)</div>
+        </details>
+        <details>
+          <summary>20-30대 여성, 시야가 흐려지고 증상이 재발과 완화를 반복한다.</summary>
+          <div class="answer">A. MS (다발성경화증)</div>
+        </details>
+        <details>
+          <summary>GBS는 중추신경계(CNS) 질환인가?</summary>
+          <div class="answer">A. X (말초신경계 PNS 질환이다)</div>
+        </details>
+        <details>
+          <summary>심부건반사가 항진(Hyper)되고 바빈스키 양성이 나타났다.</summary>
+          <div class="answer">A. MS (중추신경 손상이므로 상위운동신경원 징후)</div>
+        </details>
+        <details>
+          <summary>뇌척수액 검사에서 단백질은 높으나 세포수는 정상이다 (단백세포해리).</summary>
+          <div class="answer">A. GBS 특징적 소견</div>
+        </details>
+        <details>
+          <summary>MS의 주된 병리학적 원인은?</summary>
+          <div class="answer">A. 중추신경계의 탈수초 (Demyelination)</div>
+        </details>
+      </div>
+    </dialog>
 
-<a id="p4-foot"></a>
-<h3>Ⅰ. 발에서 나타나는 병적 반사</h3>
-<div class="box-point">
-  ▶ 상위운동신경원 병변 시 나타남<br>
-  ▶ 공통 반응: 엄지발가락의 폄
-</div>
-<div class="box-lock">🔒 헷갈림 차단 문장<br>“발에서 엄지발가락이 펴지면 상위운동신경원 병변이다.”</div>
+    <a id="part4"></a>
+    <h2>PART 4. 🧠 병적 반사 검사 (표준 한국어 의료용어 정리본)</h2>
+    <a class="backtoc" href="#toc">↑ 목차로</a>
 
-<h4>🔹 발 병적 반사 목록 (표준 용어)</h4>
-<table>
-  <tr><th>검사명 (한국어)</th><th>자극 방법</th><th>양성 반응</th><th>임상적 의미</th></tr>
-  <tr><td>바빈스키 반사</td><td>발바닥 가쪽을 뒤에서 앞으로 긁음</td><td>엄지발가락 폄, 다른 발가락 벌어짐</td><td>상위운동신경원 병변</td></tr>
-  <tr><td>차독 반사</td><td>가쪽복사 아래 발등 자극</td><td>엄지발가락 폄</td><td>바빈스키 반사와 동일</td></tr>
-  <tr><td>오펜하임 반사</td><td>정강이 앞면을 위에서 아래로 문지름</td><td>엄지발가락 폄</td><td>바빈스키 반사와 동일</td></tr>
-  <tr><td>고든 반사</td><td>장딴지근을 강하게 압박</td><td>엄지발가락 폄</td><td>바빈스키 반사와 동일</td></tr>
-  <tr><td>셰퍼 반사</td><td>아킬레스힘줄 압박</td><td>엄지발가락 폄</td><td>바빈스키 반사와 동일</td></tr>
-  <tr><td>곤다 반사</td><td>네 번째 발가락을 아래로 굽힘</td><td>엄지발가락 폄</td><td>바빈스키 반사와 동일</td></tr>
-</table>
-<div class="box-point">
-  📌 시험용 핵심<br>
-  검사 방법 다름<br>
-  의미는 전부 동일<br>
-  → 상위운동신경원 병변
-</div>
+    <a id="p4-foot"></a>
+    <h3>Ⅰ. 발에서 나타나는 병적 반사</h3>
+    <div class="box-point">
+      ▶ 상위운동신경원 병변 시 나타남<br>
+      ▶ 공통 반응: 엄지발가락의 폄
+    </div>
+    <div class="box-lock">🔒 헷갈림 차단 문장<br>“발에서 엄지발가락이 펴지면 상위운동신경원 병변이다.”</div>
 
-<a id="p4-hand"></a>
-<h3>Ⅱ. 손에서 나타나는 병적 반사</h3>
-<div class="box-point">▶ 경수 부위 상위운동신경원 병변 시사</div>
-<div class="box-lock">🔒 헷갈림 차단 문장<br>“손에서 병적 반사가 나오면 경수 병변이다.”</div>
+    <h4>🔹 발 병적 반사 목록 (표준 용어)</h4>
+    <table>
+      <tr>
+        <th>검사명 (한국어)</th>
+        <th>자극 방법</th>
+        <th>양성 반응</th>
+        <th>임상적 의미</th>
+      </tr>
+      <tr>
+        <td>바빈스키 반사</td>
+        <td>발바닥 가쪽을 뒤에서 앞으로 긁음</td>
+        <td>엄지발가락 폄, 다른 발가락 벌어짐</td>
+        <td>상위운동신경원 병변</td>
+      </tr>
+      <tr>
+        <td>차독 반사</td>
+        <td>가쪽복사 아래 발등 자극</td>
+        <td>엄지발가락 폄</td>
+        <td>바빈스키 반사와 동일</td>
+      </tr>
+      <tr>
+        <td>오펜하임 반사</td>
+        <td>정강이 앞면을 위에서 아래로 문지름</td>
+        <td>엄지발가락 폄</td>
+        <td>바빈스키 반사와 동일</td>
+      </tr>
+      <tr>
+        <td>고든 반사</td>
+        <td>장딴지근을 강하게 압박</td>
+        <td>엄지발가락 폄</td>
+        <td>바빈스키 반사와 동일</td>
+      </tr>
+      <tr>
+        <td>셰퍼 반사</td>
+        <td>아킬레스힘줄 압박</td>
+        <td>엄지발가락 폄</td>
+        <td>바빈스키 반사와 동일</td>
+      </tr>
+      <tr>
+        <td>곤다 반사</td>
+        <td>네 번째 발가락을 아래로 굽힘</td>
+        <td>엄지발가락 폄</td>
+        <td>바빈스키 반사와 동일</td>
+      </tr>
+    </table>
+    <div class="box-point">
+      📌 시험용 핵심<br>
+      검사 방법 다름<br>
+      의미는 전부 동일<br>
+      → 상위운동신경원 병변
+    </div>
 
-<h4>🔹 손 병적 반사 목록 (표준 용어)</h4>
-<table>
-  <tr><th>검사명 (한국어)</th><th>자극 방법</th><th>양성 반응</th><th>임상적 의미</th></tr>
-  <tr><td>호프만 반사</td><td>가운데손가락 손톱을 아래로 튕김</td><td>엄지손가락과 집게손가락의 굽힘</td><td>경수 상위운동신경원 병변</td></tr>
-  <tr><td>트롬너 반사</td><td>가운데손가락 손바닥쪽을 위로 튕김</td><td>엄지손가락과 집게손가락의 굽힘</td><td>호프만 반사와 동일</td></tr>
-  <tr><td>손가락굽힘 반사</td><td>손가락 말단 자극</td><td>손가락 굽힘</td><td>경수 상위운동신경원 병변</td></tr>
-</table>
-<div class="box-point">
-  📌 주의<br>
-  손 병적 반사는 하위운동신경원 병변과 무관<br>
-  반드시 상위운동신경원 병변
-</div>
+    <a id="p4-hand"></a>
+    <h3>Ⅱ. 손에서 나타나는 병적 반사</h3>
+    <div class="box-point">▶ 경수 부위 상위운동신경원 병변 시사</div>
+    <div class="box-lock">🔒 헷갈림 차단 문장<br>“손에서 병적 반사가 나오면 경수 병변이다.”</div>
 
-<a id="p4-face"></a>
-<h3>Ⅲ. 얼굴에서 나타나는 병적 반사</h3>
-<div class="box-point">▶ 전두엽 피질 억제 기능 소실</div>
-<div class="box-lock">🔒 헷갈림 차단 문장<br>“성인에게 원시반사가 다시 나타나면 전두엽 문제다.”</div>
+    <h4>🔹 손 병적 반사 목록 (표준 용어)</h4>
+    <table>
+      <tr>
+        <th>검사명 (한국어)</th>
+        <th>자극 방법</th>
+        <th>양성 반응</th>
+        <th>임상적 의미</th>
+      </tr>
+      <tr>
+        <td>호프만 반사</td>
+        <td>가운데손가락 손톱을 아래로 튕김</td>
+        <td>엄지손가락과 집게손가락의 굽힘</td>
+        <td>경수 상위운동신경원 병변</td>
+      </tr>
+      <tr>
+        <td>트롬너 반사</td>
+        <td>가운데손가락 손바닥쪽을 위로 튕김</td>
+        <td>엄지손가락과 집게손가락의 굽힘</td>
+        <td>호프만 반사와 동일</td>
+      </tr>
+      <tr>
+        <td>손가락굽힘 반사</td>
+        <td>손가락 말단 자극</td>
+        <td>손가락 굽힘</td>
+        <td>경수 상위운동신경원 병변</td>
+      </tr>
+    </table>
+    <div class="box-point">
+      📌 주의<br>
+      손 병적 반사는 하위운동신경원 병변과 무관<br>
+      반드시 상위운동신경원 병변
+    </div>
 
-<h4>🔹 얼굴 병적 반사 (원시 반사)</h4>
-<table>
-  <tr><th>검사명 (한국어)</th><th>자극 방법</th><th>양성 반응</th><th>임상적 의미</th></tr>
-  <tr><td>입술오므림 반사</td><td>입술을 가볍게 두드림</td><td>입술이 앞으로 내밀어짐</td><td>전두엽 병변</td></tr>
-  <tr><td>탐색 반사</td><td>입 주변 자극</td><td>자극 쪽으로 고개 회전</td><td>전두엽 병변</td></tr>
-  <tr><td>빨기 반사</td><td>입술 자극</td><td>빨기 동작</td><td>전두엽 병변</td></tr>
-  <tr><td>손바닥턱 반사</td><td>손바닥을 긁음</td><td>턱 근육 수축</td><td>전두엽 병변</td></tr>
-</table>
-<div class="box-point">
-  📌 시험 포인트<br>
-  성인에서 나타나면 비정상<br>
-  치매, 전두엽 손상에서 흔함
-</div>
+    <a id="p4-face"></a>
+    <h3>Ⅲ. 얼굴에서 나타나는 병적 반사</h3>
+    <div class="box-point">▶ 전두엽 피질 억제 기능 소실</div>
+    <div class="box-lock">🔒 헷갈림 차단 문장<br>“성인에게 원시반사가 다시 나타나면 전두엽 문제다.”</div>
 
-<a id="p4-flex"></a>
-<h3>Ⅳ. 발가락 굽힘 계열 병적 반사</h3>
-<div class="box-point">▶ 상위운동신경원 병변</div>
-<table>
-  <tr><th>검사명 (한국어)</th><th>자극</th><th>반응</th><th>의미</th></tr>
-  <tr><td>로솔리모 반사</td><td>발가락 말단 두드림</td><td>발가락 굽힘</td><td>상위운동신경원 병변</td></tr>
-  <tr><td>멘델–베흐테레프 반사</td><td>발등 두드림</td><td>발가락 굽힘</td><td>상위운동신경원 병변</td></tr>
-</table>
+    <h4>🔹 얼굴 병적 반사 (원시 반사)</h4>
+    <table>
+      <tr>
+        <th>검사명 (한국어)</th>
+        <th>자극 방법</th>
+        <th>양성 반응</th>
+        <th>임상적 의미</th>
+      </tr>
+      <tr>
+        <td>입술오므림 반사</td>
+        <td>입술을 가볍게 두드림</td>
+        <td>입술이 앞으로 내밀어짐</td>
+        <td>전두엽 병변</td>
+      </tr>
+      <tr>
+        <td>탐색 반사</td>
+        <td>입 주변 자극</td>
+        <td>자극 쪽으로 고개 회전</td>
+        <td>전두엽 병변</td>
+      </tr>
+      <tr>
+        <td>빨기 반사</td>
+        <td>입술 자극</td>
+        <td>빨기 동작</td>
+        <td>전두엽 병변</td>
+      </tr>
+      <tr>
+        <td>손바닥턱 반사</td>
+        <td>손바닥을 긁음</td>
+        <td>턱 근육 수축</td>
+        <td>전두엽 병변</td>
+      </tr>
+    </table>
+    <div class="box-point">
+      📌 시험 포인트<br>
+      성인에서 나타나면 비정상<br>
+      치매, 전두엽 손상에서 흔함
+    </div>
 
-<div class="box-lock">
-  🧠 병적 반사 최종 국시 정리 문장<br>
-  발에서 엄지발가락이 펴지면 → 상위운동신경원 병변<br>
-  손에서 손가락이 굽혀지면 → 경수 상위운동신경원 병변<br>
-  성인에서 원시반사 → 전두엽 병변<br>
-  병적 반사는 하위운동신경원 병변이 아니다.
-</div>
+    <a id="p4-flex"></a>
+    <h3>Ⅳ. 발가락 굽힘 계열 병적 반사</h3>
+    <div class="box-point">▶ 상위운동신경원 병변</div>
+    <table>
+      <tr>
+        <th>검사명 (한국어)</th>
+        <th>자극</th>
+        <th>반응</th>
+        <th>의미</th>
+      </tr>
+      <tr>
+        <td>로솔리모 반사</td>
+        <td>발가락 말단 두드림</td>
+        <td>발가락 굽힘</td>
+        <td>상위운동신경원 병변</td>
+      </tr>
+      <tr>
+        <td>멘델–베흐테레프 반사</td>
+        <td>발등 두드림</td>
+        <td>발가락 굽힘</td>
+        <td>상위운동신경원 병변</td>
+      </tr>
+    </table>
 
-<!-- =========================================================
+    <div class="box-lock">
+      🧠 병적 반사 최종 국시 정리 문장<br>
+      발에서 엄지발가락이 펴지면 → 상위운동신경원 병변<br>
+      손에서 손가락이 굽혀지면 → 경수 상위운동신경원 병변<br>
+      성인에서 원시반사 → 전두엽 병변<br>
+      병적 반사는 하위운동신경원 병변이 아니다.
+    </div>
+
+    <!-- =========================================================
      PART 5. 평가도구 (원문 그대로 포함)
      ========================================================= -->
-<a id="part5"></a>
-<h2>PART 5. 주요 평가 도구 (Scale)</h2>
-<a class="backtoc" href="#toc">↑ 목차로</a>
+    <button class="quiz-trigger-btn" onclick="openQuiz('quiz-part4')">🎮 [Lv.4] 병적반사 퀴즈</button>
+    <dialog id="quiz-part4">
+      <div class="modal-header"><span>🦶 Lv.4 병적반사</span><button class="close-btn"
+          onclick="closeQuiz('quiz-part4')">×</button></div>
+      <div class="modal-body">
+        <details>
+          <summary>발바닥 가쪽을 긁었더니 엄지가 펴졌다.</summary>
+          <div class="answer">A. 바빈스키 반사 (Babinski)</div>
+        </details>
+        <details>
+          <summary>종아리 근육을 꽉 쥐었더니 엄지가 펴졌다.</summary>
+          <div class="answer">A. 고든 반사 (Gordon)</div>
+        </details>
+        <details>
+          <summary>정강이를 위에서 아래로 문질렀더니 엄지가 펴졌다.</summary>
+          <div class="answer">A. 오펜하임 반사 (Oppenheim)</div>
+        </details>
+        <details>
+          <summary>가운데 손가락 손톱을 튕겼더니 엄지와 검지가 굽혀졌다.</summary>
+          <div class="answer">A. 호프만 반사 (Hoffmann) - 경수 병변</div>
+        </details>
+        <details>
+          <summary>가운데 손가락 손바닥 쪽을 튕겼더니 엄지가 굽혀졌다.</summary>
+          <div class="answer">A. 트롬너 반사 (Tromner) - 호프만과 동일</div>
+        </details>
+        <details>
+          <summary>입술을 톡 쳤더니 입술을 쭉 내민다. (전두엽 손상)</summary>
+          <div class="answer">A. 입술오므림 반사 (Snout reflex)</div>
+        </details>
+        <details>
+          <summary>발가락 끝을 쳤더니 발가락들이 굽혀졌다.</summary>
+          <div class="answer">A. 로솔리모 반사 (Rossolimo)</div>
+        </details>
+        <details>
+          <summary>발등을 타진했더니 발가락이 굽혀졌다.</summary>
+          <div class="answer">A. 멘델-베흐테레프 반사</div>
+        </details>
+        <details>
+          <summary>손에서 병적 반사가 나타났다면 병변 위치는?</summary>
+          <div class="answer">A. 경수(C-spine) 이상의 상위운동신경원</div>
+        </details>
+      </div>
+    </dialog>
 
-<h3>Ⅰ. 대운동 기능 평가</h3>
-<h4>1️⃣ GMFM (대운동기능평가)</h4>
-<table>
-  <tr><th width="20%">항목</th><th>내용</th></tr>
-  <tr><td>정식 명칭</td><td>대운동기능평가 (Gross Motor Function Measure)</td></tr>
-  <tr><td>대상</td><td>뇌성마비 아동</td></tr>
-  <tr><td>목적</td><td>대운동 기능 변화 평가</td></tr>
-  <tr><td>구성</td><td>눕기·뒤집기 / 앉기 / 기기·무릎서기 / 서기 / 걷기·뛰기</td></tr>
-  <tr><td>점수</td><td>백분율(%)</td></tr>
-  <tr><td>특징</td><td>변화 추적용</td></tr>
-</table>
-<div class="box-lock">🔒 헷갈림 차단<br>“GMFM은 진단 ❌, 변화 추적 ⭕”</div>
+    <a id="part5"></a>
+    <h2>PART 5. 주요 평가 도구 (Scale)</h2>
+    <a class="backtoc" href="#toc">↑ 목차로</a>
 
-<h3>Ⅱ. 보행 · 이동능력 평가</h3>
-<h4>2️⃣ Hoffer 분류 (호퍼 분류)</h4>
-<div class="box-point">(국시에서 HOYA처럼 들려서 많이 헷갈림)</div>
-<table>
-  <tr><th width="20%">항목</th><th>내용</th></tr>
-  <tr><td>대상</td><td>척수이분증(spina bifida)</td></tr>
-  <tr><td>분류 기준</td><td>보행 능력</td></tr>
-  <tr><td>단계</td><td>보행 가능 / 보조 보행 / 휠체어</td></tr>
-</table>
-<div class="box-lock">🔒 멘트<br>“척수이분증 보행 = Hoffer”</div>
-<div class="box-point">⚠️ 주의<br>뇌성마비 ❌<br>근이영양증 ❌</div>
+    <h3>Ⅰ. 대운동 기능 평가</h3>
+    <h4>1️⃣ GMFM (대운동기능평가)</h4>
+    <table>
+      <tr>
+        <th width="20%">항목</th>
+        <th>내용</th>
+      </tr>
+      <tr>
+        <td>정식 명칭</td>
+        <td>대운동기능평가 (Gross Motor Function Measure)</td>
+      </tr>
+      <tr>
+        <td>대상</td>
+        <td>뇌성마비 아동</td>
+      </tr>
+      <tr>
+        <td>목적</td>
+        <td>대운동 기능 변화 평가</td>
+      </tr>
+      <tr>
+        <td>구성</td>
+        <td>눕기·뒤집기 / 앉기 / 기기·무릎서기 / 서기 / 걷기·뛰기</td>
+      </tr>
+      <tr>
+        <td>점수</td>
+        <td>백분율(%)</td>
+      </tr>
+      <tr>
+        <td>특징</td>
+        <td>변화 추적용</td>
+      </tr>
+    </table>
+    <div class="box-lock">🔒 헷갈림 차단<br>“GMFM은 진단 ❌, 변화 추적 ⭕”</div>
 
-<h3>Ⅲ. 의식 수준 평가</h3>
-<h4>3️⃣ 글라스고 혼수 척도 (GCS)</h4>
-<table>
-  <tr><th>항목</th><th>점수</th></tr>
-  <tr><td>눈뜨기 반응</td><td>1–4</td></tr>
-  <tr><td>언어 반응</td><td>1–5</td></tr>
-  <tr><td>운동 반응</td><td>1–6</td></tr>
-  <tr><td>총점</td><td>3–15점</td></tr>
-</table>
-<table>
-  <tr><th>해석</th><th>의미</th></tr>
-  <tr><td>13–15</td><td>경도 손상</td></tr>
-  <tr><td>9–12</td><td>중등도 손상</td></tr>
-  <tr><td>≤8</td><td>중증 (삽관 고려)</td></tr>
-</table>
-<div class="box-lock">🔒 국시 공식<br>“GCS 8점 이하면 중증이다.”</div>
+    <h3>Ⅱ. 보행 · 이동능력 평가</h3>
+    <h4>2️⃣ Hoffer 분류 (호퍼 분류)</h4>
+    <div class="box-point">(국시에서 HOYA처럼 들려서 많이 헷갈림)</div>
+    <table>
+      <tr>
+        <th width="20%">항목</th>
+        <th>내용</th>
+      </tr>
+      <tr>
+        <td>대상</td>
+        <td>척수이분증(spina bifida)</td>
+      </tr>
+      <tr>
+        <td>분류 기준</td>
+        <td>보행 능력</td>
+      </tr>
+      <tr>
+        <td>단계</td>
+        <td>보행 가능 / 보조 보행 / 휠체어</td>
+      </tr>
+    </table>
+    <div class="box-lock">🔒 멘트<br>“척수이분증 보행 = Hoffer”</div>
+    <div class="box-point">⚠️ 주의<br>뇌성마비 ❌<br>근이영양증 ❌</div>
 
-<h3>Ⅳ. 인지 · 행동 회복 단계</h3>
-<h4>4️⃣ 란초 로스 아미고스 척도</h4>
-<div class="box-point">(Rancho Los Amigos Scale)</div>
-<table>
-  <tr><th>단계</th><th>특징</th></tr>
-  <tr><td>Ⅰ</td><td>반응 없음</td></tr>
-  <tr><td>Ⅱ</td><td>일반적 반응</td></tr>
-  <tr><td>Ⅲ</td><td>국소적 반응</td></tr>
-  <tr><td>Ⅳ</td><td>혼란·흥분</td></tr>
-  <tr><td>Ⅴ</td><td>혼란·부적절</td></tr>
-  <tr><td>Ⅵ</td><td>혼란·적절</td></tr>
-  <tr><td>Ⅶ</td><td>자동·적절</td></tr>
-  <tr><td>Ⅷ</td><td>목적적·적절</td></tr>
-</table>
-<div class="box-lock">🔒 멘트<br>“란초는 의식이 아니라 행동·인지 회복 단계”</div>
-<div class="box-point">📌 TBI(외상성 뇌손상) 단골</div>
+    <h3>Ⅲ. 의식 수준 평가</h3>
+    <h4>3️⃣ 글라스고 혼수 척도 (GCS)</h4>
+    <table>
+      <tr>
+        <th>항목</th>
+        <th>점수</th>
+      </tr>
+      <tr>
+        <td>눈뜨기 반응</td>
+        <td>1–4</td>
+      </tr>
+      <tr>
+        <td>언어 반응</td>
+        <td>1–5</td>
+      </tr>
+      <tr>
+        <td>운동 반응</td>
+        <td>1–6</td>
+      </tr>
+      <tr>
+        <td>총점</td>
+        <td>3–15점</td>
+      </tr>
+    </table>
+    <table>
+      <tr>
+        <th>해석</th>
+        <th>의미</th>
+      </tr>
+      <tr>
+        <td>13–15</td>
+        <td>경도 손상</td>
+      </tr>
+      <tr>
+        <td>9–12</td>
+        <td>중등도 손상</td>
+      </tr>
+      <tr>
+        <td>≤8</td>
+        <td>중증 (삽관 고려)</td>
+      </tr>
+    </table>
+    <div class="box-lock">🔒 국시 공식<br>“GCS 8점 이하면 중증이다.”</div>
 
-<h3>Ⅴ. 다발성경화증 평가</h3>
-<h4>5️⃣ EDSS (확장장애상태척도)</h4>
-<table>
-  <tr><th width="20%">항목</th><th>내용</th></tr>
-  <tr><td>대상</td><td>다발성경화증(MS)</td></tr>
-  <tr><td>범위</td><td>0–10점</td></tr>
-  <tr><td>기준</td><td>보행 능력 중심</td></tr>
-  <tr><td>특징</td><td>장애 정도 수치화</td></tr>
-</table>
-<div class="box-lock">🔒 멘트<br>“MS = EDSS”</div>
+    <h3>Ⅳ. 인지 · 행동 회복 단계</h3>
+    <h4>4️⃣ 란초 로스 아미고스 척도</h4>
+    <div class="box-point">(Rancho Los Amigos Scale)</div>
+    <table>
+      <tr>
+        <th>단계</th>
+        <th>특징</th>
+      </tr>
+      <tr>
+        <td>Ⅰ</td>
+        <td>반응 없음</td>
+      </tr>
+      <tr>
+        <td>Ⅱ</td>
+        <td>일반적 반응</td>
+      </tr>
+      <tr>
+        <td>Ⅲ</td>
+        <td>국소적 반응</td>
+      </tr>
+      <tr>
+        <td>Ⅳ</td>
+        <td>혼란·흥분</td>
+      </tr>
+      <tr>
+        <td>Ⅴ</td>
+        <td>혼란·부적절</td>
+      </tr>
+      <tr>
+        <td>Ⅵ</td>
+        <td>혼란·적절</td>
+      </tr>
+      <tr>
+        <td>Ⅶ</td>
+        <td>자동·적절</td>
+      </tr>
+      <tr>
+        <td>Ⅷ</td>
+        <td>목적적·적절</td>
+      </tr>
+    </table>
+    <div class="box-lock">🔒 멘트<br>“란초는 의식이 아니라 행동·인지 회복 단계”</div>
+    <div class="box-point">📌 TBI(외상성 뇌손상) 단골</div>
 
-<h3>Ⅵ. 소뇌 기능 평가</h3>
-<h4>6️⃣ 국제 소뇌 실조 척도 (ICARS)</h4>
-<table>
-  <tr><th width="20%">항목</th><th>내용</th></tr>
-  <tr><td>대상</td><td>소뇌 실조 환자</td></tr>
-  <tr><td>평가 항목</td><td>보행, 자세, 사지 협응, 언어</td></tr>
-  <tr><td>특징</td><td>실조 중증도 평가</td></tr>
-</table>
-<div class="box-lock">🔒 멘트<br>“소뇌 실조 점수화 = ICARS”</div>
+    <h3>Ⅴ. 다발성경화증 평가</h3>
+    <h4>5️⃣ EDSS (확장장애상태척도) & FSS</h4>
+    <table>
+      <tr>
+        <th>항목</th>
+        <th>내용</th>
+      </tr>
+      <tr>
+        <td>대상</td>
+        <td>다발성경화증(MS), 만성 염증성 탈락질환</td>
+      </tr>
+      <tr>
+        <td>구분</td>
+        <td>0–10점 (0=정상, 10=사망)</td>
+      </tr>
+      <tr>
+        <td>특징</td>
+        <td>보행 능력이 주요 기준</td>
+      </tr>
+      <tr>
+        <td>참고</td>
+        <td>* 국시 포인트: GBS 등 만성질환 평가로도 출제 가능성 있음</td>
+      </tr>
+    </table>
+    <div class="box-lock">🔒 멘트<br>“MS = EDSS & 쿠르츠케 FSS”</div>
 
-<h3>Ⅶ. 기타 국시 자주 나오는 신경계 검사</h3>
-<ul>
-  <li><strong>MMSE (간이정신상태검사)</strong>: 인지기능 선별, 치매 스크리닝</li>
-  <li><strong>FIM (기능적 독립성 평가)</strong>: 일상생활 수행능력, 재활 효과 평가</li>
-  <li><strong>ASIA 척도</strong>: 척수손상 신경학적 분류, 감각·운동 수준 평가</li>
-</ul>
+    <h4>6️⃣ 쿠르츠케 기능평가척도 (Kurtzke FSS)</h4>
+    <div class="box-point">EDSS와 함께 사용되는 다발성경화증 기능 평가 도구</div>
 
-<h3>🧠 신경계 검사 한 눈 요약 (시험 분기용)</h3>
-<table>
-  <tr><th>검사</th><th>대상</th><th>핵심</th></tr>
-  <tr><td>GMFM</td><td>뇌성마비</td><td>대운동 변화</td></tr>
-  <tr><td>Hoffer</td><td>척수이분증</td><td>보행 분류</td></tr>
-  <tr><td>GCS</td><td>의식</td><td>중증도</td></tr>
-  <tr><td>Rancho</td><td>TBI</td><td>인지·행동</td></tr>
-  <tr><td>EDSS</td><td>MS</td><td>장애 단계</td></tr>
-  <tr><td>ICARS</td><td>소뇌</td><td>실조 정도</td></tr>
-  <tr><td>ASIA</td><td>척수손상</td><td>손상 수준</td></tr>
-</table>
+    <h3>Ⅵ. 소뇌 기능 평가</h3>
+    <h4>6️⃣ 국제 소뇌 실조 척도 (ICARS)</h4>
+    <table>
+      <tr>
+        <th width="20%">항목</th>
+        <th>내용</th>
+      </tr>
+      <tr>
+        <td>대상</td>
+        <td>소뇌 실조 환자</td>
+      </tr>
+      <tr>
+        <td>평가 항목</td>
+        <td>보행, 자세, 사지 협응, 언어</td>
+      </tr>
+      <tr>
+        <td>특징</td>
+        <td>실조 중증도 평가</td>
+      </tr>
+    </table>
+    <div class="box-lock">🔒 멘트<br>“소뇌 실조 점수화 = ICARS”</div>
 
-<div class="box-final">
-  🔒 국시 최종 락 문장<br>
-  뇌성마비 운동 = GMFM<br>
-  척수이분증 보행 = Hoffer<br>
-  의식 = GCS<br>
-  행동 회복 = Rancho<br>
-  MS = EDSS<br>
-  소뇌 실조 = ICARS
-</div>
+    <h3>Ⅶ. 기타 국시 자주 나오는 신경계 검사</h3>
+    <ul>
+      <li><strong>MMSE (간이정신상태검사)</strong>: 인지기능 선별, 치매 스크리닝</li>
+      <li><strong>FIM (기능적 독립성 평가)</strong>: 일상생활 수행능력, 재활 효과 평가</li>
+      <li><strong>ASIA 척도</strong>: 척수손상 신경학적 분류, 감각·운동 수준 평가</li>
+    </ul>
 
-<!-- =========================================================
+    <h3>🧠 신경계 검사 한 눈 요약 (시험 분기용)</h3>
+    <table>
+      <tr>
+        <th>검사</th>
+        <th>대상</th>
+        <th>핵심</th>
+      </tr>
+      <tr>
+        <td>GMFM</td>
+        <td>뇌성마비</td>
+        <td>대운동 변화</td>
+      </tr>
+      <tr>
+        <td>Hoffer</td>
+        <td>척수이분증</td>
+        <td>보행 분류</td>
+      </tr>
+      <tr>
+        <td>GCS</td>
+        <td>의식</td>
+        <td>중증도</td>
+      </tr>
+      <tr>
+        <td>Rancho</td>
+        <td>TBI</td>
+        <td>인지·행동</td>
+      </tr>
+      <tr>
+        <td>EDSS</td>
+        <td>MS</td>
+        <td>장애 단계</td>
+      </tr>
+      <tr>
+        <td>ICARS</td>
+        <td>소뇌</td>
+        <td>실조 정도</td>
+      </tr>
+      <tr>
+        <td>ASIA</td>
+        <td>척수손상</td>
+        <td>손상 수준</td>
+      </tr>
+    </table>
+
+    <div class="box-final">
+      🔒 국시 최종 락 문장<br>
+      뇌성마비 운동 = GMFM<br>
+      척수이분증 보행 = Hoffer<br>
+      의식 = GCS<br>
+      행동 회복 = Rancho<br>
+      MS = EDSS<br>
+      소뇌 실조 = ICARS
+    </div>
+
+    <!-- =========================================================
      PART 6. 운동 관련 검사 (원문 그대로 포함)
      ========================================================= -->
-<a id="part6"></a>
-<h2 class="pb">PART 6. 🦾 운동 관련 검사 (표준 한국어 의료용어 · 국시판)</h2>
-<a class="backtoc" href="#toc">↑ 목차로</a>
+    <button class="quiz-trigger-btn" onclick="openQuiz('quiz-part5')">🎮 [Lv.5] 평가척도 퀴즈</button>
+    <dialog id="quiz-part5">
+      <div class="modal-header"><span>📏 Lv.5 척도 암기</span><button class="close-btn"
+          onclick="closeQuiz('quiz-part5')">×</button></div>
+      <div class="modal-body">
+        <details>
+          <summary>뇌성마비 아동의 '대운동 기능' 변화를 평가하는 도구는?</summary>
+          <div class="answer">A. GMFM</div>
+        </details>
+        <details>
+          <summary>척수이분증 환자의 '보행 능력'을 분류하는 척도는?</summary>
+          <div class="answer">A. Hoffer 분류</div>
+        </details>
+        <details>
+          <summary>다발성경화증(MS)의 장애 단계를 평가하는 척도는?</summary>
+          <div class="answer">A. EDSS (쿠르츠케 FSS와 함께 사용)</div>
+        </details>
+        <details>
+          <summary>의식 수준을 평가하며 8점 이하면 중증인 척도는?</summary>
+          <div class="answer">A. GCS (글라스고 혼수 척도)</div>
+        </details>
+        <details>
+          <summary>외상성 뇌손상(TBI) 환자의 인지 및 행동 회복 단계를 1~8단계로 나눈 것은?</summary>
+          <div class="answer">A. 란초 로스 아미고스 척도 (Rancho Los Amigos)</div>
+        </details>
+        <details>
+          <summary>소뇌 실조 환자의 증상을 점수화한 척도는?</summary>
+          <div class="answer">A. ICARS (국제 소뇌 실조 척도)</div>
+        </details>
+        <details>
+          <summary>일상생활동작(ADL) 수행능력을 평가하는 대표적인 도구는?</summary>
+          <div class="answer">A. FIM (MBI도 있음)</div>
+        </details>
+      </div>
+    </dialog>
 
-<div class="box-point">어깨 → 배·허리 → 엉덩관절 → 무릎 → 발목</div>
+    <a id="part6"></a>
+    <h2 class="pb">PART 6. 🦾 운동 관련 검사 (표준 한국어 의료용어 · 국시판)</h2>
+    <a class="backtoc" href="#toc">↑ 목차로</a>
 
-<h3>1️⃣ 어깨관절 검사</h3>
+    <div class="box-point">어깨 → 배·허리 → 엉덩관절 → 무릎 → 발목</div>
 
-<h4>🔹 돌림근띠(회전근개) 검사</h4>
-<table>
-  <tr><th>검사명 (신용어)</th><th>평가 구조</th><th>양성 소견</th><th>헷갈림 차단</th></tr>
-  <tr><td>팔떨어뜨림 검사</td><td>가시위근</td><td>팔을 천천히 내리지 못함</td><td>“내리다 떨어지면 가시위근”</td></tr>
-  <tr><td>빈캔 검사</td><td>가시위근</td><td>통증 또는 근력 약화</td><td>“캔 비우기 = 가시위근”</td></tr>
-  <tr><td>가쪽돌림 저항 검사</td><td>가시아래근</td><td>가쪽돌림 약화</td><td>“밖으로 못 돌리면 가시아래근”</td></tr>
-  <tr><td>들어올림 검사</td><td>어깨밑근</td><td>손을 등에서 떼지 못함</td><td>“등에서 못 떼면 어깨밑근”</td></tr>
-</table>
+    <h3>1️⃣ 어깨관절 검사</h3>
 
-<h4>🔹 충돌·불안정성 검사</h4>
-<table>
-  <tr><th>검사명 (신용어)</th><th>평가 내용</th><th>양성 소견</th></tr>
-  <tr><td>니어 충돌 검사</td><td>어깨봉우리 아래 충돌</td><td>통증</td></tr>
-  <tr><td>호킨스–케네디 검사</td><td>봉우리밑 충돌 증후군</td><td>통증</td></tr>
-  <tr><td>고랑 징후</td><td>아래쪽 불안정성</td><td>봉우리 아래 오목</td></tr>
-  <tr><td>불안 검사</td><td>앞쪽 불안정성</td><td>불안감·통증</td></tr>
-</table>
-<div class="box-lock">🔒 기억 문장<br>“아프면 충돌, 무서우면 불안정”</div>
+    <h4>🔹 돌림근띠(회전근개) 검사</h4>
+    <table>
+      <tr>
+        <th>검사명 (신용어)</th>
+        <th>평가 구조</th>
+        <th>양성 소견</th>
+        <th>헷갈림 차단</th>
+      </tr>
+      <tr>
+        <td>팔떨어뜨림 검사</td>
+        <td>가시위근</td>
+        <td>팔을 천천히 내리지 못함</td>
+        <td>“내리다 떨어지면 가시위근”</td>
+      </tr>
+      <tr>
+        <td>빈캔 검사</td>
+        <td>가시위근</td>
+        <td>통증 또는 근력 약화</td>
+        <td>“캔 비우기 = 가시위근”</td>
+      </tr>
+      <tr>
+        <td>가쪽돌림 저항 검사</td>
+        <td>가시아래근</td>
+        <td>가쪽돌림 약화</td>
+        <td>“밖으로 못 돌리면 가시아래근”</td>
+      </tr>
+      <tr>
+        <td>들어올림 검사</td>
+        <td>어깨밑근</td>
+        <td>손을 등에서 떼지 못함</td>
+        <td>“등에서 못 떼면 어깨밑근”</td>
+      </tr>
+    </table>
 
-<h3>2️⃣ 배 · 허리 검사 (허리척추)</h3>
+    <h4>🔹 충돌·불안정성 검사</h4>
+    <table>
+      <tr>
+        <th>검사명 (신용어)</th>
+        <th>평가 내용</th>
+        <th>양성 소견</th>
+      </tr>
+      <tr>
+        <td>니어 충돌 검사</td>
+        <td>어깨봉우리 아래 충돌</td>
+        <td>통증</td>
+      </tr>
+      <tr>
+        <td>호킨스–케네디 검사</td>
+        <td>봉우리밑 충돌 증후군</td>
+        <td>통증</td>
+      </tr>
+      <tr>
+        <td>고랑 징후</td>
+        <td>아래쪽 불안정성</td>
+        <td>봉우리 아래 오목</td>
+      </tr>
+      <tr>
+        <td>불안 검사</td>
+        <td>앞쪽 불안정성</td>
+        <td>불안감·통증</td>
+      </tr>
+    </table>
+    <div class="box-lock">🔒 기억 문장<br>“아프면 충돌, 무서우면 불안정”</div>
 
-<h4>🔹 신경·추간판 검사</h4>
-<table>
-  <tr><th>검사명 (신용어)</th><th>평가</th><th>양성 소견</th></tr>
-  <tr><td>하지직거상 검사</td><td>허리추간판탈출증</td><td>30–70° 방사통</td></tr>
-  <tr><td>라세그 검사</td><td>좌골신경 긴장</td><td>통증</td></tr>
-  <tr><td>반대쪽 하지직거상 검사</td><td>심한 추간판탈출</td><td>반대쪽 통증</td></tr>
-</table>
-<div class="box-lock">🔒 기억 문장<br>“다리 들다 방사통 → 허리 디스크”</div>
+    <h3>2️⃣ 배 · 허리 검사 (허리척추)</h3>
 
-<h4>🔹 배근육 검사</h4>
-<table>
-  <tr><th>검사명</th><th>평가</th></tr>
-  <tr><td>배근력 검사</td><td>배곧은근·배빗근</td></tr>
-  <tr><td>배곧은근 벌어짐 검사</td><td>배곧은근 이개</td></tr>
-</table>
+    <h4>🔹 신경·추간판 검사</h4>
+    <table>
+      <tr>
+        <th>검사명 (신용어)</th>
+        <th>평가</th>
+        <th>양성 소견</th>
+      </tr>
+      <tr>
+        <td>하지직거상 검사</td>
+        <td>허리추간판탈출증</td>
+        <td>30–70° 방사통</td>
+      </tr>
+      <tr>
+        <td>라세그 검사</td>
+        <td>좌골신경 긴장</td>
+        <td>통증</td>
+      </tr>
+      <tr>
+        <td>반대쪽 하지직거상 검사</td>
+        <td>심한 추간판탈출</td>
+        <td>반대쪽 통증</td>
+      </tr>
+    </table>
+    <div class="box-lock">🔒 기억 문장<br>“다리 들다 방사통 → 허리 디스크”</div>
 
-<h3>3️⃣ 엉덩관절 검사</h3>
+    <h4>🔹 배근육 검사</h4>
+    <table>
+      <tr>
+        <th>검사명</th>
+        <th>평가</th>
+      </tr>
+      <tr>
+        <td>배근력 검사</td>
+        <td>배곧은근·배빗근</td>
+      </tr>
+      <tr>
+        <td>배곧은근 벌어짐 검사</td>
+        <td>배곧은근 이개</td>
+      </tr>
+    </table>
 
-<h4>🔹 관절·연부조직 검사</h4>
-<table>
-  <tr><th>검사명 (신용어)</th><th>평가 구조</th><th>양성 소견</th></tr>
-  <tr><td>패트릭 검사</td><td>엉덩관절·엉치엉덩관절</td><td>서혜부 또는 엉치 통증</td></tr>
-  <tr><td>토마스 검사</td><td>엉덩관절 굽힘근</td><td>반대쪽 다리 들림</td></tr>
-  <tr><td>오버 검사</td><td>넙다리근막긴장근·엉덩정강근막</td><td>다리가 내려가지 않음</td></tr>
-  <tr><td>트렌델렌버그 검사</td><td>중간볼기근</td><td>반대쪽 골반 하강</td></tr>
-</table>
-<div class="box-lock">🔒 기억 문장<br>“한발 섰을 때 골반 떨어지면 중간볼기근”</div>
+    <h3>3️⃣ 엉덩관절 검사</h3>
 
-<h3>4️⃣ 무릎관절 검사</h3>
+    <h4>🔹 관절·연부조직 검사</h4>
+    <table>
+      <tr>
+        <th>검사명 (신용어)</th>
+        <th>평가 구조</th>
+        <th>양성 소견</th>
+      </tr>
+      <tr>
+        <td>패트릭 검사</td>
+        <td>엉덩관절·엉치엉덩관절</td>
+        <td>서혜부 또는 엉치 통증</td>
+      </tr>
+      <tr>
+        <td>토마스 검사</td>
+        <td>엉덩관절 굽힘근</td>
+        <td>반대쪽 다리 들림</td>
+      </tr>
+      <tr>
+        <td>오버 검사</td>
+        <td>넙다리근막긴장근·엉덩정강근막</td>
+        <td>다리가 내려가지 않음</td>
+      </tr>
+      <tr>
+        <td>트렌델렌버그 검사</td>
+        <td>중간볼기근</td>
+        <td>반대쪽 골반 하강</td>
+      </tr>
+    </table>
+    <div class="box-lock">🔒 기억 문장<br>“한발 섰을 때 골반 떨어지면 중간볼기근”</div>
 
-<h4>🔹 인대 검사 (국시 핵심)</h4>
-<table>
-  <tr><th>검사명 (신용어)</th><th>평가 구조</th><th>양성 소견</th></tr>
-  <tr><td>라크만 검사</td><td>앞십자인대</td><td>앞쪽 이동 증가</td></tr>
-  <tr><td>앞서랍 검사</td><td>앞십자인대</td><td>앞쪽 이동</td></tr>
-  <tr><td>뒤서랍 검사</td><td>뒤십자인대</td><td>뒤쪽 이동</td></tr>
-  <tr><td>벌림 스트레스 검사</td><td>안쪽곁인대</td><td>안쪽 이완</td></tr>
-  <tr><td>모음 스트레스 검사</td><td>가쪽곁인대</td><td>가쪽 이완</td></tr>
-</table>
-<div class="box-lock">🔒 기억 문장<br>“무릎 인대는 라크만이 대표”</div>
+    <h3>4️⃣ 무릎관절 검사</h3>
 
-<h4>🔹 반달연골 검사</h4>
-<table>
-  <tr><th>검사명 (신용어)</th><th>양성 소견</th></tr>
-  <tr><td>맥머레이 검사</td><td>통증 또는 딸깍 소리</td></tr>
-  <tr><td>애플리 압박 검사</td><td>압박 시 통증 증가</td></tr>
-</table>
+    <h4>🔹 인대 검사 (국시 핵심)</h4>
+    <table>
+      <tr>
+        <th>검사명 (신용어)</th>
+        <th>평가 구조</th>
+        <th>양성 소견</th>
+      </tr>
+      <tr>
+        <td>라크만 검사</td>
+        <td>앞십자인대</td>
+        <td>앞쪽 이동 증가</td>
+      </tr>
+      <tr>
+        <td>앞서랍 검사</td>
+        <td>앞십자인대</td>
+        <td>앞쪽 이동</td>
+      </tr>
+      <tr>
+        <td>뒤서랍 검사</td>
+        <td>뒤십자인대</td>
+        <td>뒤쪽 이동</td>
+      </tr>
+      <tr>
+        <td>벌림 스트레스 검사</td>
+        <td>안쪽곁인대</td>
+        <td>안쪽 이완</td>
+      </tr>
+      <tr>
+        <td>모음 스트레스 검사</td>
+        <td>가쪽곁인대</td>
+        <td>가쪽 이완</td>
+      </tr>
+    </table>
+    <div class="box-lock">🔒 기억 문장<br>“무릎 인대는 라크만이 대표”</div>
 
-<h3>5️⃣ 발목관절 · 발 검사</h3>
+    <h4>🔹 반달연골 검사</h4>
+    <table>
+      <tr>
+        <th>검사명 (신용어)</th>
+        <th>양성 소견</th>
+      </tr>
+      <tr>
+        <td>맥머레이 검사</td>
+        <td>통증 또는 딸깍 소리</td>
+      </tr>
+      <tr>
+        <td>애플리 압박 검사</td>
+        <td>압박 시 통증 증가</td>
+      </tr>
+    </table>
 
-<h4>🔹 인대 검사</h4>
-<table>
-  <tr><th>검사명 (신용어)</th><th>평가 구조</th><th>양성 소견</th></tr>
-  <tr><td>앞서랍 검사(발목)</td><td>앞거비인대</td><td>앞쪽 이동</td></tr>
-  <tr><td>거골기울기 검사</td><td>발꿈치종아리인대</td><td>과도한 기울어짐</td></tr>
-</table>
+    <h3>5️⃣ 발목관절 · 발 검사</h3>
 
-<h4>🔹 힘줄·기타 검사</h4>
-<table>
-  <tr><th>검사명 (신용어)</th><th>평가</th></tr>
-  <tr><td>톰슨 검사</td><td>발꿈치힘줄 파열</td></tr>
-  <tr><td>티넬 징후</td><td>말초신경 압박</td></tr>
-  <tr><td>윈들라스 검사</td><td>발바닥근막염</td></tr>
-</table>
-<div class="box-lock">🔒 기억 문장<br>“종아리 눌러도 발 안 움직이면 발꿈치힘줄”</div>
+    <h4>🔹 인대 검사</h4>
+    <table>
+      <tr>
+        <th>검사명 (신용어)</th>
+        <th>평가 구조</th>
+        <th>양성 소견</th>
+      </tr>
+      <tr>
+        <td>앞서랍 검사(발목)</td>
+        <td>앞목말종아리인대</td>
+        <td>앞쪽 이동</td>
+      </tr>
+      <tr>
+        <td>목말뼈기울기 검사</td>
+        <td>발꿈치종아리인대</td>
+        <td>과도한 기울어짐</td>
+      </tr>
+    </table>
 
-<h3>🧠 부위별 초압축 요약 (국시용)</h3>
-<ul>
-  <li>어깨 → 돌림근띠 / 충돌</li>
-  <li>허리 → 하지직거상</li>
-  <li>엉덩관절 → 패트릭·토마스</li>
-  <li>무릎 → 라크만</li>
-  <li>발목 → 톰슨</li>
-</ul>
+    <h4>🔹 힘줄·기타 검사</h4>
+    <table>
+      <tr>
+        <th>검사명 (신용어)</th>
+        <th>평가</th>
+      </tr>
+      <tr>
+        <td>톰슨 검사</td>
+        <td>발꿈치힘줄 파열</td>
+      </tr>
+      <tr>
+        <td>티넬 징후</td>
+        <td>말초신경 압박</td>
+      </tr>
+      <tr>
+        <td>윈들라스 검사</td>
+        <td>발바닥근막염</td>
+      </tr>
+    </table>
+    <div class="box-lock">🔒 기억 문장<br>“종아리 눌러도 발 안 움직이면 발꿈치힘줄”</div>
 
-<div class="box-final">
-  🔒 국시 최종 락 문장<br>
-  가시위근 = 팔떨어뜨림·빈캔<br>
-  앞십자인대 = 라크만<br>
-  중간볼기근 = 트렌델렌버그<br>
-  허리디스크 = 하지직거상<br>
-  발꿈치힘줄 = 톰슨
-</div>
+    <h3>🧠 부위별 초압축 요약 (국시용)</h3>
+    <ul>
+      <li>어깨 → 돌림근띠 / 충돌</li>
+      <li>허리 → 하지직거상</li>
+      <li>엉덩관절 → 패트릭·토마스</li>
+      <li>무릎 → 라크만</li>
+      <li>발목 → 톰슨</li>
+    </ul>
 
-<!-- =========================================================
+    <div class="box-final">
+      🔒 국시 최종 락 문장<br>
+      가시위근 = 팔떨어뜨림·빈캔<br>
+      앞십자인대 = 라크만<br>
+      중간볼기근 = 트렌델렌버그<br>
+      허리디스크 = 하지직거상<br>
+      발꿈치힘줄 = 톰슨
+    </div>
+
+    <!-- =========================================================
      PART 7. 신경 분절 (원문 그대로 포함)
      ========================================================= -->
-<a id="part7"></a>
-<h2 class="pb">PART 7. 신경 해부학 및 분절 (Segment)</h2>
-<a class="backtoc" href="#toc">↑ 목차로</a>
+    <button class="quiz-trigger-btn" onclick="openQuiz('quiz-part6')">🎮 [Lv.6] 스페셜 테스트 퀴즈</button>
+    <dialog id="quiz-part6">
+      <div class="modal-header"><span>🦴 Lv.6 검사법</span><button class="close-btn"
+          onclick="closeQuiz('quiz-part6')">×</button></div>
+      <div class="modal-body">
+        <details>
+          <summary>종아리를 쥐었는데 발이 움직이지 않는다 (아킬레스 파열).</summary>
+          <div class="answer">A. 톰슨 검사 (Thompson)</div>
+        </details>
+        <details>
+          <summary>팔을 90도 들고 안쪽으로 돌렸을 때 통증이 있다 (충돌증후군).</summary>
+          <div class="answer">A. 호킨스-케네디 검사</div>
+        </details>
+        <details>
+          <summary>무릎 앞십자인대(ACL) 파열을 확인하는 검사는?</summary>
+          <div class="answer">A. 라크만(Lachman), 앞서랍 검사</div>
+        </details>
+        <details>
+          <summary>가시위근(Supraspinatus) 파열을 검사하는 방법은?</summary>
+          <div class="answer">A. 팔떨어뜨림 검사(Drop Arm), 빈캔 검사</summary>
+          </div>
+        </details>
+        <details>
+          <summary>등 뒤로 손을 돌려 떼지 못한다면(Lift off) 손상된 근육은?</summary>
+          <div class="answer">A. 어깨밑근 (Subscapularis)</div>
+        </details>
+        <details>
+          <summary>앙와위에서 다리를 4자 모양으로 만들었을 때 서혜부 통증이 있다.</summary>
+          <div class="answer">A. 패트릭 검사 (Patrick / FABER) - 고관절/SI관절</div>
+        </details>
+        <details>
+          <summary>누워서 한쪽 다리를 안고 당겼더니 반대쪽 다리가 들렸다.</summary>
+          <div class="answer">A. 토마스 검사 (Thomas) - 고관절 굽힘근 구축</div>
+        </details>
+        <details>
+          <summary>한 발로 섰을 때 반대쪽 골반이 툭 떨어졌다.</summary>
+          <div class="answer">A. 트렌델렌버그 검사 - 중간볼기근 약화</div>
+        </details>
+        <details>
+          <summary>손목을 톡톡 쳤더니 찌릿한 통증이 재현되었다 (신경 포착).</summary>
+          <div class="answer">A. 티넬 징후 (Tinel sign)</div>
+        </details>
+      </div>
+    </dialog>
 
-<div class="img-placeholder">[Image of human dermatome map]</div>
+    <a id="part7"></a>
+    <h2 class="pb">PART 7. 신경 해부학 및 분절 (Segment)</h2>
+    <a class="backtoc" href="#toc">↑ 목차로</a>
 
-<h3>1. UMN vs LMN / 감각분절 (Dermatome)</h3>
-<table class="grid2">
-  <tr>
-    <td>
-      <table>
-        <tr><th>구분</th><th>UMN</th><th>LMN</th></tr>
-        <tr><td>긴장</td><td>증가 (경직)</td><td>감소 (이완)</td></tr>
-        <tr><td>반사</td><td><strong>항진</strong></td><td><strong>소실</strong></td></tr>
-      </table>
-    </td>
-    <td>
-      <table>
-        <tr><th>분절</th><th>위치</th></tr>
-        <tr><td>C6/7/8</td><td>엄지/중지/새끼</td></tr>
-        <tr><td>T4/10</td><td>유두/배꼽</td></tr>
-        <tr><td>L3/4/5</td><td>무릎/정강안쪽/발등</td></tr>
-        <tr><td>S1</td><td>발바닥 가쪽</td></tr>
-      </table>
-    </td>
-  </tr>
-</table>
+    <div class="img-placeholder">[Image of human dermatome map]</div>
 
-<h3>2. 운동(Myotome) & 반사(DTR) 핵심 락</h3>
-<table>
-  <tr><th>분절</th><th>운동 (Myotome)</th><th>반사 (DTR)</th><th>🔑 암기</th></tr>
-  <tr><td>C5</td><td>팔꿈치 굽힘</td><td>이두근 (C5-6)</td><td>-</td></tr>
-  <tr><td><strong>C6</strong></td><td><strong>손목 폄</strong></td><td>위팔노근 (C6)</td><td>손목 못 펴면 C6</td></tr>
-  <tr><td>C7</td><td>팔꿈치 폄</td><td>삼두근 (C7)</td><td>밀기</td></tr>
-  <tr><td><strong>L3-4</strong></td><td><strong>무릎 폄</strong></td><td>무릎반사 (L3-4)</td><td>무릎 폄</td></tr>
-  <tr><td>L4</td><td>발목 배굴</td><td>-</td><td>발 들기</td></tr>
-  <tr><td><strong>S1</strong></td><td><strong>발목 저굴</strong></td><td>아킬레스 (S1)</td><td>까치발</td></tr>
-</table>
-<div class="box-lock">🔒 반사 세트: 이두 5-6 / 노근 6 / 삼두 7 / 무릎 3-4 / 아킬레스 S1</div>
+    <h3>1. UMN vs LMN (상위 vs 하위 운동신경원)</h3>
+    <div class="box-point">
+      하지마비, 뇌졸중 등 모든 신경계 질환의 기초가 되는 감별점입니다.
+    </div>
+    <table class="grid2">
+      <tr>
+        <td>
+          <table>
+            <tr>
+              <th>구분</th>
+              <th>UMN (중추)</th>
+              <th>LMN (말초)</th>
+            </tr>
+            <tr>
+              <td><strong>긴장도</strong></td>
+              <td><strong>증가 (경직, Spasticity)</strong></td>
+              <td><strong>감소 (이완, Flaccidity)</strong></td>
+            </tr>
+            <tr>
+              <td><strong>심부건반사</strong></td>
+              <td><strong>항진 (Hyper)</strong></td>
+              <td><strong>소실/감소 (Hypo)</strong></td>
+            </tr>
+            <tr>
+              <td><strong>병적반사</strong></td>
+              <td><strong>나타남 (바빈스키+)</strong></td>
+              <td>나타나지 않음</td>
+            </tr>
+            <tr>
+              <td><strong>근위축</strong></td>
+              <td>폐용성 (서서히)</td>
+              <td><strong>신경성 (빠르게)</strong></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
 
-<!-- =========================================================
+    <h3>2. 피부분절 (Dermatome) 핵심 정리</h3>
+    <div class="box-point">
+      척수신경 뿌리가 지배하는 피부 감각 영역입니다. 랜드마크 위주로 암기해야 합니다.
+    </div>
+    <table>
+      <tr>
+        <th>분절 (Level)</th>
+        <th>지배 부위</th>
+        <th>🔑 암기 팁</th>
+      </tr>
+      <tr>
+        <td><strong>C2</strong></td>
+        <td>뒤통수 (Occiput)</td>
+        <td>머리 뒤</td>
+      </tr>
+      <tr>
+        <td><strong>C3</strong></td>
+        <td>목 부위 (Neck)</td>
+        <td>목카라 라인</td>
+      </tr>
+      <tr>
+        <td><strong>C4</strong></td>
+        <td>어깨 윗부분 (AC joint)</td>
+        <td>숄 (Shawl)</td>
+      </tr>
+      <tr>
+        <td><strong>C5</strong></td>
+        <td>어깨 가쪽 / 위팔 가쪽</td>
+        <td>삼각근 부위</td>
+      </tr>
+      <tr>
+        <td><strong>C6</strong></td>
+        <td><strong>엄지손가락</strong> / 아래팔 가쪽</td>
+        <td>따봉(Thumb) = 6</td>
+      </tr>
+      <tr>
+        <td><strong>C7</strong></td>
+        <td><strong>가운데손가락</strong></td>
+        <td>럭키 세븐(Middle)</td>
+      </tr>
+      <tr>
+        <td><strong>C8</strong></td>
+        <td><strong>새끼손가락</strong></td>
+        <td>마지막 손가락</td>
+      </tr>
+      <tr>
+        <td><strong>T1</strong></td>
+        <td>위팔 안쪽 / 겨드랑이</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><strong>T4</strong></td>
+        <td><strong>젖꼭지 (Nipple)</strong></td>
+        <td>T4 = 젖꼭지</td>
+      </tr>
+      <tr>
+        <td><strong>T10</strong></td>
+        <td><strong>배꼽 (Umbilicus)</strong></td>
+        <td>T10 = 배꼽 (Ten)</td>
+      </tr>
+      <tr>
+        <td><strong>L1</strong></td>
+        <td>서혜부 (Groin)</td>
+        <td>팬티 라인</td>
+      </tr>
+      <tr>
+        <td><strong>L2</strong></td>
+        <td>허벅지 앞쪽</td>
+        <td>주머니 손</td>
+      </tr>
+      <tr>
+        <td><strong>L3</strong></td>
+        <td>무릎 안쪽 (Medial knee)</td>
+        <td>L3 = Knee</td>
+      </tr>
+      <tr>
+        <td><strong>L4</strong></td>
+        <td><strong>복사뼈 안쪽 / 엄지발가락</strong></td>
+        <td>안쪽 타고 내려감</td>
+      </tr>
+      <tr>
+        <td><strong>L5</strong></td>
+        <td><strong>발등 / 발가락 2-4</strong> (가운데)</td>
+        <td>발등 킥</td>
+      </tr>
+      <tr>
+        <td><strong>S1</strong></td>
+        <td><strong>발가락 5 / 발바닥 가쪽 / 뒤꿈치</strong></td>
+        <td>바깥쪽 타고 라인</td>
+      </tr>
+      <tr>
+        <td><strong>S2</strong></td>
+        <td>오금 / 허벅지 뒤쪽</td>
+        <td>뒷벅지</td>
+      </tr>
+      <tr>
+        <td><strong>S3-5</strong></td>
+        <td>항문 주위 (Saddle area)</td>
+        <td>-</td>
+      </tr>
+    </table>
+    <div class="box-lock">
+      🔒 <strong>손:</strong> 엄지(C6) - 중지(C7) - 새끼(C8)<br>
+      🔒 <strong>발:</strong> 안쪽(L4) - 발등(L5) - 가쪽/바닥(S1)<br>
+      🔒 <strong>몸통:</strong> 젖꼭지(T4) - 배꼽(T10)
+    </div>
+
+    <h3>3. 운동(Myotome) & 반사(DTR) 핵심 락</h3>
+    <table>
+      <tr>
+        <th>분절</th>
+        <th>운동 (Myotome)</th>
+        <th>반사 (DTR)</th>
+        <th>🔑 암기</th>
+      </tr>
+      <tr>
+        <td>C5</td>
+        <td>팔꿈치 굽힘</td>
+        <td>위팔두갈래근 (C5-6)</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><strong>C6</strong></td>
+        <td><strong>손목 폄</strong></td>
+        <td>위팔노근 (C6)</td>
+        <td>손목 못 펴면 C6</td>
+      </tr>
+      <tr>
+        <td>C7</td>
+        <td>팔꿈치 폄</td>
+        <td>위팔세갈래근 (C7)</td>
+        <td>밀기</td>
+      </tr>
+      <tr>
+        <td><strong>L3-4</strong></td>
+        <td><strong>무릎 폄</strong></td>
+        <td>무릎반사 (L3-4)</td>
+        <td>무릎 폄</td>
+      </tr>
+      <tr>
+        <td>L4</td>
+        <td>발목 발등굽힘</td>
+        <td>-</td>
+        <td>발 들기</td>
+      </tr>
+      <tr>
+        <td><strong>S1</strong></td>
+        <td><strong>발목 발바닥굽힘</strong></td>
+        <td>발꿈치힘줄 (S1)</td>
+        <td>까치발</td>
+      </tr>
+    </table>
+    <div class="box-lock">🔒 반사 세트: 두갈래 5-6 / 노근 6 / 세갈래 7 / 무릎 3-4 / 발꿈치 S1</div>
+
+    <!-- =========================================================
      PART 8. 해부생리 (원문 그대로 포함 + 수송박스 포함)
      ========================================================= -->
-<a id="part8"></a>
-<h2 class="pb">PART 8. 해부생리 및 세포학 핵심 (추가본)</h2>
-<a class="backtoc" href="#toc">↑ 목차로</a>
+    <button class="quiz-trigger-btn" onclick="openQuiz('quiz-part7')">🎮 [Lv.7] 신경분절 퀴즈</button>
+    <dialog id="quiz-part7">
+      <div class="modal-header"><span>⚡ Lv.7 세그먼트</span><button class="close-btn"
+          onclick="closeQuiz('quiz-part7')">×</button></div>
+      <div class="modal-body">
+        <details>
+          <summary>배꼽 주변의 피부 감각을 담당하는 분절은?</summary>
+          <div class="answer">A. T10 (Ten = 배꼽)</div>
+        </details>
+        <details>
+          <summary>젖꼭지(Nipple) 높이의 감각 분절은?</summary>
+          <div class="answer">A. T4</div>
+        </details>
+        <details>
+          <summary>엄지손가락 감각과 손목 폄 동작을 담당하는 분절은?</summary>
+          <div class="answer">A. C6 (따봉)</div>
+        </details>
+        <details>
+          <summary>가운뎃손가락 감각과 팔꿈치 폄(Triceps)을 담당하는 분절은?</summary>
+          <div class="answer">A. C7 (럭키세븐)</div>
+        </details>
+        <details>
+          <summary>새끼손가락 감각을 담당하는 분절은?</summary>
+          <div class="answer">A. C8</div>
+        </details>
+        <details>
+          <summary>엄지발가락 등쪽 감각과 발등 굽힘(Dorsi-flexion)을 담당하는 분절은?</summary>
+          <div class="answer">A. L5</div>
+        </details>
+        <details>
+          <summary>발꿈치, 발바닥 가쪽 감각과 까치발(Plantar-flexion)을 담당하는 분절은?</summary>
+          <div class="answer">A. S1</div>
+        </details>
+        <details>
+          <summary>무릎 안쪽 감각과 무릎 펴기(Quadriceps)를 담당하는 분절은?</summary>
+          <div class="answer">A. L3-L4</div>
+        </details>
+        <details>
+          <summary>UMN의 특징 3가지는?</summary>
+          <div class="answer">A. 경직(Spasticity), 심부건반사 항진, 병적반사 양성</div>
+        </details>
+        <details>
+          <summary>LMN의 특징 3가지는?</summary>
+          <div class="answer">A. 이완(Flaccidity), 심부건반사 소실, 근위축(빠름)</div>
+        </details>
+      </div>
+    </dialog>
 
-<h3>1. 면역글로불린 & 세포 소기관</h3>
-<table class="grid2">
-  <tr>
-    <td>
-      <h4>🛡️ 면역글로불린 (Ig)</h4>
-      <ul>
-        <li><strong>IgG</strong>: 혈액 최다, <strong>태반 통과</strong> (장기면역)</li>
-        <li><strong>IgA</strong>: <strong>점막, 분비물</strong> (침, 모유, 눈물)</li>
-        <li>IgM(초기), IgE(알레르기)</li>
-      </ul>
-    </td>
-    <td>
-      <h4>🔬 세포 소기관</h4>
-      <ul>
-        <li><strong>미토콘드리아</strong>: ATP 생성 (에너지)</li>
-        <li><strong>리소좀</strong>: 세포 내 소화, 이물질 처리</li>
-        <li><strong>리보솜</strong>: 단백질 합성</li>
-        <li><strong>골지체</strong>: 단백질 포장/분비</li>
-      </ul>
-    </td>
-  </tr>
-</table>
+    <a id="part8"></a>
+    <h2 class="pb">PART 8. 해부생리 및 세포학 핵심 (추가본)</h2>
+    <a class="backtoc" href="#toc">↑ 목차로</a>
 
-<h3>2. 신경아교세포 & 상피조직</h3>
-<table class="grid2">
-  <tr>
-    <td>
-      <h4>🧠 신경아교세포 (Neuroglia)</h4>
-      <ul>
-        <li><strong>뇌실막세포</strong>: 뇌실 덮음, <strong>뇌척수액(CSF)</strong> 관여</li>
-        <li><strong>희돌기아교세포</strong>: <strong>중추(CNS)</strong> 수초 형성</li>
-        <li><strong>슈반세포</strong>: <strong>말초(PNS)</strong> 수초 형성</li>
-        <li>별아교세포: BBB 형성, 지지</li>
-      </ul>
-    </td>
-    <td>
-      <h4>🧱 상피조직</h4>
-      <ul>
-        <li><strong>중층편평</strong>: 마찰 강함 (입안, 식도, 피부)</li>
-        <li><strong>단층편평</strong>: 여과/확산 (폐포, 혈관)</li>
-        <li><strong>섬모원주</strong>: 이동 (기관지, 난관)</li>
-      </ul>
-    </td>
-  </tr>
-</table>
+    <h3>1. 면역글로불린 & 세포 소기관</h3>
+    <table class="grid2">
+      <tr>
+        <td>
+          <h4>🛡️ 면역글로불린 (Ig)</h4>
+          <ul>
+            <li><strong>IgG</strong>: 혈액 최다, <strong>태반 통과</strong> (장기면역)</li>
+            <li><strong>IgA</strong>: <strong>점막, 분비물</strong> (침, 모유, 눈물)</li>
+            <li>IgM(초기), IgE(알레르기)</li>
+          </ul>
+        </td>
+        <td>
+          <h4>🔬 세포 소기관</h4>
+          <ul>
+            <li><strong>미토콘드리아</strong>: ATP 생성 (에너지)</li>
+            <li><strong>리소좀</strong>: 세포 내 소화, 이물질 처리</li>
+            <li><strong>리보솜</strong>: 단백질 합성</li>
+            <li><strong>골지체</strong>: 단백질 포장/분비</li>
+          </ul>
+        </td>
+      </tr>
+    </table>
 
-<h3>3. 세포막 수송</h3>
-<div class="box-point">
-  * <strong>확산</strong>: 고농도→저농도 (에너지 X)<br>
-  * <strong>삼투</strong>: 물의 이동<br>
-  * <strong>능동수송</strong>: 저농도→고농도 (<strong>에너지 ATP 필요</strong>) 🔒 “거슬러 가면 돈 든다”
-</div>
+    <h3>2. 신경아교세포 & 상피조직</h3>
+    <table class="grid2">
+      <tr>
+        <td>
+          <h4>🧠 신경아교세포 (Neuroglia)</h4>
+          <ul>
+            <li><strong>뇌실막세포</strong>: 뇌실 덮음, <strong>뇌척수액(CSF)</strong> 관여</li>
+            <li><strong>희돌기아교세포</strong>: <strong>중추(CNS)</strong> 수초 형성</li>
+            <li><strong>슈반세포</strong>: <strong>말초(PNS)</strong> 수초 형성</li>
+            <li>별아교세포: BBB 형성, 지지</li>
+          </ul>
+        </td>
+        <td>
+          <h4>🧱 상피조직</h4>
+          <ul>
+            <li><strong>중층편평</strong>: 마찰 강함 (입안, 식도, 피부)</li>
+            <li><strong>단층편평</strong>: 여과/확산 (폐포, 혈관)</li>
+            <li><strong>섬모원주</strong>: 이동 (기관지, 난관)</li>
+          </ul>
+        </td>
+      </tr>
+    </table>
 
-<!-- =========================================================
+    <h3>3. 세포막 수송</h3>
+    <div class="box-point">
+      * <strong>확산</strong>: 고농도→저농도 (에너지 X)<br>
+      * <strong>삼투</strong>: 물의 이동<br>
+      * <strong>능동수송</strong>: 저농도→고농도 (<strong>에너지 ATP 필요</strong>) 🔒 “거슬러 가면 돈 든다”
+    </div>
+
+    <!-- =========================================================
      PART 9. 뼈세포/골화 (원문 그대로 포함)
      ========================================================= -->
-<a id="part9"></a>
-<h2 class="pb">PART 9. 뼈세포와 뼈되기 (Ossification)</h2>
-<a class="backtoc" href="#toc">↑ 목차로</a>
+    <button class="quiz-trigger-btn" onclick="openQuiz('quiz-part8')">🎮 [Lv.8] 해부생리 퀴즈</button>
+    <dialog id="quiz-part8">
+      <div class="modal-header"><span>🧬 Lv.8 해부학</span><button class="close-btn"
+          onclick="closeQuiz('quiz-part8')">×</button></div>
+      <div class="modal-body">
+        <details>
+          <summary>중추신경계(CNS)에서 수초를 만드는 세포는?</summary>
+          <div class="answer">A. 희돌기아교세포 (Oligodendrocyte)</div>
+        </details>
+        <details>
+          <summary>세포 내 에너지를 만드는 소기관은?</summary>
+          <div class="answer">A. 미토콘드리아 (ATP 생성)</div>
+        </details>
+        <details>
+          <summary>말초신경계(PNS)에서 수초를 만드는 세포는?</summary>
+          <div class="answer">A. 슈반세포 (Schwann cell)</div>
+        </details>
+        <details>
+          <summary>혈관뇌장벽(BBB)을 형성하는 아교세포는?</summary>
+          <div class="answer">A. 별아교세포 (Astrocyte)</div>
+        </details>
+        <details>
+          <summary>태반을 통과하여 신생아에게 면역을 주는 항체는?</summary>
+          <div class="answer">A. IgG</div>
+        </details>
+        <details>
+          <summary>모유, 침, 눈물 등 분비물에 많은 항체는?</summary>
+          <div class="answer">A. IgA</div>
+        </details>
+        <details>
+          <summary>농도가 낮은 곳에서 높은 곳으로 물질을 이동시키며 에너지를 쓰는 것은?</summary>
+          <div class="answer">A. 능동수송 (Active Transport)</div>
+        </details>
+      </div>
+    </dialog>
 
-<h3>1. 뼈세포 종류 (Bone Cells)</h3>
-<table>
-  <tr><th>세포명</th><th>영어명</th><th>기능 및 락 멘트</th></tr>
-  <tr><td><strong>뼈형성세포</strong></td><td>Osteo<strong>BLAST</strong></td><td>뼈를 <strong>만든다</strong> (기질 분비)</td></tr>
-  <tr><td>뼈세포</td><td>Osteo<strong>CYTE</strong></td><td>뼈를 <strong>유지/관리</strong> (기질 내 위치)</td></tr>
-  <tr><td><strong>뼈흡수세포</strong></td><td>Osteo<strong>CLAST</strong></td><td>뼈를 <strong>녹인다/파괴</strong> (칼슘 방출)</td></tr>
-</table>
+    <a id="part9"></a>
+    <h2 class="pb">PART 9. 뼈세포와 뼈되기 (Ossification)</h2>
+    <a class="backtoc" href="#toc">↑ 목차로</a>
 
-<h3>2. 뼈되기 (Ossification) 분류</h3>
-<table>
-  <tr><th>구분</th><th>막속뼈되기 (Intramembranous)</th><th>연골속뼈되기 (Endochondral)</th></tr>
-  <tr><td>기원</td><td>결합조직막 → 뼈</td><td>유리연골 → 뼈</td></tr>
-  <tr><td>대상</td><td><strong>머리뼈</strong>, 얼굴뼈, 쇄골</td><td><strong>팔다리 뼈 (긴뼈)</strong></td></tr>
-  <tr><td>성장</td><td>두께 성장</td><td><strong>길이 성장 (성장판)</strong></td></tr>
-</table>
-<div class="box-lock">🔒 “머리는 막, 팔다리 길이는 연골(성장판)”</div>
+    <h3>1. 뼈세포 종류 (Bone Cells)</h3>
+    <table>
+      <tr>
+        <th>세포명</th>
+        <th>영어명</th>
+        <th>기능 및 락 멘트</th>
+      </tr>
+      <tr>
+        <td><strong>뼈형성세포</strong></td>
+        <td>Osteo<strong>BLAST</strong></td>
+        <td>뼈를 <strong>만든다</strong> (기질 분비)</td>
+      </tr>
+      <tr>
+        <td>뼈세포</td>
+        <td>Osteo<strong>CYTE</strong></td>
+        <td>뼈를 <strong>유지/관리</strong> (기질 내 위치)</td>
+      </tr>
+      <tr>
+        <td><strong>뼈흡수세포</strong></td>
+        <td>Osteo<strong>CLAST</strong></td>
+        <td>뼈를 <strong>녹인다/파괴</strong> (칼슘 방출)</td>
+      </tr>
+    </table>
 
-<div class="box-final">
-  💯 국시 합격을 기원합니다!<br>
-  <span style="font-size: 0.85em; font-weight: normal;">(목차 점프 링크 + PDF 인쇄 공백 최소화 적용 완료)</span>
-</div>
+    <h3>2. 뼈되기 (Ossification) 분류</h3>
+    <table>
+      <tr>
+        <th>구분</th>
+        <th>막속뼈되기 (Intramembranous)</th>
+        <th>연골속뼈되기 (Endochondral)</th>
+      </tr>
+      <tr>
+        <td>기원</td>
+        <td>결합조직막 → 뼈</td>
+        <td>유리연골 → 뼈</td>
+      </tr>
+      <tr>
+        <td>대상</td>
+        <td><strong>머리뼈</strong>, 얼굴뼈, 빗장뼈</td>
+        <td><strong>팔다리 뼈 (긴뼈)</strong></td>
+      </tr>
+      <tr>
+        <td>성장</td>
+        <td>두께 성장</td>
+        <td><strong>길이 성장 (성장판)</strong></td>
+      </tr>
+    </table>
+    <div class="box-lock">🔒 “머리는 막, 팔다리 길이는 연골(성장판)”</div>
 
+
+
+    <!-- =========================================================
+     PART 10. 운동학 및 생체역학 (추가본)
+     ========================================================= -->
+    <button class="quiz-trigger-btn" onclick="openQuiz('quiz-part9')">🎮 [Lv.9] 뼈 퀴즈</button>
+    <dialog id="quiz-part9">
+      <div class="modal-header"><span>🦴 Lv.9 뼈되기</span><button class="close-btn"
+          onclick="closeQuiz('quiz-part9')">×</button></div>
+      <div class="modal-body">
+        <details>
+          <summary>팔다리 뼈(긴뼈)가 길이 성장을 하는 방식은?</summary>
+          <div class="answer">A. 연골속뼈되기 (Endochondral) - 성장판</div>
+        </details>
+        <details>
+          <summary>머리뼈처럼 납작한 뼈가 두께 성장을 하는 방식은?</summary>
+          <div class="answer">A. 막속뼈되기 (Intramembranous)</div>
+        </details>
+        <details>
+          <summary>뼈를 만들어내는(형성) 세포는?</summary>
+          <div class="answer">A. 뼈형성세포 (Osteoblast)</div>
+        </details>
+        <details>
+          <summary>뼈를 파괴하여 혈중 칼슘 농도를 높이는 세포는?</summary>
+          <div class="answer">A. 뼈흡수세포 (Osteoclast)</div>
+        </details>
+        <details>
+          <summary>성인이 뼈가 약해지는 골다공증은 어떤 세포의 작용이 더 우세한가?</summary>
+          <div class="answer">A. 뼈흡수세포 (파괴 > 형성)</div>
+        </details>
+      </div>
+    </dialog>
+
+    <a id="part10"></a>
+    <h2 class="pb">PART 10. ⚙️ 운동학 및 생체역학 핵심 (Kinesiology)</h2>
+    <a class="backtoc" href="#toc">↑ 목차로</a>
+
+    <h3>1. 지레의 원리 (Lever System)</h3>
+    <table>
+      <tr>
+        <th>구분</th>
+        <th>배열 순서</th>
+        <th>모멘트 팔 특징</th>
+        <th>비고</th>
+      </tr>
+      <tr>
+        <td><strong>1형 지레</strong></td>
+        <td>힘 - <strong>축</strong> - 저항</td>
+        <td>상황에 따라 다름</td>
+        <td>시소, 목 폄</td>
+      </tr>
+      <tr>
+        <td><strong>2형 지레</strong></td>
+        <td>축 - <strong>저항</strong> - 힘</td>
+        <td><strong>내적(힘) &gt; 외적(저항)</strong></td>
+        <td><strong>힘의 이득</strong> (장딴지근)</td>
+      </tr>
+      <tr>
+        <td><strong>3형 지레</strong></td>
+        <td>축 - <strong>힘</strong> - 저항</td>
+        <td><strong>외적(저항) &gt; 내적(힘)</strong></td>
+        <td><strong>인체 대부분</strong> (위팔두갈래근)</td>
+      </tr>
+    </table>
+    <div class="box-lock">
+      🔒 역학적 이득 순서: <strong>2형 &gt; 1형 &gt; 3형</strong><br>
+      내적 &gt; 외적 = 2형<br>
+      외적 &gt; 내적 = 3형
+    </div>
+
+    <h3>2. 응력-변형률 (Stress-Strain)</h3>
+    <table>
+      <tr>
+        <th>용어</th>
+        <th>설명</th>
+      </tr>
+      <tr>
+        <td><strong>항복점 (Yield Point)</strong></td>
+        <td>탄성과 가소성의 경계점</td>
+      </tr>
+      <tr>
+        <td><strong>가소성 영역</strong></td>
+        <td>스트레스가 제거되어도 <strong>원래 상태로 돌아갈 수 없음</strong></td>
+      </tr>
+      <tr>
+        <td><strong>병목 영역 (Necking)</strong></td>
+        <td>스트레스 지속 시 조직이 찢어짐/파열</td>
+      </tr>
+    </table>
+
+    <h3>3. 토크(Torque)와 근육 역학</h3>
+    <div class="box-point">
+      <strong>▣ 토크 (Torque)</strong> = <strong>힘(Force) × 모멘트 팔</strong><br>
+      * 돌림운동을 만들어냄<br>
+      * <strong>모멘트 팔</strong>: 관절 돌림축부터 힘 작용점까지의 <strong>수직거리</strong>
+    </div>
+
+    <h4>🔹 기타 핵심 용어</h4>
+    <ul>
+      <li><strong>고정근 (Fixator)</strong>: 움직임을 상쇄해주는 근육</li>
+      <li><strong>능동장력 (Active Tension)</strong>: 근육의 길이가 <strong>가까워지면(짧아지면) 최대</strong>가 됨</li>
+    </ul>
+    <div class="box-lock">🔒 "토크는 돌림, 인체는 3형, 2형은 힘 짱"</div>
+
+    <div class="box-final">
+      💯 국시 합격을 기원합니다!<br>
+      <span style="font-size: 0.85em; font-weight: normal;">(목차 점프 링크 + PDF 인쇄 공백 최소화 적용 완료)</span>
+    </div>
+
+    <!-- =========================================================
+     PART 11. 신경계 질환 및 말초신경 손상 (심화)
+     ========================================================= -->
+    <button class="quiz-trigger-btn" onclick="openQuiz('quiz-part10')">🎮 [Lv.10] 역학 퀴즈</button>
+    <dialog id="quiz-part10">
+      <div class="modal-header"><span>⚙️ Lv.10 역학</span><button class="close-btn"
+          onclick="closeQuiz('quiz-part10')">×</button></div>
+      <div class="modal-body">
+        <details>
+          <summary>힘의 이득이 가장 커서 적은 힘으로 무거운 걸 드는 지레는?</summary>
+          <div class="answer">A. 2형 지레 (Second Class)</div>
+        </details>
+        <details>
+          <summary>우리 몸의 대부분을 차지하며 속도에 유리한 지레는?</summary>
+          <div class="answer">A. 3형 지레 (Third Class)</div>
+        </details>
+        <details>
+          <summary>힘팔이 저항팔보다 길어(내적>외적) 힘적 이득이 있는 지레는?</summary>
+          <div class="answer">A. 2형 지레</div>
+        </details>
+        <details>
+          <summary>저항팔이 힘팔보다 길어(외적>내적) 속도와 거리 이득이 있는 지레는?</summary>
+          <div class="answer">A. 3형 지레</div>
+        </details>
+        <details>
+          <summary>토크(Torque)를 구하는 공식은?</summary>
+          <div class="answer">A. 힘(Force) × 모멘트 팔(수직거리)</div>
+        </details>
+        <details>
+          <summary>물체가 탄성을 잃고 영구적으로 변형되기 시작하는 지점은?</summary>
+          <div class="answer">A. 항복점 (Yield Point)</div>
+        </details>
+      </div>
+    </dialog>
+
+    <a id="part11"></a>
+    <h2 class="pb">PART 11. 🧠 신경계 질환 및 말초신경 손상 (심화)</h2>
+    <a class="backtoc" href="#toc">↑ 목차로</a>
+
+    <h3>1. 운동신경원 및 척수 질환 감별 🌟</h3>
+    <table>
+      <tr>
+        <th>질환명</th>
+        <th>손상 부위</th>
+        <th>핵심 임상 양상</th>
+      </tr>
+      <tr>
+        <td><strong>진행성 근위축증 (PMA)</strong></td>
+        <td><strong>LMN (아래)</strong></td>
+        <td>
+          - <strong>손의 작은 근육 약화</strong> (먼쪽 → 몸쪽)<br>
+          - <strong>감각/지각 정상</strong><br>
+          - 후기: 호흡 장애
+        </td>
+      </tr>
+      <tr>
+        <td><strong>근위축성가쪽경화증 (ALS, 루게릭)</strong></td>
+        <td><strong>UMN + LMN</strong></td>
+        <td>
+          - <strong>초기: 강직성</strong> 패터<br>
+          - <strong>후기: 이완성</strong>, 호흡근 마비 사망
+        </td>
+      </tr>
+      <tr>
+        <td><strong>척수물구멍증 (Syringomyelia)</strong></td>
+        <td>척수 중심관</td>
+        <td>
+          - <strong>해리성 감각 소실</strong> (통각/온도 감각 소실, 촉각 정상)<br>
+          - 뇌척수액(CSF) 흐름 문제<br>
+          - 호발: <strong>C2, T9-T11</strong>
+        </td>
+      </tr>
+    </table>
+
+    <h3>2. 기타 유전성 및 퇴행성 질환</h3>
+    <table>
+      <tr>
+        <th>질환</th>
+        <th>핵심 특징</th>
+      </tr>
+      <tr>
+        <td><strong>샤르코-마리-투스 (CMT)</strong></td>
+        <td>- 샴페인 병 거꾸로 세운 다리 (종아리 위축)<br>- 황새 다리 (Stork leg)</td>
+      </tr>
+      <tr>
+        <td><strong>프리드리히 실조증</strong></td>
+        <td>- <strong>9번 염색체</strong> 이상<br>- 소뇌성 실조, 척추측만</td>
+      </tr>
+      <tr>
+        <td><strong>무도병 (Chorea)</strong></td>
+        <td>- 헌팅턴 무도병 (4번 염색체)<br>- 춤추듯 불수의적 움직임 (바닥핵 손상)</td>
+      </tr>
+      <tr>
+        <td><strong>댄디-워커 증후군</strong></td>
+        <td>- 선천성 기형 (제4뇌실 확장, 소뇌 형성부전)</td>
+      </tr>
+    </table>
+
+    <h3>3. 팔신경얼기 손상 (Brachial Plexus Injury)</h3>
+    <div class="box-point">
+      <strong>호너 증후군 (Horner's Syn)</strong>: 눈꺼풀 처짐, 동공 수축(축동), 땀 안남(무한증)
+    </div>
+    <table>
+      <tr>
+        <th>구분</th>
+        <th>손상 레벨</th>
+        <th>별칭/특징</th>
+        <th>관련 신경</th>
+      </tr>
+      <tr>
+        <td><strong>에르브 마비 (Erb)</strong></td>
+        <td><strong>C5 - C6</strong></td>
+        <td>- <strong>분만 마비</strong>, 웨이터 팁 자세<br>- <strong>겨드랑신경 손상</strong> (어깨 가쪽 감각↓, 어깨세모근/작은원근 마비)</td>
+        <td>노신경 (C5-T1)</td>
+      </tr>
+      <tr>
+        <td><strong>크롬프케 마비 (Klumpke)</strong></td>
+        <td><strong>C8 - T1</strong></td>
+        <td>
+          - 몸통/팔 사이 심한 견인 (팔 당겨짐)<br>
+          - <strong>호너 증후군 동반</strong><br>
+          - 정중/자신경 마비와 유사 (갈퀴손)<br>
+          - <strong>엄지 맞섬 운동 필요</strong>
+        </td>
+        <td>자신경/정중신경</td>
+      </tr>
+    </table>
+
+    <h3>4. 말초신경 병변 (Peripheral Neuropathy) 핵심 🔐</h3>
+
+    <h4>🔹 상지 (Upper Extremity)</h4>
+    <table>
+      <tr>
+        <th>신경</th>
+        <th>손상 시 증상 (별칭)</th>
+        <th>핵심 소견</th>
+      </tr>
+      <tr>
+        <td><strong>노신경 (Radial n.)</strong></td>
+        <td><strong>손목 처짐 (Wrist Drop)</strong></td>
+        <td>손목 폄 불가</td>
+      </tr>
+      <tr>
+        <td><strong>자신경 (Ulnar n.)</strong></td>
+        <td><strong>갈퀴손 (Claw Hand)</strong></td>
+        <td>4,5지 굽힘 구축, 프로멘트 징후</td>
+      </tr>
+      <tr>
+        <td><strong>정중신경 (Median n.)</strong></td>
+        <td><strong>원숭이손 (Ape Hand)</strong></td>
+        <td><strong>엄지두덩 위축</strong>, 맞섬 불가</td>
+      </tr>
+    </table>
+
+    <h4>🔹 하지 (Lower Extremity)</h4>
+    <table>
+      <tr>
+        <th>신경</th>
+        <th>감각 손상</th>
+        <th>운동 손상 (약화)</th>
+      </tr>
+      <tr>
+        <td><strong>넙다리신경 (Femoral)</strong></td>
+        <td>넙다리 앞쪽/안쪽</td>
+        <td><strong>엉덩 굽힘, 무릎 폄</strong></td>
+      </tr>
+      <tr>
+        <td><strong>폐쇄신경 (Obturator)</strong></td>
+        <td>넙다리 안쪽</td>
+        <td><strong>엉덩관절 모음</strong></td>
+      </tr>
+      <tr>
+        <td><strong>아래볼기신경 (Inf. Gluteal)</strong></td>
+        <td>(감각 없음)</td>
+        <td><strong>엉덩 폄, 가쪽돌림</strong> (큰볼기근)</td>
+      </tr>
+      <tr>
+        <td><strong>정강신경 (Tibial)</strong></td>
+        <td>발바닥</td>
+        <td><strong>발바닥굽힘, 발가락 굽힘</strong></td>
+      </tr>
+      <tr>
+        <td><strong>온종아리신경 (Common Peroneal)</strong></td>
+        <td>발 가쪽 / 발등</td>
+        <td><strong>발등굽힘(처짐), 발목 가쪽번짐</strong></td>
+      </tr>
+    </table>
+
+    <h3>5. 얼굴신경 마비: 중추성 vs 말초성 감별 ⚡</h3>
+    <table class="grid2">
+      <tr>
+        <td>
+          <div class="box-lock" style="background:#fff3cd;">
+            <strong>🏥 중추성 (Stroke 등)</strong><br>
+            1. <strong>이마 주름 잡기 가능</strong> (양측 지배)<br>
+            2. 눈 감기 가능<br>
+            3. 반대쪽 얼굴 마비 (강직성 패턴)
+          </div>
+        </td>
+        <td>
+          <div class="box-lock" style="background:#d1ecf1;">
+            <strong>🦠 말초성 (Bell's Palsy)</strong><br>
+            1. <strong>이마 주름 불가능</strong><br>
+            2. <strong>눈 감기 불가능</strong> (벨 현상)<br>
+            3. 같은쪽 얼굴 마비 (이완성)<br>
+            4. 청각 과민, 눈물/미각 상실<br>
+            5. 입이 비마비측(건강한 쪽)으로 돌아감 (마비측 처짐)
+          </div>
+        </td>
+      </tr>
+    </table>
+
+    <!-- =========================================================
+     PART 12. 내분비계 및 호르몬 (추가본)
+     ========================================================= -->
+    <button class="quiz-trigger-btn" onclick="openQuiz('quiz-part11')">🎮 [Lv.11] 질환 심화 퀴즈</button>
+    <dialog id="quiz-part11">
+      <div class="modal-header"><span>💀 Lv.11 심화</span><button class="close-btn"
+          onclick="closeQuiz('quiz-part11')">×</button></div>
+      <div class="modal-body">
+        <details>
+          <summary>UMN과 LMN 증상이 동시에 나타나는 질환은?</summary>
+          <div class="answer">A. ALS (근위축성측삭경화증 / 루게릭병)</div>
+        </details>
+        <details>
+          <summary>LMN 손상으로 손의 작은 근육이 위축되는 질환은?</summary>
+          <div class="answer">A. 진행성 근위축증 (PMA)</div>
+        </details>
+        <details>
+          <summary>통각과 온도 감각은 소실되나 촉각은 보존되는 질환은?</summary>
+          <div class="answer">A. 척수물구멍증 (Syringomyelia) - 해리성 감각</div>
+        </details>
+        <details>
+          <summary>유전성 운동감각 신경병증으로 '샴페인 병 거꾸로' 모양 다리가 특징인 것은?</summary>
+          <div class="answer">A. 샤르코-마리-투스 (CMT)</div>
+        </details>
+        <details>
+          <summary>팔신경얼기 C5-C6 손상으로 웨이터 팁 자세를 보이는 마비는?</summary>
+          <div class="answer">A. 에르브 마비 (Erb's Palsy)</div>
+        </details>
+        <details>
+          <summary>팔신경얼기 C8-T1 손상으로 호너 증후군과 갈퀴손이 나타나는 마비는?</summary>
+          <div class="answer">A. 크롬프케 마비 (Klumpke's Palsy)</div>
+        </details>
+        <details>
+          <summary>목발을 잘못 짚어 발생하며 손목이 툭 떨어지는(Wrist Drop) 신경 마비는?</summary>
+          <div class="answer">A. 노신경 마비 (Radial n.)</div>
+        </details>
+        <details>
+          <summary>자신경(Ulnar n.) 마비의 특징적인 손 모양은?</summary>
+          <div class="answer">A. 갈퀴손 (Claw Hand)</div>
+        </details>
+        <details>
+          <summary>정중신경(Median n.) 마비의 특징적인 손 모양은?</summary>
+          <div class="answer">A. 원숭이손 (Ape Hand), 기도하는 손</div>
+        </details>
+        <details>
+          <summary>벨 마비(Bell's palsy, 말초성 얼울마비)에서 이마 주름을 잡을 수 있는가?</summary>
+          <div class="answer">A. 아니오 (이마 주름 소실됨, 잡을 수 있으면 중추성)</div>
+        </details>
+        <details>
+          <summary>다리를 꼬고 앉거나 석고붕대 압박으로 발목이 처지는(Foot drop) 신경은?</summary>
+          <div class="answer">A. 온종아리신경 (Common Peroneal)</div>
+        </details>
+      </div>
+    </dialog>
+
+    <a id="part12"></a>
+    <h2 class="pb">PART 12. 🩸 내분비계 및 호르몬 핵심 정리</h2>
+    <a class="backtoc" href="#toc">↑ 목차로</a>
+
+    <h3>1. 뇌하수체 (Pituitary Gland) 🌟</h3>
+    <table class="grid2">
+      <tr>
+        <td>
+          <div class="box-lock">
+            <strong>앞엽 (전엽) - "생성 분비"</strong><br>
+            1. <strong>성장호르몬(GH)</strong>: 뼈/근육 성장 (과다: 거인증/말단비대, 결핍: 난쟁이)<br>
+            2. <strong>갑상샘자극(TSH)</strong>: 티록신 분비 촉진<br>
+            3. <strong>부신겉질자극(ACTH)</strong>: 코르티솔 분비 촉진
+          </div>
+        </td>
+        <td>
+          <div class="box-point">
+            <strong>뒤엽 (후엽) - "저장 분비"</strong><br>
+            1. <strong>항이뇨호르몬(ADH, 바소프레신)</strong>: 수분 재흡수 (결핍: 요붕증)<br>
+            2. <strong>옥시토신</strong>: 자궁 수축, 젖 분비 (분만 촉진)
+          </div>
+        </td>
+      </tr>
+    </table>
+
+    <h3>2. 갑상샘 & 부갑상샘 (Thyroid & Parathyroid)</h3>
+    <table>
+      <tr>
+        <th>호르몬</th>
+        <th>기능 및 특징</th>
+        <th>관련 질환</th>
+      </tr>
+      <tr>
+        <td><strong>티록신 (T4)</strong></td>
+        <td>대사 촉진, 체온 유지</td>
+        <td>항진(그레이브스병), 저하(크레틴병)</td>
+      </tr>
+      <tr>
+        <td><strong>칼시토닌</strong></td>
+        <td><strong>혈중 칼슘 감소</strong> (뼈로 저장)</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><strong>파라토르몬 (PTH)</strong></td>
+        <td><strong>혈중 칼슘 증가</strong> (뼈에서 빼옴)</td>
+        <td>부갑상샘(곁샘) 분비</td>
+      </tr>
+    </table>
+    <div class="box-lock">🔒 칼슘 조절: 칼시토닌(↓) vs 파라토르몬(↑) 반대 작용</div>
+
+    <h3>3. 이자 (Pancreas) - 혈당 조절 🍬</h3>
+    <table>
+      <tr>
+        <th>세포</th>
+        <th>호르몬</th>
+        <th>작용</th>
+        <th>결핍/과잉 시</th>
+      </tr>
+      <tr>
+        <td><strong>알파(α) 세포</strong></td>
+        <td><strong>글루카곤</strong></td>
+        <td><strong>혈당 증가</strong> (글리코겐 분해)</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td><strong>베타(β) 세포</strong></td>
+        <td><strong>인슐린</strong></td>
+        <td><strong>혈당 감소</strong> (세포 내 포도당 유입)</td>
+        <td><strong>당뇨병 (Diabetes Mellitus)</strong></td>
+      </tr>
+    </table>
+
+    <h3>4. 부신 (Adrenal Gland) ⚡</h3>
+    <table class="grid2">
+      <tr>
+        <td>
+          <h4>겉질 (Cortex)</h4>
+          <ul>
+            <li><strong>알도스테론</strong>: Na+ 재흡수, K+ 배출, 혈압 상승</li>
+            <li><strong>코르티솔</strong>: 항스트레스, 항염증, 혈당 상승</li>
+            <li>(질환) <strong>쿠싱증후군</strong>: 코르티솔 과다 (달덩이 얼굴, 중심성 비만)</li>
+          </ul>
+        </td>
+        <td>
+          <h4>속질 (Medulla)</h4>
+          <ul>
+            <li><strong>에피네프린 (아드레날린)</strong></li>
+            <li><strong>노르에피네프린</strong></li>
+            <li>작용: 교감신경 흥분 유사 (심박↑, 혈압↑, 동공확대)</li>
+          </ul>
+        </td>
+      </tr>
+    </table>
+
+    <h3>5. 호르몬 질환 핵심 짝짓기 (국시용)</h3>
+    <table>
+      <tr>
+        <th>질환명</th>
+        <th>원인 호르몬</th>
+        <th>핵심 증상</th>
+      </tr>
+      <tr>
+        <td><strong>요붕증</strong></td>
+        <td>ADH 결핍</td>
+        <td>소변량 과다, 갈증</td>
+      </tr>
+      <tr>
+        <td><strong>쿠싱 증후군</strong></td>
+        <td>코르티솔 과다</td>
+        <td>Moon face, 복부비만, 가는 팔다리</td>
+      </tr>
+      <tr>
+        <td><strong>그레이브스병</strong></td>
+        <td>티록신 과다 (갑상샘 항진)</td>
+        <td>안구 돌출, 체중 감소, 더위 못 참음</td>
+      </tr>
+      <tr>
+        <td><strong>애디슨병</strong></td>
+        <td>부신겉질 호르몬 결핍</td>
+        <td>피부 색소 침착, 저혈압</td>
+      </tr>
+      <tr>
+        <td><strong>당뇨병</strong></td>
+        <td>인슐린 결핍/저항성</td>
+        <td>다뇨, 다음, 다식 (3대 증상)</td>
+      </tr>
+    </table>
+    <div class="box-final">🔒 암기: 쿠싱(달덩이) / 그레이브스(눈튀) / 요붕(오줌콸콸)</div>
+
+    <button class="quiz-trigger-btn" onclick="openQuiz('quiz-part12')">🎮 [Lv.Final] 호르몬 퀴즈</button>
+    <dialog id="quiz-part12">
+      <div class="modal-header"><span>🩸 Lv.Final 호르몬</span><button class="close-btn"
+          onclick="closeQuiz('quiz-part12')">×</button></div>
+      <div class="modal-body">
+        <details>
+          <summary>성장호르몬(GH)이 과다하면 생기는 병은?</summary>
+          <div class="answer">A. 거인증(소아), 말단비대증(성인)</div>
+        </details>
+        <details>
+          <summary>소변량을 줄여주는 항이뇨호르몬(ADH)이 부족하면 생기는 병은?</summary>
+          <div class="answer">A. 요붕증 (소변이 콸콸)</div>
+        </details>
+        <details>
+          <summary>티록신(갑상샘호르몬)이 과다하여 눈이 튀어나오고 더위를 못 참는 질환은?</summary>
+          <div class="answer">A. 그레이브스병 (갑상샘항진증)</div>
+        </details>
+        <details>
+          <summary>혈중 칼슘 농도를 낮추는(뼈로 보냄) 호르몬은?</summary>
+          <div class="answer">A. 칼시토닌</div>
+        </details>
+        <details>
+          <summary>혈중 칼슘 농도를 높이는(뼈를 녹임) 호르몬은?</summary>
+          <div class="answer">A. 부갑상샘호르몬 (PTH)</div>
+        </details>
+        <details>
+          <summary>혈당을 낮추는 유일한 호르몬이며 부족 시 당뇨가 생기는 것은?</summary>
+          <div class="answer">A. 인슐린 (베타세포)</div>
+        </details>
+        <details>
+          <summary>혈당을 높이는 이자의 알파세포 호르몬은?</summary>
+          <div class="answer">A. 글루카곤</div>
+        </details>
+        <details>
+          <summary>코르티솔 과다 분비로 얼굴이 달덩이(Moon face)처럼 되는 병은?</summary>
+          <div class="answer">A. 쿠싱 증후군 (Cushing)</div>
+        </details>
+        <details>
+          <summary>부신겉질 호르몬이 부족하여 피부가 검게 착색되는 병은?</summary>
+          <div class="answer">A. 애디슨병</div>
+        </details>
+      </div>
+    </dialog>
+
+  </div> <!-- End Raw Content -->
+
+  <script>
+    /* =========================================
+       Dynamic Pagination Engine & Logic
+       ========================================= */
+    document.addEventListener("DOMContentLoaded", () => {
+      try {
+        const body = document.body;
+        const bookContainer = document.getElementById('book-container');
+        const rawContent = document.getElementById('raw-content');
+
+        if (!bookContainer || !rawContent) return;
+
+        // 1. Pagination Strategy (Split by H2)
+        const contentNodes = Array.from(rawContent.children);
+        let pages = [];
+        let currentPage = [];
+
+        // Initial Page (Cover/TOC)
+        // If the first element isn't H2, start a page
+
+        contentNodes.forEach(node => {
+          if (node.tagName === 'H2') {
+            if (currentPage.length > 0) {
+              pages.push(currentPage);
+              currentPage = [];
+            }
+          }
+          currentPage.push(node);
+        });
+        if (currentPage.length > 0) pages.push(currentPage);
+
+        // 2. Render Pages to Container
+        pages.forEach((pageNodes, index) => {
+          const pageDiv = document.createElement('div');
+          pageDiv.className = 'book-page';
+          pageDiv.id = `page-${index}`;
+
+          // Clone nodes to pages
+          pageNodes.forEach(node => pageDiv.appendChild(node.cloneNode(true)));
+
+          // Set first page active
+          if (index === 0) pageDiv.classList.add('active');
+          bookContainer.appendChild(pageDiv);
+        });
+
+        // 3. Initialize Features
+        initNavigation(pages.length);
+        setupTOC();
+        setupInteraction();
+
+      } catch (e) {
+        console.error("Layout Engine Error:", e);
+        // Fail-safe: Show raw content
+        document.getElementById('raw-content').style.display = 'block';
+        document.getElementById('book-container').style.display = 'none';
+        document.querySelector('.nav-bar').style.display = 'none';
+        document.body.style.overflow = 'auto'; // allow scroll
+      }
+    });
+
+    /* Navigation */
+    let currentPageIndex = 0;
+    let totalPages = 0;
+
+    function initNavigation(total) {
+      totalPages = total;
+      updateNav();
+
+      document.getElementById('prevBtn').onclick = () => changePage(-1);
+      document.getElementById('nextBtn').onclick = () => changePage(1);
+
+      // TOC FAB Handler
+      const tocFab = document.getElementById('tocFab');
+      if (tocFab) tocFab.onclick = () => jumpToPage(0);
+
+      // Keyboard
+      document.addEventListener('keydown', (e) => {
+        if (document.querySelector('dialog[open]')) return; // Disable parsing if modal open
+        if (e.key === 'ArrowLeft') changePage(-1);
+        if (e.key === 'ArrowRight') changePage(1);
+      });
+    }
+
+    function changePage(delta) {
+      jumpToPage(currentPageIndex + delta);
+    }
+
+    function jumpToPage(index) {
+      if (index >= 0 && index < totalPages) {
+        // Hide old
+        const oldPage = document.getElementById(`page-${currentPageIndex}`);
+        if (oldPage) {
+          oldPage.classList.remove('active');
+          oldPage.style.display = 'none'; // Ensure valid display transition
+          setTimeout(() => oldPage.style.display = '', 50); // Reset for class handling
+        }
+
+        currentPageIndex = index;
+
+        // Show new
+        const newPage = document.getElementById(`page-${index}`);
+        if (newPage) {
+          newPage.classList.add('active');
+          newPage.scrollTop = 0;
+        }
+        updateNav();
+      }
+    }
+
+    function updateNav() {
+      const ind = document.getElementById('pageIndicator');
+      if (ind) ind.innerText = `${currentPageIndex + 1} / ${totalPages}`;
+
+      document.getElementById('prevBtn').disabled = currentPageIndex === 0;
+      document.getElementById('nextBtn').disabled = currentPageIndex === totalPages - 1;
+    }
+
+    /* TOC Links inside pages */
+    function setupTOC() {
+      // Intercept anchor clicks
+      document.body.addEventListener('click', (e) => {
+        // Check if it's an anchor or inside an anchor
+        const anchor = e.target.closest('a');
+        if (anchor && anchor.getAttribute('href')?.startsWith('#')) {
+          e.preventDefault();
+          const targetId = anchor.getAttribute('href').substring(1);
+
+          // Special case: 'toc' -> page 0
+          if (targetId === 'toc') {
+            jumpToPage(0);
+            return;
+          }
+
+          // Search all pages for this ID
+          const allPages = document.querySelectorAll('.book-page');
+          for (let page of allPages) {
+            // Look for the element with this ID in the page
+            if (page.querySelector(`#${targetId}`) || page.id === targetId) {
+              const pageIdx = parseInt(page.id.split('-')[1]);
+              jumpToPage(pageIdx);
+
+              // Scroll to element
+              setTimeout(() => {
+                const el = page.querySelector(`#${targetId}`);
+                if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+              }, 100);
+              break;
+            }
+          }
+        }
+      });
+    }
+
+    /* Interaction: Quiz & Blur */
+    function setupInteraction() {
+      // Blur Click Handler (Robust)
+      document.body.addEventListener('click', (e) => {
+        // 1. Check direct blur-text click
+        if (e.target.classList.contains('blur-text')) {
+          e.target.classList.toggle('revealed');
+          return;
+        }
+        // 2. Check if clicked inside a blur-text (child text node)
+        const parent = e.target.closest('.blur-text');
+        if (parent) {
+          parent.classList.toggle('revealed');
+        }
+      });
+
+      // Floating Quiz Button Logic
+      const quizBtn = document.getElementById('quizBtn');
+      if (quizBtn) {
+        quizBtn.addEventListener('click', () => {
+          // Find active page
+          const activePage = document.querySelector('.book-page.active');
+          if (!activePage) return;
+
+          // Find dialog inside active page
+          // Note: Dialogs might be hidden by CSS (display:none of button handles only button)
+          const dialog = activePage.querySelector('dialog');
+
+          if (dialog) {
+            // Use global opener to ensure safe body append
+            openQuiz(dialog.id);
+          } else {
+            alert("이 페이지에는 퀴즈가 없습니다. (표지나 목차일 수 있습니다)");
+          }
+        });
+      }
+    }
+
+    // Global functions for inline HTML calls
+    window.openQuiz = (id) => {
+      let sourceDialog = document.getElementById(id); // could be anywhere
+      if (!sourceDialog) return;
+
+      // Reset: Remove existing dialog if present
+      let existing = document.querySelector(`body > dialog#${id}`);
+      if (existing) existing.remove();
+
+      // Clone and append to body
+      const dialogClone = sourceDialog.cloneNode(true);
+      document.body.appendChild(dialogClone);
+      dialogClone.showModal();
+
+      // Setup Quiz Logic (Step-by-Step)
+      const modalBody = dialogClone.querySelector('.modal-body');
+      const questions = modalBody.querySelectorAll('details');
+
+      // Hide all initially
+      questions.forEach(q => {
+        q.style.display = 'none';
+        q.open = false; // Reset state
+        // Remove old buttons if clones had them
+        const oldBtn = q.querySelector('.next-btn');
+        if (oldBtn) oldBtn.remove();
+      });
+
+      const totalSteps = questions.length;
+
+      // Progress Bar
+      const progressBar = document.createElement('div');
+      progressBar.style.cssText = "height:8px; background:rgba(0,0,0,0.05); margin-bottom:25px; border-radius:10px; overflow:hidden;";
+      const progressFill = document.createElement('div');
+      progressFill.style.cssText = "height:100%; width:0%; background:linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%); transition:width 0.5s cubic-bezier(0.4, 0, 0.2, 1); border-radius:10px;";
+      progressBar.appendChild(progressFill);
+      modalBody.insertBefore(progressBar, modalBody.firstChild);
+
+      const showQuestion = (index) => {
+        // Update Progress
+        progressFill.style.width = `${((index) / totalSteps) * 100}%`;
+
+        if (index >= totalSteps) {
+          progressFill.style.width = '100%';
+          const finishDiv = document.createElement('div');
+          finishDiv.style.textAlign = 'center';
+          finishDiv.style.padding = '50px 20px';
+          finishDiv.classList.add('fade-in');
+          finishDiv.innerHTML = `
+                 <div style="font-size:5rem; margin-bottom:20px; animation: popIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);">🎉</div>
+                 <h3 style="color:var(--text-main); margin:0; font-size:1.8rem; border:none; padding:0;">완벽합니다!</h3>
+                 <p style="color:var(--text-sub); margin-top:10px; font-size:1.1rem;">이 파트의 핵심 내용을 모두 마스터하셨습니다.</p>
+                 <button style="margin-top:30px; padding:14px 40px; background:linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%); color:white; border:none; border-radius:50px; font-weight:700; cursor:pointer; font-size:1.1rem; box-shadow: 0 10px 25px rgba(99, 102, 241, 0.3); transition: transform 0.2s;" 
+                         onclick="document.querySelector('body > dialog').close(); document.querySelector('body > dialog').remove();"
+                         onmouseover="this.style.transform='translateY(-2px)'"
+                         onmouseout="this.style.transform='translateY(0)'">
+                     퀴즈 마치기
+                 </button>
+             `;
+          modalBody.appendChild(finishDiv);
+          return;
+        }
+
+        const q = questions[index];
+        q.style.display = 'block';
+        q.style.opacity = '0';
+        q.style.transform = 'translateY(20px)';
+        q.style.transition = 'all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1)';
+
+        // Trigger animation
+        setTimeout(() => {
+          q.style.opacity = '1';
+          q.style.transform = 'translateY(0)';
+        }, 50);
+
+        // One-time listener for opening answer
+        const onToggle = () => {
+          if (q.open) {
+            // Answer revealed
+            if (!q.querySelector('.next-btn')) {
+              const nextBtn = document.createElement('button');
+              nextBtn.className = 'next-btn';
+              nextBtn.innerText = '다음 문제 ▶';
+              // Modern Glassy Button
+              nextBtn.style.cssText = 'display:block; width:100%; margin-top:20px; padding:16px; background:white; color:var(--primary); border:2px solid rgba(99, 102, 241, 0.2); border-radius:var(--radius-md); cursor:pointer; font-weight:700; font-size:1rem; transition:all 0.3s; box-shadow: 0 4px 10px rgba(0,0,0,0.05);';
+
+              nextBtn.onmouseover = () => {
+                nextBtn.style.background = 'linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%)';
+                nextBtn.style.color = 'white';
+                nextBtn.style.borderColor = 'transparent';
+                nextBtn.style.transform = 'translateY(-2px)';
+                nextBtn.style.boxShadow = '0 10px 20px rgba(99, 102, 241, 0.25)';
+              };
+              nextBtn.onmouseout = () => {
+                nextBtn.style.background = 'white';
+                nextBtn.style.color = 'var(--primary)';
+                nextBtn.style.borderColor = 'rgba(99, 102, 241, 0.2)';
+                nextBtn.style.transform = 'translateY(0)';
+                nextBtn.style.boxShadow = '0 4px 10px rgba(0,0,0,0.05)';
+              };
+
+              nextBtn.onclick = () => {
+                q.style.display = 'none';
+                showQuestion(index + 1);
+              };
+              q.querySelector('.answer').appendChild(nextBtn);
+
+              setTimeout(() => nextBtn.scrollIntoView({ behavior: 'smooth', block: 'nearest' }), 100);
+            }
+          }
+        };
+        q.addEventListener('toggle', onToggle, { once: true });
+      };
+
+      // Start
+      showQuestion(0);
+
+      // Close Handler
+      dialogClone.querySelector('.close-btn').onclick = () => {
+        dialogClone.close();
+        dialogClone.remove();
+      };
+    };
+
+    window.closeQuiz = (id) => {
+      // This is handled by the clone logic above, but for inline onClick compat:
+      const dialog = document.querySelector(`body > dialog#${id}`);
+      if (dialog) {
+        dialog.close();
+        dialog.remove();
+      }
+    };
+
+    /* Memorization Mode Toggle */
+    const memoBtn = document.getElementById('memoToggle');
+    if (memoBtn) {
+      memoBtn.addEventListener('click', () => {
+        const isActive = memoBtn.classList.contains('active');
+
+        // Helper to apply to a specific container
+        const applyBlur = (container) => {
+          const targets = container.querySelectorAll('table td');
+          targets.forEach(td => {
+            // Logic: Blur cells that are not boxes/headers/strong
+            // Exclude cells that have "strong" tags? No, blur everything in table body except headers
+            if (!td.querySelector('[class^="box-"]') && !td.classList.contains('box-point')) {
+              td.classList.add('blur-text');
+              td.classList.remove('revealed');
+            }
+          });
+        };
+
+        const removeBlur = (container) => {
+          const targets = container.querySelectorAll('.blur-text');
+          targets.forEach(td => td.classList.remove('blur-text', 'revealed'));
+        };
+
+        if (!isActive) {
+          // Activate
+          memoBtn.classList.add('active');
+          memoBtn.textContent = '👁️';
+          // Apply to all existing book pages
+          document.querySelectorAll('.book-page').forEach(applyBlur);
+        } else {
+          // Deactivate
+          memoBtn.classList.remove('active');
+          memoBtn.textContent = '🙈';
+          document.querySelectorAll('.book-page').forEach(removeBlur);
+        }
+      });
+    }
+
+  </script>
 </body>
+
 </html>

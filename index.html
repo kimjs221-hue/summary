@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<title>물리치료 국가고시 최종 완벽 요약 (신경계/근골격계/해부생리)</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700;900&display=swap" rel="stylesheet">
+<style>
+  /* =======================
+     Print + Layout Safe CSS
+     ======================= */
+  @page { size: A4; margin: 15mm; }
+  html { scroll-behavior: smooth; }
+  body{
+    font-family: 'Noto Sans KR', sans-serif;
+    line-height: 1.55;
+    color: #333;
+    max-width: 210mm;
+    margin: 0 auto;
+    background: #fff;
+    font-size: 10pt;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  h1{
+    text-align:center;
+    background-color:#2c3e50;
+    color:#fff;
+    padding:15px;
+    border-radius:8px;
+    font-size:22pt;
+    margin: 0 0 18px 0;
+  }
+  h2{
+    color:#2980b9;
+    border-bottom:2px solid #2980b9;
+    padding-bottom:5px;
+    margin-top:28px;
+    font-size:16pt;
+    page-break-after: avoid;
+  }
+  h3{
+    color:#2c3e50;
+    background:#ecf0f1;
+    padding:6px 10px;
+    border-left:5px solid #2c3e50;
+    margin-top:18px;
+    font-size:13pt;
+    page-break-after: avoid;
+  }
+  h4{
+    color:#c0392b;
+    margin-top:14px;
+    margin-bottom:6px;
+    font-size:11pt;
+    font-weight:bold;
+    page-break-after: avoid;
+  }
+
+  /* Tables */
+  table{
+    width:100%;
+    border-collapse:collapse;
+    margin:10px 0;
+    font-size:9.5pt;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+  th{
+    background-color:#34495e;
+    color:white;
+    padding:6px;
+    text-align:center;
+  }
+  td{
+    border:1px solid #bdc3c7;
+    padding:5px;
+    text-align:center;
+    vertical-align:middle;
+  }
+  tr:nth-child(even){ background-color:#f9f9f9; }
+
+  /* Boxes */
+  .box-lock, .box-point, .box-final{
+    padding:10px;
+    margin:10px 0;
+    border-radius:6px;
+    break-inside: avoid;
+    page-break-inside: avoid;
+    font-size:10pt;
+  }
+  .box-lock{
+    background-color:#fff3cd;
+    border:1px solid #ffeeba;
+    border-left:6px solid #ffc107;
+  }
+  .box-point{
+    background-color:#d1ecf1;
+    border:1px solid #bee5eb;
+    border-left:6px solid #17a2b8;
+  }
+  .box-final{
+    background-color:#2c3e50;
+    color:white;
+    padding:15px;
+    border-radius:8px;
+    text-align:center;
+    font-weight:bold;
+    font-size:1.05em;
+  }
+
+  /* Print-safe two-column blocks (no flex) */
+  .grid2{
+    width:100%;
+    border-collapse:separate;
+    border-spacing: 12px 0;
+    margin: 6px 0 10px 0;
+  }
+  .grid2 td{
+    border: none;
+    text-align: left;
+    vertical-align: top;
+    padding: 0;
+  }
+
+  ul{ margin: 6px 0 6px 18px; padding:0; }
+  li{ margin-bottom:4px; }
+
+  /* TOC */
+  .toc{
+    border:1px solid #dfe6e9;
+    border-radius:10px;
+    padding:14px 16px;
+    background:#fbfcfd;
+    margin: 8px 0 18px 0;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+  .toc h2{ margin-top: 0; border-bottom: 0; padding-bottom: 0; }
+  .toc a{ color:#2c3e50; text-decoration:none; font-weight:800; }
+  .toc a:hover{ text-decoration:underline; }
+  .toc .sub{ margin-left: 16px; font-weight:600; }
+  .toc .tiny{ color:#666; font-weight:400; font-size:9pt; }
+
+  .backtoc{
+    display:inline-block;
+    margin:6px 0 0 0;
+    padding:4px 10px;
+    border:1px solid #d0d7de;
+    border-radius:999px;
+    font-size:9pt;
+    text-decoration:none;
+    color:#2c3e50;
+    background:#fff;
+  }
+
+  /* Page breaks (minimal, controlled) */
+  .pb{ break-before: page; page-break-before: always; }
+  .keep{ break-inside: avoid; page-break-inside: avoid; }
+
+  /* Optional placeholder for images */
+  .img-placeholder{
+    border:1px dashed #95a5a6;
+    border-radius:8px;
+    padding:10px;
+    color:#7f8c8d;
+    font-size:9pt;
+    text-align:center;
+    margin:10px 0;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+</style>
+</head>
+
+<body>
+
+<a id="toc"></a>
+<h1>🧠 물리치료 국가고시 최종 완벽 요약집</h1>
+
+<div class="box-final">
+  🔑 최종 암기 공식: <span style="font-weight:900;">병변 위치 → 증상 / 반사 / 평가도구 자동 연결</span>
+</div>
+
+<div class="toc">
+  <h2>📑 목차 (클릭 이동)</h2>
+  <ul>
+    <li><a href="#part1">PART 1. 신경계 수준별 반사·반응 (국시 단골)</a>
+      <div class="sub tiny">
+        <a href="#p1-spinal">1) 척수(ATNR)</a> ·
+        <a href="#p1-brainstem">2) 뇌줄기(TLR/양서류)</a> ·
+        <a href="#p1-midbrain">3) 중간뇌(란다우/유인원)</a> ·
+        <a href="#p1-cortical">4) 대뇌겉질(평형/보호)</a> ·
+        <a href="#p1-table">초압축표</a> ·
+        <a href="#p1-remain">남아 있으면 문제</a>
+      </div>
+    </li>
+    <li><a href="#part2">PART 2. 뇌졸중(CVA) 핵심 정리</a></li>
+    <li><a href="#part3">PART 3. MS vs GBS (탈수초 질환)</a></li>
+    <li><a href="#part4">PART 4. 병적 반사 검사 (표준 한국어 의료용어)</a>
+      <div class="sub tiny">
+        <a href="#p4-foot">Ⅰ. 발</a> ·
+        <a href="#p4-hand">Ⅱ. 손</a> ·
+        <a href="#p4-face">Ⅲ. 얼굴</a> ·
+        <a href="#p4-flex">Ⅳ. 발가락 굽힘 계열</a>
+      </div>
+    </li>
+    <li><a href="#part5">PART 5. 주요 평가 도구(Scale)</a></li>
+    <li><a href="#part6">PART 6. 운동 관련 검사 (어깨→배/허리→엉덩관절→무릎→발목)</a></li>
+    <li><a href="#part7">PART 7. 신경 해부학 및 분절(Segment)</a></li>
+    <li><a href="#part8">PART 8. 해부생리 및 세포학 핵심</a></li>
+    <li><a href="#part9">PART 9. 뼈세포와 뼈되기(Ossification)</a></li>
+  </ul>
+
+  <div class="box-point">
+    ✅ PDF 저장 팁: Chrome/Edge에서 열기 → Ctrl+P → <strong>배경 그래픽(Background graphics)</strong> 체크 → PDF로 저장<br>
+    <span class="tiny">* PDF에서 링크 클릭은 뷰어에 따라 다를 수 있음</span>
+  </div>
+</div>
+
+<!-- =========================================================
+     PART 1. 신경계 수준별 반사·반응 정리 (원문 100% 포함)
+     ========================================================= -->
+<a id="part1"></a>
+<h2>PART 1. 🧠 신경계 수준별 반사·반응 정리 (국시 단골)</h2>
+<a class="backtoc" href="#toc">↑ 목차로</a>
+
+<div class="box-point">
+  <strong>핵심 구조 먼저</strong><br>
+  척수 수준 → 원시적, 분절 반사<br>
+  뇌줄기 수준 → 자세 긴장 반사<br>
+  중간뇌 수준 → 항중력·자세 반응 시작<br>
+  대뇌겉질 수준 → 균형·보호 반응 완성
+</div>
+
+<a id="p1-spinal"></a>
+<h3>1️⃣ 척수 수준 반사 (Spinal level)</h3>
+
+<h4>🔹 비대칭긴장성목반사 (ATNR)</h4>
+<table>
+  <tr><th width="20%">항목</th><th>내용</th></tr>
+  <tr><td>신경계 수준</td><td>척수 수준</td></tr>
+  <tr><td>자극</td><td>머리를 한쪽으로 돌림</td></tr>
+  <tr><td>양성 자세</td><td>얼굴 쪽 팔다리 폄, 반대쪽 굽힘</td></tr>
+  <tr><td>의미</td><td>원시적 자세 패턴</td></tr>
+  <tr><td>소실</td><td>생후 4–6개월</td></tr>
+</table>
+<div class="box-lock">🔒 절대 안 까먹는 멘트<br>“고개 돌리면 활 쏘는 자세 = 척수”</div>
+<div class="box-point">
+  📌 시험 포인트<br>
+  ATNR 지속 → 뇌성마비 의심<br>
+  척수 수준 = 가장 원시적
+</div>
+
+<a id="p1-brainstem"></a>
+<h3>2️⃣ 뇌줄기 수준 반사 (Brainstem level)</h3>
+
+<h4>🔹 긴장성미로반사 (TLR)</h4>
+<table>
+  <tr><th width="20%">항목</th><th>내용</th></tr>
+  <tr><td>신경계 수준</td><td>뇌줄기 수준</td></tr>
+  <tr><td>자극</td><td>머리 위치 변화</td></tr>
+  <tr><td>양성 자세</td><td>바로 누우면 폄, 엎드리면 굽힘</td></tr>
+  <tr><td>의미</td><td>중력에 대한 자세 긴장</td></tr>
+  <tr><td>소실</td><td>생후 6개월</td></tr>
+</table>
+<div class="box-lock">🔒 멘트<br>“하늘 보면 펴지고, 바닥 보면 접힌다”</div>
+
+<h4>🔹 양서류 반응 (Amphibian reaction)</h4>
+<table>
+  <tr><th width="20%">항목</th><th>내용</th></tr>
+  <tr><td>신경계 수준</td><td>뇌줄기 수준</td></tr>
+  <tr><td>자극</td><td>한쪽 다리 굽힘</td></tr>
+  <tr><td>양성 자세</td><td>같은 쪽 팔·다리 굽힘</td></tr>
+  <tr><td>의미</td><td>분리된 몸통·사지 움직임</td></tr>
+  <tr><td>시기</td><td>생후 6개월 이후</td></tr>
+</table>
+<div class="box-lock">🔒 멘트<br>“한쪽 접으면 그쪽만 따라 접힌다”</div>
+<div class="box-point">
+  📌 중요<br>
+  이건 반사라기보다 반응<br>
+  뇌줄기 단계에서 처음 나타나는 분리 움직임
+</div>
+
+<a id="p1-midbrain"></a>
+<h3>3️⃣ 중간뇌 수준 반응 (Midbrain level)</h3>
+
+<h4>🔹 란다우 반응 (Landau reaction)</h4>
+<table>
+  <tr><th width="20%">항목</th><th>내용</th></tr>
+  <tr><td>신경계 수준</td><td>중간뇌 수준</td></tr>
+  <tr><td>자극</td><td>엎드린 공중 들기</td></tr>
+  <tr><td>양성 자세</td><td>머리·몸통·다리 폄</td></tr>
+  <tr><td>의미</td><td>항중력 신전</td></tr>
+  <tr><td>시기</td><td>생후 3–12개월</td></tr>
+</table>
+<div class="box-lock">🔒 멘트<br>“공중에 들면 슈퍼맨 = 중간뇌”</div>
+<div class="box-point">
+  📌 시험 포인트<br>
+  란다우 없음 → 중간뇌 이상<br>
+  너무 과도 → 강직 의심
+</div>
+
+<h4>🔹 유인원 반응 (Simian reaction)</h4>
+<table>
+  <tr><th width="20%">항목</th><th>내용</th></tr>
+  <tr><td>신경계 수준</td><td>중간뇌 수준</td></tr>
+  <tr><td>자극</td><td>한쪽 팔 굽힘</td></tr>
+  <tr><td>양성 자세</td><td>같은 쪽 다리도 굽힘</td></tr>
+  <tr><td>의미</td><td>상·하지 협응</td></tr>
+  <tr><td>시기</td><td>생후 6개월 이후</td></tr>
+</table>
+<div class="box-lock">🔒 멘트<br>“팔 접히면 다리도 따라 접힌다”</div>
+
+<a id="p1-cortical"></a>
+<h3>4️⃣ 대뇌겉질 수준 반응 (Cortical level)</h3>
+
+<h4>🔹 평형 반응 · 보호신전반응</h4>
+<table>
+  <tr><th width="20%">항목</th><th>내용</th></tr>
+  <tr><td>신경계 수준</td><td>대뇌겉질 수준</td></tr>
+  <tr><td>특징</td><td>중심 이동에 따른 균형</td></tr>
+  <tr><td>의미</td><td>최고 수준 자세 조절</td></tr>
+  <tr><td>소실</td><td>❌ (평생 유지)</td></tr>
+</table>
+<div class="box-lock">🔒 멘트<br>“넘어질 걸 알고 손을 뻗는다 = 대뇌”</div>
+
+<a id="p1-table"></a>
+<h3>🧠 국시용 한 눈에 보는 표 (초압축)</h3>
+<table>
+  <tr><th>반사/반응</th><th>신경계 수준</th><th>핵심 자세</th></tr>
+  <tr><td>ATNR</td><td>척수</td><td>얼굴 쪽 폄</td></tr>
+  <tr><td>TLR</td><td>뇌줄기</td><td>하늘=폄 / 바닥=굽힘</td></tr>
+  <tr><td>양서류 반응</td><td>뇌줄기</td><td>한쪽만 분리</td></tr>
+  <tr><td>란다우</td><td>중간뇌</td><td>슈퍼맨</td></tr>
+  <tr><td>유인원 반응</td><td>중간뇌</td><td>팔=다리</td></tr>
+  <tr><td>평형·보호</td><td>대뇌겉질</td><td>균형·방어</td></tr>
+</table>
+
+<div class="box-lock">
+  🔒 국시 최종 락 문장 (이거 외우면 끝)<br>
+  ATNR = 척수<br>
+  TLR·양서류 = 뇌줄기<br>
+  란다우·유인원 = 중간뇌<br>
+  평형·보호 = 대뇌겉질
+</div>
+
+<a id="p1-remain"></a>
+<h3>남아 있으면 문제</h3>
+<table>
+  <tr><th>남아 있으면 문제</th><th>핵심 의미</th></tr>
+  <tr><td>ATNR</td><td>양손 협응 불가</td></tr>
+  <tr><td>TLR</td><td>항중력 자세 불가</td></tr>
+  <tr><td>모로</td><td>자세 불안정</td></tr>
+  <tr><td>STNR</td><td>기기·서기 장애</td></tr>
+  <tr><td>손바닥잡기</td><td>미세운동 장애</td></tr>
+  <tr><td>발바닥잡기</td><td>보행 장애</td></tr>
+  <tr><td>보호·평형 없음</td><td>대뇌겉질 미성숙</td></tr>
+</table>
+
+<!-- =========================================================
+     PART 2. 뇌졸중 (원문 그대로 포함)
+     ========================================================= -->
+<a id="part2"></a>
+<h2 class="pb">PART 2. 뇌졸중 (CVA) 핵심 정리 🔥</h2>
+<a class="backtoc" href="#toc">↑ 목차로</a>
+
+<h3>1. 허혈성 vs 출혈성 감별</h3>
+<table>
+  <tr><th width="20%">구분</th><th>허혈성 (막힘)</th><th>출혈성 (터짐)</th></tr>
+  <tr><td>원인</td><td>혈전, 색전</td><td>고혈압, 동맥류 파열</td></tr>
+  <tr><td>증상</td><td>점진적/갑작스런 신경결손</td><td><strong>극심한 두통</strong>, 의식 저하</td></tr>
+</table>
+<div class="box-lock">🔑 “머리 깨질 듯한 두통 = 출혈성”</div>
+
+<h3>2. 뇌혈관별 증상 (킬러 포인트)</h3>
+<table>
+  <tr>
+    <th width="20%">혈관명</th>
+    <th width="30%">핵심 마비 위치</th>
+    <th>주요 동반 증상</th>
+    <th width="20%">🔑 기억 락</th>
+  </tr>
+  <tr>
+    <td><strong>중대뇌동맥 (MCA)</strong></td>
+    <td><strong>얼굴·팔 &gt; 다리</strong></td>
+    <td>실어증(우성), 시야 결손</td>
+    <td><strong>얼굴·팔 + 말</strong></td>
+  </tr>
+  <tr>
+    <td>전대뇌동맥 (ACA)</td>
+    <td><strong>다리 &gt; 팔</strong></td>
+    <td>보행 장애, 성격 변화</td>
+    <td><strong>ACA = 다리</strong></td>
+  </tr>
+  <tr>
+    <td>후대뇌동맥 (PCA)</td>
+    <td>(마비 경미)</td>
+    <td>시야 결손, 시각 인식 장애</td>
+    <td><strong>PCA = 눈</strong></td>
+  </tr>
+  <tr>
+    <td>내낭 병변</td>
+    <td><strong>운동+감각+시야</strong></td>
+    <td>증상이 한꺼번에 심함</td>
+    <td><strong>다 같이 망가짐</strong></td>
+  </tr>
+</table>
+
+<h3>3. 반구 우성 (Lateralization)</h3>
+<table class="grid2">
+  <tr>
+    <td>
+      <div class="box-point">
+        <strong>▣ 우성반구 (좌뇌)</strong><br>
+        - 실어증, 계산·언어 장애
+      </div>
+    </td>
+    <td>
+      <div class="box-point">
+        <strong>▣ 비우성반구 (우뇌)</strong><br>
+        - <strong>반쪽무시 (Neglect)</strong>, 공간 인식
+      </div>
+    </td>
+  </tr>
+</table>
+<div class="box-lock">🔑 말 못 하면 좌뇌 / 몸 반쪽 무시하면 우뇌</div>
+
+<!-- =========================================================
+     PART 3. MS vs GBS (원문 그대로 포함)
+     ========================================================= -->
+<a id="part3"></a>
+<h2 class="pb">PART 3. MS vs GBS (탈수초 질환)</h2>
+<a class="backtoc" href="#toc">↑ 목차로</a>
+
+<table>
+  <tr>
+    <th width="20%">구분</th>
+    <th>길랭–바레 (GBS)</th>
+    <th>다발성경화증 (MS)</th>
+  </tr>
+  <tr>
+    <td><strong>병변 위치</strong></td>
+    <td><strong>말초신경 (PNS)</strong></td>
+    <td><strong>중추신경 (CNS)</strong></td>
+  </tr>
+  <tr>
+    <td>운동신경원</td>
+    <td><strong>LMN (하위)</strong></td>
+    <td><strong>UMN (상위)</strong></td>
+  </tr>
+  <tr>
+    <td><strong>심부건반사</strong></td>
+    <td><strong>감소/소실 (이완성)</strong></td>
+    <td><strong>증가/항진 (경직성)</strong></td>
+  </tr>
+  <tr>
+    <td>진행/증상</td>
+    <td>급성, <strong>상행성 마비</strong><br>호흡근 약화</td>
+    <td>재발–완화<br><strong>시신경염, 복시</strong></td>
+  </tr>
+</table>
+<div class="box-final">
+  🔑 <strong>GBS = 말초/반사↓/상행성</strong> vs <strong>MS = 중추/반사↑/재발-완화</strong>
+</div>
+
+<!-- =========================================================
+     PART 4. 병적 반사 (원문 100% 포함)
+     ========================================================= -->
+<a id="part4"></a>
+<h2>PART 4. 🧠 병적 반사 검사 (표준 한국어 의료용어 정리본)</h2>
+<a class="backtoc" href="#toc">↑ 목차로</a>
+
+<a id="p4-foot"></a>
+<h3>Ⅰ. 발에서 나타나는 병적 반사</h3>
+<div class="box-point">
+  ▶ 상위운동신경원 병변 시 나타남<br>
+  ▶ 공통 반응: 엄지발가락의 폄
+</div>
+<div class="box-lock">🔒 헷갈림 차단 문장<br>“발에서 엄지발가락이 펴지면 상위운동신경원 병변이다.”</div>
+
+<h4>🔹 발 병적 반사 목록 (표준 용어)</h4>
+<table>
+  <tr><th>검사명 (한국어)</th><th>자극 방법</th><th>양성 반응</th><th>임상적 의미</th></tr>
+  <tr><td>바빈스키 반사</td><td>발바닥 가쪽을 뒤에서 앞으로 긁음</td><td>엄지발가락 폄, 다른 발가락 벌어짐</td><td>상위운동신경원 병변</td></tr>
+  <tr><td>차독 반사</td><td>가쪽복사 아래 발등 자극</td><td>엄지발가락 폄</td><td>바빈스키 반사와 동일</td></tr>
+  <tr><td>오펜하임 반사</td><td>정강이 앞면을 위에서 아래로 문지름</td><td>엄지발가락 폄</td><td>바빈스키 반사와 동일</td></tr>
+  <tr><td>고든 반사</td><td>장딴지근을 강하게 압박</td><td>엄지발가락 폄</td><td>바빈스키 반사와 동일</td></tr>
+  <tr><td>셰퍼 반사</td><td>아킬레스힘줄 압박</td><td>엄지발가락 폄</td><td>바빈스키 반사와 동일</td></tr>
+  <tr><td>곤다 반사</td><td>네 번째 발가락을 아래로 굽힘</td><td>엄지발가락 폄</td><td>바빈스키 반사와 동일</td></tr>
+</table>
+<div class="box-point">
+  📌 시험용 핵심<br>
+  검사 방법 다름<br>
+  의미는 전부 동일<br>
+  → 상위운동신경원 병변
+</div>
+
+<a id="p4-hand"></a>
+<h3>Ⅱ. 손에서 나타나는 병적 반사</h3>
+<div class="box-point">▶ 경수 부위 상위운동신경원 병변 시사</div>
+<div class="box-lock">🔒 헷갈림 차단 문장<br>“손에서 병적 반사가 나오면 경수 병변이다.”</div>
+
+<h4>🔹 손 병적 반사 목록 (표준 용어)</h4>
+<table>
+  <tr><th>검사명 (한국어)</th><th>자극 방법</th><th>양성 반응</th><th>임상적 의미</th></tr>
+  <tr><td>호프만 반사</td><td>가운데손가락 손톱을 아래로 튕김</td><td>엄지손가락과 집게손가락의 굽힘</td><td>경수 상위운동신경원 병변</td></tr>
+  <tr><td>트롬너 반사</td><td>가운데손가락 손바닥쪽을 위로 튕김</td><td>엄지손가락과 집게손가락의 굽힘</td><td>호프만 반사와 동일</td></tr>
+  <tr><td>손가락굽힘 반사</td><td>손가락 말단 자극</td><td>손가락 굽힘</td><td>경수 상위운동신경원 병변</td></tr>
+</table>
+<div class="box-point">
+  📌 주의<br>
+  손 병적 반사는 하위운동신경원 병변과 무관<br>
+  반드시 상위운동신경원 병변
+</div>
+
+<a id="p4-face"></a>
+<h3>Ⅲ. 얼굴에서 나타나는 병적 반사</h3>
+<div class="box-point">▶ 전두엽 피질 억제 기능 소실</div>
+<div class="box-lock">🔒 헷갈림 차단 문장<br>“성인에게 원시반사가 다시 나타나면 전두엽 문제다.”</div>
+
+<h4>🔹 얼굴 병적 반사 (원시 반사)</h4>
+<table>
+  <tr><th>검사명 (한국어)</th><th>자극 방법</th><th>양성 반응</th><th>임상적 의미</th></tr>
+  <tr><td>입술오므림 반사</td><td>입술을 가볍게 두드림</td><td>입술이 앞으로 내밀어짐</td><td>전두엽 병변</td></tr>
+  <tr><td>탐색 반사</td><td>입 주변 자극</td><td>자극 쪽으로 고개 회전</td><td>전두엽 병변</td></tr>
+  <tr><td>빨기 반사</td><td>입술 자극</td><td>빨기 동작</td><td>전두엽 병변</td></tr>
+  <tr><td>손바닥턱 반사</td><td>손바닥을 긁음</td><td>턱 근육 수축</td><td>전두엽 병변</td></tr>
+</table>
+<div class="box-point">
+  📌 시험 포인트<br>
+  성인에서 나타나면 비정상<br>
+  치매, 전두엽 손상에서 흔함
+</div>
+
+<a id="p4-flex"></a>
+<h3>Ⅳ. 발가락 굽힘 계열 병적 반사</h3>
+<div class="box-point">▶ 상위운동신경원 병변</div>
+<table>
+  <tr><th>검사명 (한국어)</th><th>자극</th><th>반응</th><th>의미</th></tr>
+  <tr><td>로솔리모 반사</td><td>발가락 말단 두드림</td><td>발가락 굽힘</td><td>상위운동신경원 병변</td></tr>
+  <tr><td>멘델–베흐테레프 반사</td><td>발등 두드림</td><td>발가락 굽힘</td><td>상위운동신경원 병변</td></tr>
+</table>
+
+<div class="box-lock">
+  🧠 병적 반사 최종 국시 정리 문장<br>
+  발에서 엄지발가락이 펴지면 → 상위운동신경원 병변<br>
+  손에서 손가락이 굽혀지면 → 경수 상위운동신경원 병변<br>
+  성인에서 원시반사 → 전두엽 병변<br>
+  병적 반사는 하위운동신경원 병변이 아니다.
+</div>
+
+<!-- =========================================================
+     PART 5. 평가도구 (원문 그대로 포함)
+     ========================================================= -->
+<a id="part5"></a>
+<h2>PART 5. 주요 평가 도구 (Scale)</h2>
+<a class="backtoc" href="#toc">↑ 목차로</a>
+
+<h3>Ⅰ. 대운동 기능 평가</h3>
+<h4>1️⃣ GMFM (대운동기능평가)</h4>
+<table>
+  <tr><th width="20%">항목</th><th>내용</th></tr>
+  <tr><td>정식 명칭</td><td>대운동기능평가 (Gross Motor Function Measure)</td></tr>
+  <tr><td>대상</td><td>뇌성마비 아동</td></tr>
+  <tr><td>목적</td><td>대운동 기능 변화 평가</td></tr>
+  <tr><td>구성</td><td>눕기·뒤집기 / 앉기 / 기기·무릎서기 / 서기 / 걷기·뛰기</td></tr>
+  <tr><td>점수</td><td>백분율(%)</td></tr>
+  <tr><td>특징</td><td>변화 추적용</td></tr>
+</table>
+<div class="box-lock">🔒 헷갈림 차단<br>“GMFM은 진단 ❌, 변화 추적 ⭕”</div>
+
+<h3>Ⅱ. 보행 · 이동능력 평가</h3>
+<h4>2️⃣ Hoffer 분류 (호퍼 분류)</h4>
+<div class="box-point">(국시에서 HOYA처럼 들려서 많이 헷갈림)</div>
+<table>
+  <tr><th width="20%">항목</th><th>내용</th></tr>
+  <tr><td>대상</td><td>척수이분증(spina bifida)</td></tr>
+  <tr><td>분류 기준</td><td>보행 능력</td></tr>
+  <tr><td>단계</td><td>보행 가능 / 보조 보행 / 휠체어</td></tr>
+</table>
+<div class="box-lock">🔒 멘트<br>“척수이분증 보행 = Hoffer”</div>
+<div class="box-point">⚠️ 주의<br>뇌성마비 ❌<br>근이영양증 ❌</div>
+
+<h3>Ⅲ. 의식 수준 평가</h3>
+<h4>3️⃣ 글라스고 혼수 척도 (GCS)</h4>
+<table>
+  <tr><th>항목</th><th>점수</th></tr>
+  <tr><td>눈뜨기 반응</td><td>1–4</td></tr>
+  <tr><td>언어 반응</td><td>1–5</td></tr>
+  <tr><td>운동 반응</td><td>1–6</td></tr>
+  <tr><td>총점</td><td>3–15점</td></tr>
+</table>
+<table>
+  <tr><th>해석</th><th>의미</th></tr>
+  <tr><td>13–15</td><td>경도 손상</td></tr>
+  <tr><td>9–12</td><td>중등도 손상</td></tr>
+  <tr><td>≤8</td><td>중증 (삽관 고려)</td></tr>
+</table>
+<div class="box-lock">🔒 국시 공식<br>“GCS 8점 이하면 중증이다.”</div>
+
+<h3>Ⅳ. 인지 · 행동 회복 단계</h3>
+<h4>4️⃣ 란초 로스 아미고스 척도</h4>
+<div class="box-point">(Rancho Los Amigos Scale)</div>
+<table>
+  <tr><th>단계</th><th>특징</th></tr>
+  <tr><td>Ⅰ</td><td>반응 없음</td></tr>
+  <tr><td>Ⅱ</td><td>일반적 반응</td></tr>
+  <tr><td>Ⅲ</td><td>국소적 반응</td></tr>
+  <tr><td>Ⅳ</td><td>혼란·흥분</td></tr>
+  <tr><td>Ⅴ</td><td>혼란·부적절</td></tr>
+  <tr><td>Ⅵ</td><td>혼란·적절</td></tr>
+  <tr><td>Ⅶ</td><td>자동·적절</td></tr>
+  <tr><td>Ⅷ</td><td>목적적·적절</td></tr>
+</table>
+<div class="box-lock">🔒 멘트<br>“란초는 의식이 아니라 행동·인지 회복 단계”</div>
+<div class="box-point">📌 TBI(외상성 뇌손상) 단골</div>
+
+<h3>Ⅴ. 다발성경화증 평가</h3>
+<h4>5️⃣ EDSS (확장장애상태척도)</h4>
+<table>
+  <tr><th width="20%">항목</th><th>내용</th></tr>
+  <tr><td>대상</td><td>다발성경화증(MS)</td></tr>
+  <tr><td>범위</td><td>0–10점</td></tr>
+  <tr><td>기준</td><td>보행 능력 중심</td></tr>
+  <tr><td>특징</td><td>장애 정도 수치화</td></tr>
+</table>
+<div class="box-lock">🔒 멘트<br>“MS = EDSS”</div>
+
+<h3>Ⅵ. 소뇌 기능 평가</h3>
+<h4>6️⃣ 국제 소뇌 실조 척도 (ICARS)</h4>
+<table>
+  <tr><th width="20%">항목</th><th>내용</th></tr>
+  <tr><td>대상</td><td>소뇌 실조 환자</td></tr>
+  <tr><td>평가 항목</td><td>보행, 자세, 사지 협응, 언어</td></tr>
+  <tr><td>특징</td><td>실조 중증도 평가</td></tr>
+</table>
+<div class="box-lock">🔒 멘트<br>“소뇌 실조 점수화 = ICARS”</div>
+
+<h3>Ⅶ. 기타 국시 자주 나오는 신경계 검사</h3>
+<ul>
+  <li><strong>MMSE (간이정신상태검사)</strong>: 인지기능 선별, 치매 스크리닝</li>
+  <li><strong>FIM (기능적 독립성 평가)</strong>: 일상생활 수행능력, 재활 효과 평가</li>
+  <li><strong>ASIA 척도</strong>: 척수손상 신경학적 분류, 감각·운동 수준 평가</li>
+</ul>
+
+<h3>🧠 신경계 검사 한 눈 요약 (시험 분기용)</h3>
+<table>
+  <tr><th>검사</th><th>대상</th><th>핵심</th></tr>
+  <tr><td>GMFM</td><td>뇌성마비</td><td>대운동 변화</td></tr>
+  <tr><td>Hoffer</td><td>척수이분증</td><td>보행 분류</td></tr>
+  <tr><td>GCS</td><td>의식</td><td>중증도</td></tr>
+  <tr><td>Rancho</td><td>TBI</td><td>인지·행동</td></tr>
+  <tr><td>EDSS</td><td>MS</td><td>장애 단계</td></tr>
+  <tr><td>ICARS</td><td>소뇌</td><td>실조 정도</td></tr>
+  <tr><td>ASIA</td><td>척수손상</td><td>손상 수준</td></tr>
+</table>
+
+<div class="box-final">
+  🔒 국시 최종 락 문장<br>
+  뇌성마비 운동 = GMFM<br>
+  척수이분증 보행 = Hoffer<br>
+  의식 = GCS<br>
+  행동 회복 = Rancho<br>
+  MS = EDSS<br>
+  소뇌 실조 = ICARS
+</div>
+
+<!-- =========================================================
+     PART 6. 운동 관련 검사 (원문 그대로 포함)
+     ========================================================= -->
+<a id="part6"></a>
+<h2 class="pb">PART 6. 🦾 운동 관련 검사 (표준 한국어 의료용어 · 국시판)</h2>
+<a class="backtoc" href="#toc">↑ 목차로</a>
+
+<div class="box-point">어깨 → 배·허리 → 엉덩관절 → 무릎 → 발목</div>
+
+<h3>1️⃣ 어깨관절 검사</h3>
+
+<h4>🔹 돌림근띠(회전근개) 검사</h4>
+<table>
+  <tr><th>검사명 (신용어)</th><th>평가 구조</th><th>양성 소견</th><th>헷갈림 차단</th></tr>
+  <tr><td>팔떨어뜨림 검사</td><td>가시위근</td><td>팔을 천천히 내리지 못함</td><td>“내리다 떨어지면 가시위근”</td></tr>
+  <tr><td>빈캔 검사</td><td>가시위근</td><td>통증 또는 근력 약화</td><td>“캔 비우기 = 가시위근”</td></tr>
+  <tr><td>가쪽돌림 저항 검사</td><td>가시아래근</td><td>가쪽돌림 약화</td><td>“밖으로 못 돌리면 가시아래근”</td></tr>
+  <tr><td>들어올림 검사</td><td>어깨밑근</td><td>손을 등에서 떼지 못함</td><td>“등에서 못 떼면 어깨밑근”</td></tr>
+</table>
+
+<h4>🔹 충돌·불안정성 검사</h4>
+<table>
+  <tr><th>검사명 (신용어)</th><th>평가 내용</th><th>양성 소견</th></tr>
+  <tr><td>니어 충돌 검사</td><td>어깨봉우리 아래 충돌</td><td>통증</td></tr>
+  <tr><td>호킨스–케네디 검사</td><td>봉우리밑 충돌 증후군</td><td>통증</td></tr>
+  <tr><td>고랑 징후</td><td>아래쪽 불안정성</td><td>봉우리 아래 오목</td></tr>
+  <tr><td>불안 검사</td><td>앞쪽 불안정성</td><td>불안감·통증</td></tr>
+</table>
+<div class="box-lock">🔒 기억 문장<br>“아프면 충돌, 무서우면 불안정”</div>
+
+<h3>2️⃣ 배 · 허리 검사 (허리척추)</h3>
+
+<h4>🔹 신경·추간판 검사</h4>
+<table>
+  <tr><th>검사명 (신용어)</th><th>평가</th><th>양성 소견</th></tr>
+  <tr><td>하지직거상 검사</td><td>허리추간판탈출증</td><td>30–70° 방사통</td></tr>
+  <tr><td>라세그 검사</td><td>좌골신경 긴장</td><td>통증</td></tr>
+  <tr><td>반대쪽 하지직거상 검사</td><td>심한 추간판탈출</td><td>반대쪽 통증</td></tr>
+</table>
+<div class="box-lock">🔒 기억 문장<br>“다리 들다 방사통 → 허리 디스크”</div>
+
+<h4>🔹 배근육 검사</h4>
+<table>
+  <tr><th>검사명</th><th>평가</th></tr>
+  <tr><td>배근력 검사</td><td>배곧은근·배빗근</td></tr>
+  <tr><td>배곧은근 벌어짐 검사</td><td>배곧은근 이개</td></tr>
+</table>
+
+<h3>3️⃣ 엉덩관절 검사</h3>
+
+<h4>🔹 관절·연부조직 검사</h4>
+<table>
+  <tr><th>검사명 (신용어)</th><th>평가 구조</th><th>양성 소견</th></tr>
+  <tr><td>패트릭 검사</td><td>엉덩관절·엉치엉덩관절</td><td>서혜부 또는 엉치 통증</td></tr>
+  <tr><td>토마스 검사</td><td>엉덩관절 굽힘근</td><td>반대쪽 다리 들림</td></tr>
+  <tr><td>오버 검사</td><td>넙다리근막긴장근·엉덩정강근막</td><td>다리가 내려가지 않음</td></tr>
+  <tr><td>트렌델렌버그 검사</td><td>중간볼기근</td><td>반대쪽 골반 하강</td></tr>
+</table>
+<div class="box-lock">🔒 기억 문장<br>“한발 섰을 때 골반 떨어지면 중간볼기근”</div>
+
+<h3>4️⃣ 무릎관절 검사</h3>
+
+<h4>🔹 인대 검사 (국시 핵심)</h4>
+<table>
+  <tr><th>검사명 (신용어)</th><th>평가 구조</th><th>양성 소견</th></tr>
+  <tr><td>라크만 검사</td><td>앞십자인대</td><td>앞쪽 이동 증가</td></tr>
+  <tr><td>앞서랍 검사</td><td>앞십자인대</td><td>앞쪽 이동</td></tr>
+  <tr><td>뒤서랍 검사</td><td>뒤십자인대</td><td>뒤쪽 이동</td></tr>
+  <tr><td>벌림 스트레스 검사</td><td>안쪽곁인대</td><td>안쪽 이완</td></tr>
+  <tr><td>모음 스트레스 검사</td><td>가쪽곁인대</td><td>가쪽 이완</td></tr>
+</table>
+<div class="box-lock">🔒 기억 문장<br>“무릎 인대는 라크만이 대표”</div>
+
+<h4>🔹 반달연골 검사</h4>
+<table>
+  <tr><th>검사명 (신용어)</th><th>양성 소견</th></tr>
+  <tr><td>맥머레이 검사</td><td>통증 또는 딸깍 소리</td></tr>
+  <tr><td>애플리 압박 검사</td><td>압박 시 통증 증가</td></tr>
+</table>
+
+<h3>5️⃣ 발목관절 · 발 검사</h3>
+
+<h4>🔹 인대 검사</h4>
+<table>
+  <tr><th>검사명 (신용어)</th><th>평가 구조</th><th>양성 소견</th></tr>
+  <tr><td>앞서랍 검사(발목)</td><td>앞거비인대</td><td>앞쪽 이동</td></tr>
+  <tr><td>거골기울기 검사</td><td>발꿈치종아리인대</td><td>과도한 기울어짐</td></tr>
+</table>
+
+<h4>🔹 힘줄·기타 검사</h4>
+<table>
+  <tr><th>검사명 (신용어)</th><th>평가</th></tr>
+  <tr><td>톰슨 검사</td><td>발꿈치힘줄 파열</td></tr>
+  <tr><td>티넬 징후</td><td>말초신경 압박</td></tr>
+  <tr><td>윈들라스 검사</td><td>발바닥근막염</td></tr>
+</table>
+<div class="box-lock">🔒 기억 문장<br>“종아리 눌러도 발 안 움직이면 발꿈치힘줄”</div>
+
+<h3>🧠 부위별 초압축 요약 (국시용)</h3>
+<ul>
+  <li>어깨 → 돌림근띠 / 충돌</li>
+  <li>허리 → 하지직거상</li>
+  <li>엉덩관절 → 패트릭·토마스</li>
+  <li>무릎 → 라크만</li>
+  <li>발목 → 톰슨</li>
+</ul>
+
+<div class="box-final">
+  🔒 국시 최종 락 문장<br>
+  가시위근 = 팔떨어뜨림·빈캔<br>
+  앞십자인대 = 라크만<br>
+  중간볼기근 = 트렌델렌버그<br>
+  허리디스크 = 하지직거상<br>
+  발꿈치힘줄 = 톰슨
+</div>
+
+<!-- =========================================================
+     PART 7. 신경 분절 (원문 그대로 포함)
+     ========================================================= -->
+<a id="part7"></a>
+<h2 class="pb">PART 7. 신경 해부학 및 분절 (Segment)</h2>
+<a class="backtoc" href="#toc">↑ 목차로</a>
+
+<div class="img-placeholder">[Image of human dermatome map]</div>
+
+<h3>1. UMN vs LMN / 감각분절 (Dermatome)</h3>
+<table class="grid2">
+  <tr>
+    <td>
+      <table>
+        <tr><th>구분</th><th>UMN</th><th>LMN</th></tr>
+        <tr><td>긴장</td><td>증가 (경직)</td><td>감소 (이완)</td></tr>
+        <tr><td>반사</td><td><strong>항진</strong></td><td><strong>소실</strong></td></tr>
+      </table>
+    </td>
+    <td>
+      <table>
+        <tr><th>분절</th><th>위치</th></tr>
+        <tr><td>C6/7/8</td><td>엄지/중지/새끼</td></tr>
+        <tr><td>T4/10</td><td>유두/배꼽</td></tr>
+        <tr><td>L3/4/5</td><td>무릎/정강안쪽/발등</td></tr>
+        <tr><td>S1</td><td>발바닥 가쪽</td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<h3>2. 운동(Myotome) & 반사(DTR) 핵심 락</h3>
+<table>
+  <tr><th>분절</th><th>운동 (Myotome)</th><th>반사 (DTR)</th><th>🔑 암기</th></tr>
+  <tr><td>C5</td><td>팔꿈치 굽힘</td><td>이두근 (C5-6)</td><td>-</td></tr>
+  <tr><td><strong>C6</strong></td><td><strong>손목 폄</strong></td><td>위팔노근 (C6)</td><td>손목 못 펴면 C6</td></tr>
+  <tr><td>C7</td><td>팔꿈치 폄</td><td>삼두근 (C7)</td><td>밀기</td></tr>
+  <tr><td><strong>L3-4</strong></td><td><strong>무릎 폄</strong></td><td>무릎반사 (L3-4)</td><td>무릎 폄</td></tr>
+  <tr><td>L4</td><td>발목 배굴</td><td>-</td><td>발 들기</td></tr>
+  <tr><td><strong>S1</strong></td><td><strong>발목 저굴</strong></td><td>아킬레스 (S1)</td><td>까치발</td></tr>
+</table>
+<div class="box-lock">🔒 반사 세트: 이두 5-6 / 노근 6 / 삼두 7 / 무릎 3-4 / 아킬레스 S1</div>
+
+<!-- =========================================================
+     PART 8. 해부생리 (원문 그대로 포함 + 수송박스 포함)
+     ========================================================= -->
+<a id="part8"></a>
+<h2 class="pb">PART 8. 해부생리 및 세포학 핵심 (추가본)</h2>
+<a class="backtoc" href="#toc">↑ 목차로</a>
+
+<h3>1. 면역글로불린 & 세포 소기관</h3>
+<table class="grid2">
+  <tr>
+    <td>
+      <h4>🛡️ 면역글로불린 (Ig)</h4>
+      <ul>
+        <li><strong>IgG</strong>: 혈액 최다, <strong>태반 통과</strong> (장기면역)</li>
+        <li><strong>IgA</strong>: <strong>점막, 분비물</strong> (침, 모유, 눈물)</li>
+        <li>IgM(초기), IgE(알레르기)</li>
+      </ul>
+    </td>
+    <td>
+      <h4>🔬 세포 소기관</h4>
+      <ul>
+        <li><strong>미토콘드리아</strong>: ATP 생성 (에너지)</li>
+        <li><strong>리소좀</strong>: 세포 내 소화, 이물질 처리</li>
+        <li><strong>리보솜</strong>: 단백질 합성</li>
+        <li><strong>골지체</strong>: 단백질 포장/분비</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+<h3>2. 신경아교세포 & 상피조직</h3>
+<table class="grid2">
+  <tr>
+    <td>
+      <h4>🧠 신경아교세포 (Neuroglia)</h4>
+      <ul>
+        <li><strong>뇌실막세포</strong>: 뇌실 덮음, <strong>뇌척수액(CSF)</strong> 관여</li>
+        <li><strong>희돌기아교세포</strong>: <strong>중추(CNS)</strong> 수초 형성</li>
+        <li><strong>슈반세포</strong>: <strong>말초(PNS)</strong> 수초 형성</li>
+        <li>별아교세포: BBB 형성, 지지</li>
+      </ul>
+    </td>
+    <td>
+      <h4>🧱 상피조직</h4>
+      <ul>
+        <li><strong>중층편평</strong>: 마찰 강함 (입안, 식도, 피부)</li>
+        <li><strong>단층편평</strong>: 여과/확산 (폐포, 혈관)</li>
+        <li><strong>섬모원주</strong>: 이동 (기관지, 난관)</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+<h3>3. 세포막 수송</h3>
+<div class="box-point">
+  * <strong>확산</strong>: 고농도→저농도 (에너지 X)<br>
+  * <strong>삼투</strong>: 물의 이동<br>
+  * <strong>능동수송</strong>: 저농도→고농도 (<strong>에너지 ATP 필요</strong>) 🔒 “거슬러 가면 돈 든다”
+</div>
+
+<!-- =========================================================
+     PART 9. 뼈세포/골화 (원문 그대로 포함)
+     ========================================================= -->
+<a id="part9"></a>
+<h2 class="pb">PART 9. 뼈세포와 뼈되기 (Ossification)</h2>
+<a class="backtoc" href="#toc">↑ 목차로</a>
+
+<h3>1. 뼈세포 종류 (Bone Cells)</h3>
+<table>
+  <tr><th>세포명</th><th>영어명</th><th>기능 및 락 멘트</th></tr>
+  <tr><td><strong>뼈형성세포</strong></td><td>Osteo<strong>BLAST</strong></td><td>뼈를 <strong>만든다</strong> (기질 분비)</td></tr>
+  <tr><td>뼈세포</td><td>Osteo<strong>CYTE</strong></td><td>뼈를 <strong>유지/관리</strong> (기질 내 위치)</td></tr>
+  <tr><td><strong>뼈흡수세포</strong></td><td>Osteo<strong>CLAST</strong></td><td>뼈를 <strong>녹인다/파괴</strong> (칼슘 방출)</td></tr>
+</table>
+
+<h3>2. 뼈되기 (Ossification) 분류</h3>
+<table>
+  <tr><th>구분</th><th>막속뼈되기 (Intramembranous)</th><th>연골속뼈되기 (Endochondral)</th></tr>
+  <tr><td>기원</td><td>결합조직막 → 뼈</td><td>유리연골 → 뼈</td></tr>
+  <tr><td>대상</td><td><strong>머리뼈</strong>, 얼굴뼈, 쇄골</td><td><strong>팔다리 뼈 (긴뼈)</strong></td></tr>
+  <tr><td>성장</td><td>두께 성장</td><td><strong>길이 성장 (성장판)</strong></td></tr>
+</table>
+<div class="box-lock">🔒 “머리는 막, 팔다리 길이는 연골(성장판)”</div>
+
+<div class="box-final">
+  💯 국시 합격을 기원합니다!<br>
+  <span style="font-size: 0.85em; font-weight: normal;">(목차 점프 링크 + PDF 인쇄 공백 최소화 적용 완료)</span>
+</div>
+
+</body>
+</html>
